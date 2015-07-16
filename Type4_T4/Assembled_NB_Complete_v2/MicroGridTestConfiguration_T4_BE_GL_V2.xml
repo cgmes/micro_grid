@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cim="http://iec.ch/TC57/2013/CIM-schema-cim16#" xmlns:entsoe="http://entsoe.eu/CIM/SchemaExtension/3/1#" xmlns:md="http://iec.ch/TC57/61970-552/ModelDescription/1#">
+  <md:FullModel rdf:about="urn:uuid:8d6b5a63-e64e-4a25-955f-9c5e107382eb">
+    <md:Model.created>2014-10-24T16:36:33</md:Model.created>
+    <md:Model.scenarioTime>2014-03-28T10:13:02</md:Model.scenarioTime>
+    <md:Model.version>2</md:Model.version>
+    <md:Model.DependentOn rdf:resource="urn:uuid:96adadbe-902b-4cd6-9fc8-01a56ecbee79"/>
+    <md:Model.DependentOn rdf:resource="urn:uuid:2399cbd0-9a39-11e0-aa80-0800200c9a66"/>
+    <md:Model.description>CGMES Conformity Assessment: 'MicroGridTestConfiguration....T4(Assembled) Test Configuration. The model is owned by ENTSO-E and is provided by ENTSO-E “as it is”. To the fullest extent permitted by law, ENTSO-E shall not be liable for any damages of any kind arising out of the use of the model (including any of its subsequent modifications). ENTSO-E neither warrants, nor represents that the use of the model will not infringe the rights of third parties. Any use of the model shall  include a reference to ENTSO-E. ENTSO-E web site is the only official source of information related to the model.</md:Model.description>
+    <md:Model.modelingAuthoritySet>http://ELIA/CGMES/2.4.15</md:Model.modelingAuthoritySet>
+    <md:Model.profile>http://entsoe.eu/CIM/GeographicalLocation/2/1</md:Model.profile>
+    <md:Model.Supersedes rdf:resource="urn:uuid:9e383122-10cf-4da3-9785-f404b3541588"/>
+  </md:FullModel>
+  <cim:CoordinateSystem rdf:ID="_99e8af92-f74c-4027-a1cc-7f4261b37374">
+    <cim:IdentifiedObject.name>WGS84</cim:IdentifiedObject.name>
+    <cim:CoordinateSystem.crsUrn>urn:ogc:def:crs:EPSG::4326</cim:CoordinateSystem.crsUrn>
+  </cim:CoordinateSystem>
+  <cim:Location rdf:ID="_f52dab66-3e35-4982-b0ac-9b17e2c398f6">
+    <cim:Location.PowerSystemResources rdf:resource="#_87f7002b-056f-4a6a-a872-1744eea757e3"/>
+    <cim:Location.CoordinateSystem rdf:resource="#_99e8af92-f74c-4027-a1cc-7f4261b37374"/>
+  </cim:Location>
+  <cim:PositionPoint rdf:ID="_108a1850-aa6b-422a-be23-a2cbbd792c1e">
+    <cim:PositionPoint.sequenceNumber>1</cim:PositionPoint.sequenceNumber>
+    <cim:PositionPoint.Location rdf:resource="#_f52dab66-3e35-4982-b0ac-9b17e2c398f6"/>
+    <cim:PositionPoint.xPosition>4.259260</cim:PositionPoint.xPosition>
+    <cim:PositionPoint.yPosition>51.325100</cim:PositionPoint.yPosition>
+  </cim:PositionPoint>
+  <cim:Location rdf:ID="_9d54ee09-80dc-4e3f-8f27-39af2234d153">
+    <cim:Location.PowerSystemResources rdf:resource="#_37e14a0f-5e34-4647-a062-8bfd9305fa9d"/>
+    <cim:Location.CoordinateSystem rdf:resource="#_99e8af92-f74c-4027-a1cc-7f4261b37374"/>
+  </cim:Location>
+  <cim:PositionPoint rdf:ID="_c749eafc-ba6d-4005-b200-1101538062bb">
+    <cim:PositionPoint.sequenceNumber>1</cim:PositionPoint.sequenceNumber>
+    <cim:PositionPoint.Location rdf:resource="#_9d54ee09-80dc-4e3f-8f27-39af2234d153"/>
+    <cim:PositionPoint.xPosition>4.300890</cim:PositionPoint.xPosition>
+    <cim:PositionPoint.yPosition>50.803800</cim:PositionPoint.yPosition>
+  </cim:PositionPoint>
+  <cim:Location rdf:ID="_7589eb2a-7618-4711-a130-ada38cdfbabb">
+    <cim:Location.PowerSystemResources rdf:resource="#_a16b4a6c-70b1-4abf-9a9d-bd0fa47f9fe4"/>
+    <cim:Location.CoordinateSystem rdf:resource="#_99e8af92-f74c-4027-a1cc-7f4261b37374"/>
+  </cim:Location>
+  <cim:PositionPoint rdf:ID="_3634d728-30e0-4d7a-aee1-fa6181c2f7f4">
+    <cim:PositionPoint.sequenceNumber>1</cim:PositionPoint.sequenceNumber>
+    <cim:PositionPoint.Location rdf:resource="#_7589eb2a-7618-4711-a130-ada38cdfbabb"/>
+    <cim:PositionPoint.xPosition>4.888920</cim:PositionPoint.xPosition>
+    <cim:PositionPoint.yPosition>51.913800</cim:PositionPoint.yPosition>
+  </cim:PositionPoint>
+  <cim:PositionPoint rdf:ID="_ea7d4831-0b07-42b8-9553-4eb7ce44e958">
+    <cim:PositionPoint.sequenceNumber>3</cim:PositionPoint.sequenceNumber>
+    <cim:PositionPoint.Location rdf:resource="#_7589eb2a-7618-4711-a130-ada38cdfbabb"/>
+    <cim:PositionPoint.xPosition>4.847720</cim:PositionPoint.xPosition>
+    <cim:PositionPoint.yPosition>51.612900</cim:PositionPoint.yPosition>
+  </cim:PositionPoint>
+  <cim:PositionPoint rdf:ID="_5f795902-3ff7-436e-9ba6-28f4d4f01539">
+    <cim:PositionPoint.sequenceNumber>5</cim:PositionPoint.sequenceNumber>
+    <cim:PositionPoint.Location rdf:resource="#_7589eb2a-7618-4711-a130-ada38cdfbabb"/>
+    <cim:PositionPoint.xPosition>4.259260</cim:PositionPoint.xPosition>
+    <cim:PositionPoint.yPosition>51.325100</cim:PositionPoint.yPosition>
+  </cim:PositionPoint>
+  <cim:Location rdf:ID="_a839f2b9-93a9-4983-b1d1-2f644fc87ff1">
+    <cim:Location.PowerSystemResources rdf:resource="#_b58bf21a-096a-4dae-9a01-3f03b60c24c7"/>
+    <cim:Location.CoordinateSystem rdf:resource="#_99e8af92-f74c-4027-a1cc-7f4261b37374"/>
+  </cim:Location>
+  <cim:PositionPoint rdf:ID="_ab5c78aa-8425-4488-91e6-7dffae4fa5d8">
+    <cim:PositionPoint.sequenceNumber>1</cim:PositionPoint.sequenceNumber>
+    <cim:PositionPoint.Location rdf:resource="#_a839f2b9-93a9-4983-b1d1-2f644fc87ff1"/>
+    <cim:PositionPoint.xPosition>4.301130</cim:PositionPoint.xPosition>
+    <cim:PositionPoint.yPosition>50.803500</cim:PositionPoint.yPosition>
+  </cim:PositionPoint>
+  <cim:PositionPoint rdf:ID="_85f1705a-420c-4577-92d0-d186234a5d6a">
+    <cim:PositionPoint.sequenceNumber>3</cim:PositionPoint.sequenceNumber>
+    <cim:PositionPoint.Location rdf:resource="#_a839f2b9-93a9-4983-b1d1-2f644fc87ff1"/>
+    <cim:PositionPoint.xPosition>4.345090</cim:PositionPoint.xPosition>
+    <cim:PositionPoint.yPosition>50.916900</cim:PositionPoint.yPosition>
+  </cim:PositionPoint>
+  <cim:PositionPoint rdf:ID="_536cbd84-5a1b-49c9-bdc8-127e6342fbda">
+    <cim:PositionPoint.sequenceNumber>5</cim:PositionPoint.sequenceNumber>
+    <cim:PositionPoint.Location rdf:resource="#_a839f2b9-93a9-4983-b1d1-2f644fc87ff1"/>
+    <cim:PositionPoint.xPosition>4.295650</cim:PositionPoint.xPosition>
+    <cim:PositionPoint.yPosition>51.044800</cim:PositionPoint.yPosition>
+  </cim:PositionPoint>
+  <cim:PositionPoint rdf:ID="_04f5c888-6015-4890-806e-b2f9c3cf0c1d">
+    <cim:PositionPoint.sequenceNumber>7</cim:PositionPoint.sequenceNumber>
+    <cim:PositionPoint.Location rdf:resource="#_a839f2b9-93a9-4983-b1d1-2f644fc87ff1"/>
+    <cim:PositionPoint.xPosition>4.383540</cim:PositionPoint.xPosition>
+    <cim:PositionPoint.yPosition>51.157000</cim:PositionPoint.yPosition>
+  </cim:PositionPoint>
+  <cim:PositionPoint rdf:ID="_e9b91252-a84e-402f-a1c3-047d571445a7">
+    <cim:PositionPoint.sequenceNumber>9</cim:PositionPoint.sequenceNumber>
+    <cim:PositionPoint.Location rdf:resource="#_a839f2b9-93a9-4983-b1d1-2f644fc87ff1"/>
+    <cim:PositionPoint.xPosition>4.259260</cim:PositionPoint.xPosition>
+    <cim:PositionPoint.yPosition>51.325100</cim:PositionPoint.yPosition>
+  </cim:PositionPoint>
+  <cim:Location rdf:ID="_f66349dc-eacd-4ce3-9f1d-c312382dd60f">
+    <cim:Location.PowerSystemResources rdf:resource="#_78736387-5f60-4832-b3fe-d50daf81b0a6"/>
+    <cim:Location.CoordinateSystem rdf:resource="#_99e8af92-f74c-4027-a1cc-7f4261b37374"/>
+  </cim:Location>
+  <cim:PositionPoint rdf:ID="_f698d636-e1be-479d-bc8e-b39686b12431">
+    <cim:PositionPoint.sequenceNumber>1</cim:PositionPoint.sequenceNumber>
+    <cim:PositionPoint.Location rdf:resource="#_f66349dc-eacd-4ce3-9f1d-c312382dd60f"/>
+    <cim:PositionPoint.xPosition>4.301730</cim:PositionPoint.xPosition>
+    <cim:PositionPoint.yPosition>50.803000</cim:PositionPoint.yPosition>
+  </cim:PositionPoint>
+  <cim:PositionPoint rdf:ID="_60ef1f44-9ab6-4bd8-9cab-18f1bb2c5831">
+    <cim:PositionPoint.sequenceNumber>3</cim:PositionPoint.sequenceNumber>
+    <cim:PositionPoint.Location rdf:resource="#_f66349dc-eacd-4ce3-9f1d-c312382dd60f"/>
+    <cim:PositionPoint.xPosition>4.690460</cim:PositionPoint.xPosition>
+    <cim:PositionPoint.yPosition>50.899400</cim:PositionPoint.yPosition>
+  </cim:PositionPoint>
+  <cim:PositionPoint rdf:ID="_646a7e4e-6451-4ae8-b129-63e2d092ce3d">
+    <cim:PositionPoint.sequenceNumber>5</cim:PositionPoint.sequenceNumber>
+    <cim:PositionPoint.Location rdf:resource="#_f66349dc-eacd-4ce3-9f1d-c312382dd60f"/>
+    <cim:PositionPoint.xPosition>5.088250</cim:PositionPoint.xPosition>
+    <cim:PositionPoint.yPosition>51.302600</cim:PositionPoint.yPosition>
+  </cim:PositionPoint>
+  <cim:PositionPoint rdf:ID="_da172b02-4799-4954-8801-9e295a48e3b3">
+    <cim:PositionPoint.sequenceNumber>7</cim:PositionPoint.sequenceNumber>
+    <cim:PositionPoint.Location rdf:resource="#_f66349dc-eacd-4ce3-9f1d-c312382dd60f"/>
+    <cim:PositionPoint.xPosition>5.072940</cim:PositionPoint.xPosition>
+    <cim:PositionPoint.yPosition>51.876500</cim:PositionPoint.yPosition>
+  </cim:PositionPoint>
+  <cim:Location rdf:ID="_ed21adc2-fa60-4577-a107-5f0753d683bb">
+    <cim:Location.PowerSystemResources rdf:resource="#_ed0c5d75-4a54-43c8-b782-b20d7431630b"/>
+    <cim:Location.CoordinateSystem rdf:resource="#_99e8af92-f74c-4027-a1cc-7f4261b37374"/>
+  </cim:Location>
+  <cim:PositionPoint rdf:ID="_39a7e9dc-d24e-49d4-b6b4-87d1723a9d7d">
+    <cim:PositionPoint.sequenceNumber>1</cim:PositionPoint.sequenceNumber>
+    <cim:PositionPoint.Location rdf:resource="#_ed21adc2-fa60-4577-a107-5f0753d683bb"/>
+    <cim:PositionPoint.xPosition>4.301730</cim:PositionPoint.xPosition>
+    <cim:PositionPoint.yPosition>50.803000</cim:PositionPoint.yPosition>
+  </cim:PositionPoint>
+  <cim:PositionPoint rdf:ID="_b4aa8b0d-306a-44e1-b0b6-bb7996bc9fde">
+    <cim:PositionPoint.sequenceNumber>3</cim:PositionPoint.sequenceNumber>
+    <cim:PositionPoint.Location rdf:resource="#_ed21adc2-fa60-4577-a107-5f0753d683bb"/>
+    <cim:PositionPoint.xPosition>4.690460</cim:PositionPoint.xPosition>
+    <cim:PositionPoint.yPosition>50.899400</cim:PositionPoint.yPosition>
+  </cim:PositionPoint>
+  <cim:PositionPoint rdf:ID="_f7d2f677-18f2-4293-97e5-1dae82f27122">
+    <cim:PositionPoint.sequenceNumber>5</cim:PositionPoint.sequenceNumber>
+    <cim:PositionPoint.Location rdf:resource="#_ed21adc2-fa60-4577-a107-5f0753d683bb"/>
+    <cim:PositionPoint.xPosition>5.088250</cim:PositionPoint.xPosition>
+    <cim:PositionPoint.yPosition>51.302600</cim:PositionPoint.yPosition>
+  </cim:PositionPoint>
+  <cim:PositionPoint rdf:ID="_2c3b02ac-8ffd-41fe-8265-341df1de8f93">
+    <cim:PositionPoint.sequenceNumber>7</cim:PositionPoint.sequenceNumber>
+    <cim:PositionPoint.Location rdf:resource="#_ed21adc2-fa60-4577-a107-5f0753d683bb"/>
+    <cim:PositionPoint.xPosition>5.071860</cim:PositionPoint.xPosition>
+    <cim:PositionPoint.yPosition>51.875600</cim:PositionPoint.yPosition>
+  </cim:PositionPoint>
+  <cim:Location rdf:ID="_f1029fd5-f6fb-437d-aee7-aedf8a72d939">
+    <cim:Location.PowerSystemResources rdf:resource="#_b18cd1aa-7808-49b9-a7cf-605eaf07b006"/>
+    <cim:Location.CoordinateSystem rdf:resource="#_99e8af92-f74c-4027-a1cc-7f4261b37374"/>
+  </cim:Location>
+  <cim:PositionPoint rdf:ID="_d7bf6490-f8d1-4878-9dac-a6aefdd458d8">
+    <cim:PositionPoint.sequenceNumber>1</cim:PositionPoint.sequenceNumber>
+    <cim:PositionPoint.Location rdf:resource="#_f1029fd5-f6fb-437d-aee7-aedf8a72d939"/>
+    <cim:PositionPoint.xPosition>4.301730</cim:PositionPoint.xPosition>
+    <cim:PositionPoint.yPosition>50.803000</cim:PositionPoint.yPosition>
+  </cim:PositionPoint>
+  <cim:PositionPoint rdf:ID="_82ed99bc-9cc5-4bc6-ac99-215516d3c062">
+    <cim:PositionPoint.sequenceNumber>3</cim:PositionPoint.sequenceNumber>
+    <cim:PositionPoint.Location rdf:resource="#_f1029fd5-f6fb-437d-aee7-aedf8a72d939"/>
+    <cim:PositionPoint.xPosition>4.690460</cim:PositionPoint.xPosition>
+    <cim:PositionPoint.yPosition>50.899400</cim:PositionPoint.yPosition>
+  </cim:PositionPoint>
+  <cim:PositionPoint rdf:ID="_d2ced949-0ff6-43fc-b4cb-f584e950b8d8">
+    <cim:PositionPoint.sequenceNumber>5</cim:PositionPoint.sequenceNumber>
+    <cim:PositionPoint.Location rdf:resource="#_f1029fd5-f6fb-437d-aee7-aedf8a72d939"/>
+    <cim:PositionPoint.xPosition>5.088250</cim:PositionPoint.xPosition>
+    <cim:PositionPoint.yPosition>51.302600</cim:PositionPoint.yPosition>
+  </cim:PositionPoint>
+  <cim:PositionPoint rdf:ID="_78456e78-9507-4e92-8514-ae666f106859">
+    <cim:PositionPoint.sequenceNumber>7</cim:PositionPoint.sequenceNumber>
+    <cim:PositionPoint.Location rdf:resource="#_f1029fd5-f6fb-437d-aee7-aedf8a72d939"/>
+    <cim:PositionPoint.xPosition>5.070580</cim:PositionPoint.xPosition>
+    <cim:PositionPoint.yPosition>51.873100</cim:PositionPoint.yPosition>
+  </cim:PositionPoint>
+  <cim:Location rdf:ID="_57c4742b-615c-49c8-8ffd-83ea62caefd8">
+    <cim:Location.PowerSystemResources rdf:resource="#_ffbabc27-1ccd-4fdc-b037-e341706c8d29"/>
+    <cim:Location.CoordinateSystem rdf:resource="#_99e8af92-f74c-4027-a1cc-7f4261b37374"/>
+  </cim:Location>
+  <cim:PositionPoint rdf:ID="_7f996cba-79ad-44fb-ba8c-baeec6b35c97">
+    <cim:PositionPoint.sequenceNumber>1</cim:PositionPoint.sequenceNumber>
+    <cim:PositionPoint.Location rdf:resource="#_57c4742b-615c-49c8-8ffd-83ea62caefd8"/>
+    <cim:PositionPoint.xPosition>4.301130</cim:PositionPoint.xPosition>
+    <cim:PositionPoint.yPosition>50.803500</cim:PositionPoint.yPosition>
+  </cim:PositionPoint>
+  <cim:PositionPoint rdf:ID="_e2330b24-30cb-4f54-b877-e54cc6dd3a28">
+    <cim:PositionPoint.sequenceNumber>3</cim:PositionPoint.sequenceNumber>
+    <cim:PositionPoint.Location rdf:resource="#_57c4742b-615c-49c8-8ffd-83ea62caefd8"/>
+    <cim:PositionPoint.xPosition>4.345090</cim:PositionPoint.xPosition>
+    <cim:PositionPoint.yPosition>50.916900</cim:PositionPoint.yPosition>
+  </cim:PositionPoint>
+  <cim:PositionPoint rdf:ID="_8b0676cf-4083-4501-8ce5-d18aabf9fc3c">
+    <cim:PositionPoint.sequenceNumber>5</cim:PositionPoint.sequenceNumber>
+    <cim:PositionPoint.Location rdf:resource="#_57c4742b-615c-49c8-8ffd-83ea62caefd8"/>
+    <cim:PositionPoint.xPosition>4.295650</cim:PositionPoint.xPosition>
+    <cim:PositionPoint.yPosition>51.044800</cim:PositionPoint.yPosition>
+  </cim:PositionPoint>
+  <cim:PositionPoint rdf:ID="_42a396bd-6374-4451-ae1f-225c059aa02d">
+    <cim:PositionPoint.sequenceNumber>7</cim:PositionPoint.sequenceNumber>
+    <cim:PositionPoint.Location rdf:resource="#_57c4742b-615c-49c8-8ffd-83ea62caefd8"/>
+    <cim:PositionPoint.xPosition>4.383540</cim:PositionPoint.xPosition>
+    <cim:PositionPoint.yPosition>51.157000</cim:PositionPoint.yPosition>
+  </cim:PositionPoint>
+  <cim:PositionPoint rdf:ID="_880aa073-712e-4bc1-bb2c-f149b7468de0">
+    <cim:PositionPoint.sequenceNumber>9</cim:PositionPoint.sequenceNumber>
+    <cim:PositionPoint.Location rdf:resource="#_57c4742b-615c-49c8-8ffd-83ea62caefd8"/>
+    <cim:PositionPoint.xPosition>4.259260</cim:PositionPoint.xPosition>
+    <cim:PositionPoint.yPosition>51.325100</cim:PositionPoint.yPosition>
+  </cim:PositionPoint>
+  <cim:Location rdf:ID="_3b498c2d-f1c0-4948-ae2a-ee3ff2acfcda">
+    <cim:Location.PowerSystemResources rdf:resource="#_17086487-56ba-4979-b8de-064025a6b4da"/>
+    <cim:Location.CoordinateSystem rdf:resource="#_99e8af92-f74c-4027-a1cc-7f4261b37374"/>
+  </cim:Location>
+  <cim:PositionPoint rdf:ID="_7f8c31f7-4c07-412b-9d15-497fda144b59">
+    <cim:PositionPoint.sequenceNumber>1</cim:PositionPoint.sequenceNumber>
+    <cim:PositionPoint.Location rdf:resource="#_3b498c2d-f1c0-4948-ae2a-ee3ff2acfcda"/>
+    <cim:PositionPoint.xPosition>4.887980</cim:PositionPoint.xPosition>
+    <cim:PositionPoint.yPosition>51.912700</cim:PositionPoint.yPosition>
+  </cim:PositionPoint>
+  <cim:PositionPoint rdf:ID="_614a5654-dc73-464d-8f9f-39828035bfaf">
+    <cim:PositionPoint.sequenceNumber>3</cim:PositionPoint.sequenceNumber>
+    <cim:PositionPoint.Location rdf:resource="#_3b498c2d-f1c0-4948-ae2a-ee3ff2acfcda"/>
+    <cim:PositionPoint.xPosition>4.846830</cim:PositionPoint.xPosition>
+    <cim:PositionPoint.yPosition>51.612100</cim:PositionPoint.yPosition>
+  </cim:PositionPoint>
+</rdf:RDF>

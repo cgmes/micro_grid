@@ -1,0 +1,1059 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cim="http://iec.ch/TC57/2013/CIM-schema-cim16#" xmlns:entsoe="http://entsoe.eu/CIM/SchemaExtension/3/1#" xmlns:md="http://iec.ch/TC57/61970-552/ModelDescription/1#" xmlns:dm="http://iec.ch/TC57/61970-552/DifferenceModel/1#">
+<dm:DifferenceModel rdf:about="urn:uuid:a612f019-7f9d-4caf-92ea-819da1d458b9">
+<md:Model.created>2014-10-24T15:50:18</md:Model.created>
+<md:Model.scenarioTime/>
+<md:Model.version>2</md:Model.version>
+<md:Model.Supersedes rdf:resource="urn:uuid:77b55f87-fc1e-4046-9599-6c6b4f991a86"/>
+<md:Model.description>CGMES Conformity Assessment: 'MicroGridTestConfiguration....T2' Test Configuration. The model is owned by ENTSO-E and is provided by ENTSO-E “as it is”. To the fullest extent permitted by law, ENTSO-E shall not be liable for any damages of any kind arising out of the use of the model (including any of its subsequent modifications). ENTSO-E neither warrants, nor represents that the use of the model will not infringe the rights of third parties. Any use of the model shall  include a reference to ENTSO-E. ENTSO-E web site is the only official source of information related to the model.</md:Model.description>
+<md:Model.modelingAuthoritySet>http://tennet.nl/CGMES/2.4.15</md:Model.modelingAuthoritySet>
+<md:Model.profile>http://iec.ch/TC57/61970-552/DifferenceModel/1http://entsoe.eu/CIM/EquipmentCore/3/1</md:Model.profile>
+<md:Model.profile>http://entsoe.eu/CIM/EquipmentShortCircuit/3/1</md:Model.profile>
+<md:Model.profile>http://entsoe.eu/CIM/EquipmentOperation/3/1</md:Model.profile>
+<dm:preconditions parseType="Statements"> </dm:preconditions>
+<dm:reverseDifferences parseType="Statements">
+<cim:OperationalLimitType rdf:ID="_250e948b-70ae-4139-971b-4f0053425b60">
+<cim:IdentifiedObject.name>TATL20</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>tatl</entsoe:IdentifiedObject.shortName>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#OperationalLimitDirectionKind.absoluteValue"/>
+<entsoe:OperationalLimitType.limitType rdf:resource="http://entsoe.eu/CIM/SchemaExtension/3/1#LimitTypeKind.tatl"/>
+<cim:OperationalLimitType.acceptableDuration>20.000000</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_18c8d038-31ea-4d92-9e7e-4b8a397f30a5">
+<cim:IdentifiedObject.name>TATL10</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>tatl</entsoe:IdentifiedObject.shortName>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#OperationalLimitDirectionKind.absoluteValue"/>
+<entsoe:OperationalLimitType.limitType rdf:resource="http://entsoe.eu/CIM/SchemaExtension/3/1#LimitTypeKind.tatl"/>
+<cim:OperationalLimitType.acceptableDuration>10.000000</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_1aee0921-7cbe-481c-9078-daf66ab2a950">
+<cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>patl</entsoe:IdentifiedObject.shortName>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#OperationalLimitDirectionKind.absoluteValue"/>
+<entsoe:OperationalLimitType.limitType rdf:resource="http://entsoe.eu/CIM/SchemaExtension/3/1#LimitTypeKind.patl"/>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_dd9c5b59-0728-45ca-9930-0dff2a9fb390">
+<cim:IdentifiedObject.name>TC</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>tc</entsoe:IdentifiedObject.shortName>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#OperationalLimitDirectionKind.absoluteValue"/>
+<entsoe:OperationalLimitType.limitType rdf:resource="http://entsoe.eu/CIM/SchemaExtension/3/1#LimitTypeKind.tc"/>
+</cim:OperationalLimitType>
+<cim:EquivalentInjection rdf:ID="_820d95d7-26d4-4311-8b1f-026f8605b86d">
+<cim:IdentifiedObject.name>NL-Inj-XZE_ST24</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>NL-I-XZE_ST2</entsoe:IdentifiedObject.shortName>
+<cim:IdentifiedObject.description>Eq_Injection</cim:IdentifiedObject.description>
+<cim:EquivalentInjection.regulationCapability>false</cim:EquivalentInjection.regulationCapability>
+<cim:EquivalentInjection.r>0e+000</cim:EquivalentInjection.r>
+<cim:EquivalentInjection.x>0e+000</cim:EquivalentInjection.x>
+<cim:EquivalentInjection.r2>0e+000</cim:EquivalentInjection.r2>
+<cim:EquivalentInjection.x2>0e+000</cim:EquivalentInjection.x2>
+<cim:EquivalentInjection.r0>0e+000</cim:EquivalentInjection.r0>
+<cim:EquivalentInjection.x0>0e+000</cim:EquivalentInjection.x0>
+</cim:EquivalentInjection>
+<cim:Terminal rdf:ID="_26e50b4b-9a19-420d-98ce-bc4f11971cd7">
+<cim:IdentifiedObject.name>NL-Inj-XZE_ST24 - T1</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>NL-I-XZE_ST2</entsoe:IdentifiedObject.shortName>
+<cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+<cim:Terminal.phases rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#PhaseCode.ABC"/>
+<cim:Terminal.ConductingEquipment rdf:resource="#_820d95d7-26d4-4311-8b1f-026f8605b86d"/>
+<cim:Terminal.ConnectivityNode rdf:resource="#_b6978550-cb6e-11e1-bcee-406c8f32ef58"/>
+</cim:Terminal>
+<rdf:Description rdf:about="#_d4831248-07f3-4d9a-a06b-d39461cd16a2">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_250e948b-70ae-4139-971b-4f0053425b60"/>
+</rdf:Description>
+<rdf:Description rdf:about="#_b50d912a-8ce8-4962-a21b-f2d91dcc430e">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_18c8d038-31ea-4d92-9e7e-4b8a397f30a5"/>
+</rdf:Description>
+<rdf:Description rdf:about="#_a4b97f0b-39b8-452d-b51c-fd3b25fa1d9b">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_1aee0921-7cbe-481c-9078-daf66ab2a950"/>
+</rdf:Description>
+<rdf:Description rdf:about="#_d3c7e111-afa0-4cc2-99d0-8c75e3d6fb91">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_250e948b-70ae-4139-971b-4f0053425b60"/>
+</rdf:Description>
+<rdf:Description rdf:about="#_c43551e9-eeee-415a-acf1-570fab88b426">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_18c8d038-31ea-4d92-9e7e-4b8a397f30a5"/>
+</rdf:Description>
+<rdf:Description rdf:about="#_db8675aa-6a3d-47a8-b864-a3e474c5c885">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_1aee0921-7cbe-481c-9078-daf66ab2a950"/>
+</rdf:Description>
+<rdf:Description rdf:about="#_fff80a22-3a4b-4c22-94d2-2901e8085df1">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_250e948b-70ae-4139-971b-4f0053425b60"/>
+</rdf:Description>
+<rdf:Description rdf:about="#_32ba352e-5877-4d42-b7e4-49a23b78297d">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_18c8d038-31ea-4d92-9e7e-4b8a397f30a5"/>
+</rdf:Description>
+<rdf:Description rdf:about="#_b4659169-38a4-494f-b3e2-aa83dc9a6670">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_1aee0921-7cbe-481c-9078-daf66ab2a950"/>
+</rdf:Description>
+<rdf:Description rdf:about="#_4224b5aa-ef0b-4f31-b2a5-002c0c696721">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_250e948b-70ae-4139-971b-4f0053425b60"/>
+</rdf:Description>
+<rdf:Description rdf:about="#_d6da4ddd-944f-48ab-bdb2-651883dc9dea">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_18c8d038-31ea-4d92-9e7e-4b8a397f30a5"/>
+</rdf:Description>
+<rdf:Description rdf:about="#_0388b680-3feb-45a2-bd56-5a620472107b">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_1aee0921-7cbe-481c-9078-daf66ab2a950"/>
+</rdf:Description>
+<cim:ACLineSegment rdf:ID="_a279a3dc-550b-426c-af3a-61b7be508dcc">
+<cim:IdentifiedObject.name>NL-Line_3</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>NL-L_3</entsoe:IdentifiedObject.shortName>
+<entsoe:IdentifiedObject.energyIdentCodeEic>10T-AT-DE-00009W</entsoe:IdentifiedObject.energyIdentCodeEic>
+<cim:IdentifiedObject.description>10T-AT-DE-00009W</cim:IdentifiedObject.description>
+<cim:Equipment.EquipmentContainer rdf:resource="#_644936cc-1ea0-46f3-93e6-eed0e0cc8bee"/>
+<cim:ACLineSegment.r>5.060000</cim:ACLineSegment.r>
+<cim:ACLineSegment.x>69.000000</cim:ACLineSegment.x>
+<cim:ACLineSegment.bch>0.0000202319</cim:ACLineSegment.bch>
+<cim:Conductor.length>23.000000</cim:Conductor.length>
+<cim:ACLineSegment.gch>0.0000230000</cim:ACLineSegment.gch>
+<cim:Equipment.aggregate>false</cim:Equipment.aggregate>
+<cim:ConductingEquipment.BaseVoltage rdf:resource="#_7891a026ba2c42098556665efd13ba94"/>
+<cim:ACLineSegment.r0>15.180000</cim:ACLineSegment.r0>
+<cim:ACLineSegment.x0>207.000000</cim:ACLineSegment.x0>
+<cim:ACLineSegment.b0ch>0.0000455217</cim:ACLineSegment.b0ch>
+<cim:ACLineSegment.g0ch>0.0000230000</cim:ACLineSegment.g0ch>
+<cim:ACLineSegment.shortCircuitEndTemperature>160.0000000000</cim:ACLineSegment.shortCircuitEndTemperature>
+</cim:ACLineSegment>
+<cim:Terminal rdf:ID="_5dfee914-a4fd-4bde-a5b4-c4caa6378d10">
+<cim:IdentifiedObject.name>NL-Line_3 - T1</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>NL-L_3</entsoe:IdentifiedObject.shortName>
+<entsoe:IdentifiedObject.energyIdentCodeEic>10T-AT-DE-00009W</entsoe:IdentifiedObject.energyIdentCodeEic>
+<cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+<cim:Terminal.phases rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#PhaseCode.ABC"/>
+<cim:Terminal.ConductingEquipment rdf:resource="#_a279a3dc-550b-426c-af3a-61b7be508dcc"/>
+<cim:Terminal.ConnectivityNode rdf:resource="#_f28134fe-076d-4605-aa92-b9e0bbe96841"/>
+</cim:Terminal>
+<cim:Terminal rdf:ID="_6aecb9ba-5835-4b70-89bc-96d687e45779">
+<cim:IdentifiedObject.name>NL-Line_3 - T2</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>NL-L_3</entsoe:IdentifiedObject.shortName>
+<entsoe:IdentifiedObject.energyIdentCodeEic>10T-AT-DE-00009W</entsoe:IdentifiedObject.energyIdentCodeEic>
+<cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+<cim:Terminal.phases rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#PhaseCode.ABC"/>
+<cim:Terminal.ConductingEquipment rdf:resource="#_a279a3dc-550b-426c-af3a-61b7be508dcc"/>
+<cim:Terminal.ConnectivityNode rdf:resource="#_b6978550-cb6e-11e1-bcee-406c8f32ef58"/>
+</cim:Terminal>
+<cim:OperationalLimitSet rdf:ID="_9a03e8ee-e832-43c8-b38e-0d43f8ef7355">
+<cim:IdentifiedObject.name>Limits at Port 1</cim:IdentifiedObject.name>
+<cim:IdentifiedObject.description>Limit-Ratings for branch NL-Line_3 at Port 1</cim:IdentifiedObject.description>
+<cim:OperationalLimitSet.Terminal rdf:resource="#_5dfee914-a4fd-4bde-a5b4-c4caa6378d10"/>
+</cim:OperationalLimitSet>
+<cim:CurrentLimit rdf:ID="_9dd40a3a-c6df-4f16-876c-bd11c538324b">
+<cim:IdentifiedObject.name>NL-Line_3 - CL-0</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>CL-0</entsoe:IdentifiedObject.shortName>
+<cim:IdentifiedObject.description>Ratings for element NL-Line_3 - Limit</cim:IdentifiedObject.description>
+<cim:CurrentLimit.value>1312.000000</cim:CurrentLimit.value>
+<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_9a03e8ee-e832-43c8-b38e-0d43f8ef7355"/>
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_250e948b-70ae-4139-971b-4f0053425b60"/>
+</cim:CurrentLimit>
+<cim:CurrentLimit rdf:ID="_150d1dcb-f7b6-4fcd-bce9-e39c6ddf15aa">
+<cim:IdentifiedObject.name>NL-Line_3 - CL-1</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>CL-1</entsoe:IdentifiedObject.shortName>
+<cim:IdentifiedObject.description>Ratings for element NL-Line_3 - Limit</cim:IdentifiedObject.description>
+<cim:CurrentLimit.value>1443.000000</cim:CurrentLimit.value>
+<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_9a03e8ee-e832-43c8-b38e-0d43f8ef7355"/>
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_18c8d038-31ea-4d92-9e7e-4b8a397f30a5"/>
+</cim:CurrentLimit>
+<cim:CurrentLimit rdf:ID="_317c3033-0409-4f57-9209-4baae4b5e165">
+<cim:IdentifiedObject.name>NL-Line_3 - CL-2</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>CL-2</entsoe:IdentifiedObject.shortName>
+<cim:IdentifiedObject.description>Ratings for element NL-Line_3 - Limit</cim:IdentifiedObject.description>
+<cim:CurrentLimit.value>1180.000000</cim:CurrentLimit.value>
+<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_9a03e8ee-e832-43c8-b38e-0d43f8ef7355"/>
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_1aee0921-7cbe-481c-9078-daf66ab2a950"/>
+</cim:CurrentLimit>
+<cim:CurrentLimit rdf:ID="_317c3033-0409-4f57-9209-4baae4b5e1651">
+<cim:IdentifiedObject.name>90</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>CL-2</entsoe:IdentifiedObject.shortName>
+<cim:IdentifiedObject.description>Ratings for element NL-Line_3 - Limit</cim:IdentifiedObject.description>
+<cim:CurrentLimit.value>1062.000000</cim:CurrentLimit.value>
+<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_9a03e8ee-e832-43c8-b38e-0d43f8ef7355"/>
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_68cd26b8-d512-4104-a1d1-b2e8f9376ecc"/>
+</cim:CurrentLimit>
+<cim:CurrentLimit rdf:ID="_e29f4055-0267-4d9e-a889-8afc2326e870">
+<cim:IdentifiedObject.name>NL-Line_3 - CL-3</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>CL-3</entsoe:IdentifiedObject.shortName>
+<cim:IdentifiedObject.description>Ratings for element NL-Line_3 - Limit</cim:IdentifiedObject.description>
+<cim:CurrentLimit.value>2000.000000</cim:CurrentLimit.value>
+<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_9a03e8ee-e832-43c8-b38e-0d43f8ef7355"/>
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd9c5b59-0728-45ca-9930-0dff2a9fb390"/>
+</cim:CurrentLimit>
+<cim:CurrentLimit rdf:ID="_e29f4055-0267-4d9e-a889-8afc2326e8702">
+<cim:IdentifiedObject.name>90</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>CL-3</entsoe:IdentifiedObject.shortName>
+<cim:IdentifiedObject.description>Ratings for element NL-Line_3 - Limit</cim:IdentifiedObject.description>
+<cim:CurrentLimit.value>1800.000000</cim:CurrentLimit.value>
+<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_9a03e8ee-e832-43c8-b38e-0d43f8ef7355"/>
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_a1cc9747-6819-429e-bd5f-23ffdb1d7376"/>
+</cim:CurrentLimit>
+<cim:OperationalLimitSet rdf:ID="_14e9e317-a168-44a2-82ef-7c76190108a2">
+<cim:IdentifiedObject.name>Limits at Port 2</cim:IdentifiedObject.name>
+<cim:IdentifiedObject.description>Limit-Ratings for branch NL-Line_3 at Port 2</cim:IdentifiedObject.description>
+<cim:OperationalLimitSet.Terminal rdf:resource="#_6aecb9ba-5835-4b70-89bc-96d687e45779"/>
+</cim:OperationalLimitSet>
+<cim:CurrentLimit rdf:ID="_75caf931-a43f-4e4a-a831-fe9a729feb72">
+<cim:IdentifiedObject.name>NL-Line_3 - CL-0</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>CL-0</entsoe:IdentifiedObject.shortName>
+<cim:IdentifiedObject.description>Ratings for element NL-Line_3 - Limit</cim:IdentifiedObject.description>
+<cim:CurrentLimit.value>1312.000000</cim:CurrentLimit.value>
+<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_14e9e317-a168-44a2-82ef-7c76190108a2"/>
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_250e948b-70ae-4139-971b-4f0053425b60"/>
+</cim:CurrentLimit>
+<cim:CurrentLimit rdf:ID="_bec4e785-5143-4ad4-b7b0-aea8e33be7e6">
+<cim:IdentifiedObject.name>NL-Line_3 - CL-1</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>CL-1</entsoe:IdentifiedObject.shortName>
+<cim:IdentifiedObject.description>Ratings for element NL-Line_3 - Limit</cim:IdentifiedObject.description>
+<cim:CurrentLimit.value>1443.000000</cim:CurrentLimit.value>
+<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_14e9e317-a168-44a2-82ef-7c76190108a2"/>
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_18c8d038-31ea-4d92-9e7e-4b8a397f30a5"/>
+</cim:CurrentLimit>
+<cim:CurrentLimit rdf:ID="_62be08ea-2a9e-4284-9642-2947cb2c5f1b">
+<cim:IdentifiedObject.name>NL-Line_3 - CL-2</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>CL-2</entsoe:IdentifiedObject.shortName>
+<cim:IdentifiedObject.description>Ratings for element NL-Line_3 - Limit</cim:IdentifiedObject.description>
+<cim:CurrentLimit.value>1180.000000</cim:CurrentLimit.value>
+<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_14e9e317-a168-44a2-82ef-7c76190108a2"/>
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_1aee0921-7cbe-481c-9078-daf66ab2a950"/>
+</cim:CurrentLimit>
+<cim:CurrentLimit rdf:ID="_62be08ea-2a9e-4284-9642-2947cb2c5f1b1">
+<cim:IdentifiedObject.name>90</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>CL-2</entsoe:IdentifiedObject.shortName>
+<cim:IdentifiedObject.description>Ratings for element NL-Line_3 - Limit</cim:IdentifiedObject.description>
+<cim:CurrentLimit.value>1062.000000</cim:CurrentLimit.value>
+<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_14e9e317-a168-44a2-82ef-7c76190108a2"/>
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_68cd26b8-d512-4104-a1d1-b2e8f9376ecc"/>
+</cim:CurrentLimit>
+<cim:CurrentLimit rdf:ID="_22274f03-885c-4ea8-931d-862beec6edd1">
+<cim:IdentifiedObject.name>NL-Line_3 - CL-3</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>CL-3</entsoe:IdentifiedObject.shortName>
+<cim:IdentifiedObject.description>Ratings for element NL-Line_3 - Limit</cim:IdentifiedObject.description>
+<cim:CurrentLimit.value>2000.000000</cim:CurrentLimit.value>
+<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_14e9e317-a168-44a2-82ef-7c76190108a2"/>
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_dd9c5b59-0728-45ca-9930-0dff2a9fb390"/>
+</cim:CurrentLimit>
+<cim:CurrentLimit rdf:ID="_22274f03-885c-4ea8-931d-862beec6edd12">
+<cim:IdentifiedObject.name>90</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>CL-3</entsoe:IdentifiedObject.shortName>
+<cim:IdentifiedObject.description>Ratings for element NL-Line_3 - Limit</cim:IdentifiedObject.description>
+<cim:CurrentLimit.value>1800.000000</cim:CurrentLimit.value>
+<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_14e9e317-a168-44a2-82ef-7c76190108a2"/>
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_a1cc9747-6819-429e-bd5f-23ffdb1d7376"/>
+</cim:CurrentLimit>
+<cim:Line rdf:ID="_644936cc-1ea0-46f3-93e6-eed0e0cc8bee">
+<cim:IdentifiedObject.name>container of NL-Line_3</cim:IdentifiedObject.name>
+<cim:Line.Region rdf:resource="#_c1d5bfe48f8011e08e4d00247eb1f55e"/>
+</cim:Line>
+<rdf:Description rdf:about="#_3341e4e1-b1f0-4832-854f-4254ddb7459b">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_250e948b-70ae-4139-971b-4f0053425b60"/>
+</rdf:Description>
+<rdf:Description rdf:about="#_eaa17d90-1494-42b8-803c-0a6692c493a0">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_18c8d038-31ea-4d92-9e7e-4b8a397f30a5"/>
+</rdf:Description>
+<rdf:Description rdf:about="#_1cd93631-5573-48db-8444-0e85a91aa6f1">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_1aee0921-7cbe-481c-9078-daf66ab2a950"/>
+</rdf:Description>
+<rdf:Description rdf:about="#_b5172307-8c71-4c82-92ec-b05592694ab1">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_250e948b-70ae-4139-971b-4f0053425b60"/>
+</rdf:Description>
+<rdf:Description rdf:about="#_467f1c8f-fa42-45d5-88c1-9b8fea6f1cab">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_18c8d038-31ea-4d92-9e7e-4b8a397f30a5"/>
+</rdf:Description>
+<rdf:Description rdf:about="#_d73f50e0-00db-4f54-a087-b0d2204f229a">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_1aee0921-7cbe-481c-9078-daf66ab2a950"/>
+</rdf:Description>
+<rdf:Description rdf:about="#_2ddd3dac-4c0e-4355-b1eb-2e4bb45a2526">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_250e948b-70ae-4139-971b-4f0053425b60"/>
+</rdf:Description>
+<rdf:Description rdf:about="#_3b9b581e-dd06-4be8-81b8-9abc72450c89">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_18c8d038-31ea-4d92-9e7e-4b8a397f30a5"/>
+</rdf:Description>
+<rdf:Description rdf:about="#_45b85c9e-0788-4cbb-b71b-dc1d5de04e51">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_1aee0921-7cbe-481c-9078-daf66ab2a950"/>
+</rdf:Description>
+<rdf:Description rdf:about="#_802dd8b7-d55c-46bf-8a22-895e251fb8db">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_250e948b-70ae-4139-971b-4f0053425b60"/>
+</rdf:Description>
+<rdf:Description rdf:about="#_5baace86-1d76-428b-9045-0d6b50024316">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_18c8d038-31ea-4d92-9e7e-4b8a397f30a5"/>
+</rdf:Description>
+<rdf:Description rdf:about="#_a228917a-44c9-4124-b7db-ea6408b3c5bb">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_1aee0921-7cbe-481c-9078-daf66ab2a950"/>
+</rdf:Description>
+<rdf:Description rdf:about="#_5e7f87db-9758-4098-b19e-4f365915721f">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_250e948b-70ae-4139-971b-4f0053425b60"/>
+</rdf:Description>
+<rdf:Description rdf:about="#_553477f0-ed39-499b-a07d-3c602bd8a13d">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_18c8d038-31ea-4d92-9e7e-4b8a397f30a5"/>
+</rdf:Description>
+<rdf:Description rdf:about="#_150183f1-3144-4d18-b5ca-328efdead257">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_1aee0921-7cbe-481c-9078-daf66ab2a950"/>
+</rdf:Description>
+<rdf:Description rdf:about="#_bd6482bb-5e21-46df-a3c3-0e4a64d49f89">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_250e948b-70ae-4139-971b-4f0053425b60"/>
+</rdf:Description>
+<rdf:Description rdf:about="#_8122651e-22ba-4320-9032-c59969020565">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_18c8d038-31ea-4d92-9e7e-4b8a397f30a5"/>
+</rdf:Description>
+<rdf:Description rdf:about="#_89d45390-25dc-49a6-bb08-69b67f27cd39">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_1aee0921-7cbe-481c-9078-daf66ab2a950"/>
+</rdf:Description>
+<rdf:Description rdf:about="#_e2153eed-fb1f-44e2-b116-d045c5e50e3b">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_250e948b-70ae-4139-971b-4f0053425b60"/>
+</rdf:Description>
+<rdf:Description rdf:about="#_b4f373a0-1d09-4f4f-9f29-f72ff6b4f62f">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_18c8d038-31ea-4d92-9e7e-4b8a397f30a5"/>
+</rdf:Description>
+<rdf:Description rdf:about="#_fa85553d-9769-45fe-9b79-cecafa01c4ba">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_1aee0921-7cbe-481c-9078-daf66ab2a950"/>
+</rdf:Description>
+<rdf:Description rdf:about="#_2f71df7b-6118-4973-acea-7f65a563a979">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_250e948b-70ae-4139-971b-4f0053425b60"/>
+</rdf:Description>
+<rdf:Description rdf:about="#_176ae6ba-d38c-4f7c-8a60-038dc4980a39">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_18c8d038-31ea-4d92-9e7e-4b8a397f30a5"/>
+</rdf:Description>
+<rdf:Description rdf:about="#_1a886514-5f7d-418a-99b7-02330ed01ca7">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_1aee0921-7cbe-481c-9078-daf66ab2a950"/>
+</rdf:Description>
+<rdf:Description rdf:about="#_e2afb3a0-94ea-4f8f-b717-7b91c603d3dc">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_250e948b-70ae-4139-971b-4f0053425b60"/>
+</rdf:Description>
+<rdf:Description rdf:about="#_d4bc2ee3-43b8-46fb-9337-d82590af1c8b">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_18c8d038-31ea-4d92-9e7e-4b8a397f30a5"/>
+</rdf:Description>
+<rdf:Description rdf:about="#_0c95b506-05a2-40d5-9f82-b9bf1e680a8d">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_1aee0921-7cbe-481c-9078-daf66ab2a950"/>
+</rdf:Description>
+<rdf:Description rdf:about="#_716e45d4-4092-4a1b-ba5f-c78e1da4f363">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_250e948b-70ae-4139-971b-4f0053425b60"/>
+</rdf:Description>
+<rdf:Description rdf:about="#_23b11495-8c2c-47cc-a561-e215196afa2b">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_18c8d038-31ea-4d92-9e7e-4b8a397f30a5"/>
+</rdf:Description>
+<rdf:Description rdf:about="#_6a927421-36cd-487a-b6b7-61dd45470447">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_1aee0921-7cbe-481c-9078-daf66ab2a950"/>
+</rdf:Description>
+</dm:reverseDifferences>
+<dm:forwardDifferences parseType="Statements">
+<cim:OperationalLimitType rdf:ID="_632b18c8-702d-4e45-ae4d-e294453b2e3e">
+<cim:IdentifiedObject.name>PATL</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>patl</entsoe:IdentifiedObject.shortName>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#OperationalLimitDirectionKind.absoluteValue"/>
+<entsoe:OperationalLimitType.limitType rdf:resource="http://entsoe.eu/CIM/SchemaExtension/3/1#LimitTypeKind.patl"/>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_f02ae32e-7530-4c43-9d5a-23750ccf9079">
+<cim:IdentifiedObject.name>TATL10</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>tatl</entsoe:IdentifiedObject.shortName>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#OperationalLimitDirectionKind.absoluteValue"/>
+<entsoe:OperationalLimitType.limitType rdf:resource="http://entsoe.eu/CIM/SchemaExtension/3/1#LimitTypeKind.tatl"/>
+<cim:OperationalLimitType.acceptableDuration>10.000000</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:OperationalLimitType rdf:ID="_5e5c2d3c-66e4-455b-8ea8-c18cfcbe3ab2">
+<cim:IdentifiedObject.name>TATL20</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>tatl</entsoe:IdentifiedObject.shortName>
+<cim:OperationalLimitType.direction rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#OperationalLimitDirectionKind.absoluteValue"/>
+<entsoe:OperationalLimitType.limitType rdf:resource="http://entsoe.eu/CIM/SchemaExtension/3/1#LimitTypeKind.tatl"/>
+<cim:OperationalLimitType.acceptableDuration>20.000000</cim:OperationalLimitType.acceptableDuration>
+</cim:OperationalLimitType>
+<cim:EquivalentInjection rdf:ID="_a3792f84-a59a-4c22-9672-5b604f7b3320">
+<cim:IdentifiedObject.name>NL-Inj-XZE_ST24</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>NL-I-XZE_ST2</entsoe:IdentifiedObject.shortName>
+<cim:IdentifiedObject.description>Eq_Injection</cim:IdentifiedObject.description>
+<cim:EquivalentInjection.regulationCapability>false</cim:EquivalentInjection.regulationCapability>
+<cim:EquivalentInjection.r>0e+000</cim:EquivalentInjection.r>
+<cim:EquivalentInjection.x>0e+000</cim:EquivalentInjection.x>
+<cim:EquivalentInjection.r2>0e+000</cim:EquivalentInjection.r2>
+<cim:EquivalentInjection.x2>0e+000</cim:EquivalentInjection.x2>
+<cim:EquivalentInjection.r0>0e+000</cim:EquivalentInjection.r0>
+<cim:EquivalentInjection.x0>0e+000</cim:EquivalentInjection.x0>
+</cim:EquivalentInjection>
+<cim:Terminal rdf:ID="_6abb6f6b-35af-4754-aac0-ccbe6a4d8c90">
+<cim:IdentifiedObject.name>NL-Inj-XZE_ST24 - T1</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>NL-I-XZE_ST2</entsoe:IdentifiedObject.shortName>
+<cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+<cim:Terminal.phases rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#PhaseCode.ABC"/>
+<cim:Terminal.ConductingEquipment rdf:resource="#_a3792f84-a59a-4c22-9672-5b604f7b3320"/>
+<cim:Terminal.ConnectivityNode rdf:resource="#_1c4a9e9c-ef00-42c9-9845-f64f9ca1e57a"/>
+</cim:Terminal>
+<cim:ACLineSegment rdf:ID="_882271f9-1793-4fc2-8b2e-12a37292f364">
+<cim:IdentifiedObject.name>L1230812310</cim:IdentifiedObject.name>
+<cim:Equipment.EquipmentContainer rdf:resource="#_28c58ea6-954e-4cd8-8b64-7163343262e3"/>
+<cim:ACLineSegment.r>0.100000</cim:ACLineSegment.r>
+<cim:ACLineSegment.x>0.100000</cim:ACLineSegment.x>
+<cim:ACLineSegment.bch>0.0</cim:ACLineSegment.bch>
+<cim:Conductor.length>1.000000</cim:Conductor.length>
+<cim:ACLineSegment.gch>0.0</cim:ACLineSegment.gch>
+<cim:Equipment.aggregate>false</cim:Equipment.aggregate>
+<cim:ConductingEquipment.BaseVoltage rdf:resource="#_7891a026ba2c42098556665efd13ba94"/>
+<cim:ACLineSegment.r0>0.300000</cim:ACLineSegment.r0>
+<cim:ACLineSegment.x0>0.300000</cim:ACLineSegment.x0>
+<cim:ACLineSegment.b0ch>0.0</cim:ACLineSegment.b0ch>
+<cim:ACLineSegment.g0ch>0.0</cim:ACLineSegment.g0ch>
+<cim:ACLineSegment.shortCircuitEndTemperature>160.0000000000</cim:ACLineSegment.shortCircuitEndTemperature>
+</cim:ACLineSegment>
+<cim:Terminal rdf:ID="_b7a26740-334e-46d4-a98d-303fa6fad2d3">
+<cim:IdentifiedObject.name>L1230812310 - T1</cim:IdentifiedObject.name>
+<cim:ACDCTerminal.sequenceNumber>1</cim:ACDCTerminal.sequenceNumber>
+<cim:Terminal.phases rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#PhaseCode.ABC"/>
+<cim:Terminal.ConductingEquipment rdf:resource="#_882271f9-1793-4fc2-8b2e-12a37292f364"/>
+<cim:Terminal.ConnectivityNode rdf:resource="#_e4743b84-976a-414d-a888-4362532c39e6"/>
+</cim:Terminal>
+<cim:Terminal rdf:ID="_e22768d9-7ccf-44a5-b364-d13afe6a5d01">
+<cim:IdentifiedObject.name>L1230812310 - T2</cim:IdentifiedObject.name>
+<cim:ACDCTerminal.sequenceNumber>2</cim:ACDCTerminal.sequenceNumber>
+<cim:Terminal.phases rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#PhaseCode.ABC"/>
+<cim:Terminal.ConductingEquipment rdf:resource="#_882271f9-1793-4fc2-8b2e-12a37292f364"/>
+<cim:Terminal.ConnectivityNode rdf:resource="#_1c4a9e9c-ef00-42c9-9845-f64f9ca1e57a"/>
+</cim:Terminal>
+<cim:OperationalLimitSet rdf:ID="_d2c78bd1-5ae7-4fb7-b1f5-93e318727ac5">
+<cim:IdentifiedObject.name>Limits at Port 1</cim:IdentifiedObject.name>
+<cim:IdentifiedObject.description>Limit-Ratings for branch L1230812310 at Port 1</cim:IdentifiedObject.description>
+<cim:OperationalLimitSet.Terminal rdf:resource="#_b7a26740-334e-46d4-a98d-303fa6fad2d3"/>
+</cim:OperationalLimitSet>
+<cim:CurrentLimit rdf:ID="_962e8149-1462-4797-a7b0-3764f7237047">
+<cim:IdentifiedObject.name>L1230812310 - CL-0</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>CL-0</entsoe:IdentifiedObject.shortName>
+<cim:IdentifiedObject.description>Ratings for element L1230812310 - Limit</cim:IdentifiedObject.description>
+<cim:CurrentLimit.value>1300.000000</cim:CurrentLimit.value>
+<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_d2c78bd1-5ae7-4fb7-b1f5-93e318727ac5"/>
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_5e5c2d3c-66e4-455b-8ea8-c18cfcbe3ab2"/>
+</cim:CurrentLimit>
+<cim:CurrentLimit rdf:ID="_13b0828c-7e4d-495c-beac-c8432ac447c8">
+<cim:IdentifiedObject.name>L1230812310 - CL-1</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>CL-1</entsoe:IdentifiedObject.shortName>
+<cim:IdentifiedObject.description>Ratings for element L1230812310 - Limit</cim:IdentifiedObject.description>
+<cim:CurrentLimit.value>1500.000000</cim:CurrentLimit.value>
+<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_d2c78bd1-5ae7-4fb7-b1f5-93e318727ac5"/>
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_f02ae32e-7530-4c43-9d5a-23750ccf9079"/>
+</cim:CurrentLimit>
+<cim:CurrentLimit rdf:ID="_1d28aa6a-8e76-4254-a02b-68f392400b08">
+<cim:IdentifiedObject.name>L1230812310 - CL-2</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>CL-2</entsoe:IdentifiedObject.shortName>
+<cim:IdentifiedObject.description>Ratings for element L1230812310 - Limit</cim:IdentifiedObject.description>
+<cim:CurrentLimit.value>1000.000000</cim:CurrentLimit.value>
+<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_d2c78bd1-5ae7-4fb7-b1f5-93e318727ac5"/>
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_632b18c8-702d-4e45-ae4d-e294453b2e3e"/>
+</cim:CurrentLimit>
+<cim:CurrentLimit rdf:ID="_1d28aa6a-8e76-4254-a02b-68f392400b081">
+<cim:IdentifiedObject.name>90</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>CL-2</entsoe:IdentifiedObject.shortName>
+<cim:IdentifiedObject.description>Ratings for element L1230812310 - Limit</cim:IdentifiedObject.description>
+<cim:CurrentLimit.value>900.000000</cim:CurrentLimit.value>
+<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_d2c78bd1-5ae7-4fb7-b1f5-93e318727ac5"/>
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_68cd26b8-d512-4104-a1d1-b2e8f9376ecc"/>
+</cim:CurrentLimit>
+<cim:OperationalLimitSet rdf:ID="_ba061ff8-d0c0-4e3f-bb67-32261e973374">
+<cim:IdentifiedObject.name>Limits at Port 2</cim:IdentifiedObject.name>
+<cim:IdentifiedObject.description>Limit-Ratings for branch L1230812310 at Port 2</cim:IdentifiedObject.description>
+<cim:OperationalLimitSet.Terminal rdf:resource="#_e22768d9-7ccf-44a5-b364-d13afe6a5d01"/>
+</cim:OperationalLimitSet>
+<cim:CurrentLimit rdf:ID="_3ecba241-5810-4e1c-aa29-bfccdecb0880">
+<cim:IdentifiedObject.name>L1230812310 - CL-0</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>CL-0</entsoe:IdentifiedObject.shortName>
+<cim:IdentifiedObject.description>Ratings for element L1230812310 - Limit</cim:IdentifiedObject.description>
+<cim:CurrentLimit.value>1300.000000</cim:CurrentLimit.value>
+<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_ba061ff8-d0c0-4e3f-bb67-32261e973374"/>
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_5e5c2d3c-66e4-455b-8ea8-c18cfcbe3ab2"/>
+</cim:CurrentLimit>
+<cim:CurrentLimit rdf:ID="_7324aae2-fe99-43bc-a2e9-6060412f048a">
+<cim:IdentifiedObject.name>L1230812310 - CL-1</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>CL-1</entsoe:IdentifiedObject.shortName>
+<cim:IdentifiedObject.description>Ratings for element L1230812310 - Limit</cim:IdentifiedObject.description>
+<cim:CurrentLimit.value>1500.000000</cim:CurrentLimit.value>
+<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_ba061ff8-d0c0-4e3f-bb67-32261e973374"/>
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_f02ae32e-7530-4c43-9d5a-23750ccf9079"/>
+</cim:CurrentLimit>
+<cim:CurrentLimit rdf:ID="_96701b80-9c5d-4ade-8dd3-de52e903396a">
+<cim:IdentifiedObject.name>L1230812310 - CL-2</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>CL-2</entsoe:IdentifiedObject.shortName>
+<cim:IdentifiedObject.description>Ratings for element L1230812310 - Limit</cim:IdentifiedObject.description>
+<cim:CurrentLimit.value>1000.000000</cim:CurrentLimit.value>
+<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_ba061ff8-d0c0-4e3f-bb67-32261e973374"/>
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_632b18c8-702d-4e45-ae4d-e294453b2e3e"/>
+</cim:CurrentLimit>
+<cim:CurrentLimit rdf:ID="_96701b80-9c5d-4ade-8dd3-de52e903396a1">
+<cim:IdentifiedObject.name>90</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>CL-2</entsoe:IdentifiedObject.shortName>
+<cim:IdentifiedObject.description>Ratings for element L1230812310 - Limit</cim:IdentifiedObject.description>
+<cim:CurrentLimit.value>900.000000</cim:CurrentLimit.value>
+<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_ba061ff8-d0c0-4e3f-bb67-32261e973374"/>
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_68cd26b8-d512-4104-a1d1-b2e8f9376ecc"/>
+</cim:CurrentLimit>
+<cim:Line rdf:ID="_28c58ea6-954e-4cd8-8b64-7163343262e3">
+<cim:IdentifiedObject.name>container of L1230812310</cim:IdentifiedObject.name>
+<cim:Line.Region rdf:resource="#_c1d5bfe48f8011e08e4d00247eb1f55e"/>
+</cim:Line>
+<rdf:Description rdf:about="#_d4831248-07f3-4d9a-a06b-d39461cd16a2">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_632b18c8-702d-4e45-ae4d-e294453b2e3e"/>
+</rdf:Description>
+<cim:CurrentLimit rdf:ID="_d4831248-07f3-4d9a-a06b-d39461cd16a21">
+<cim:IdentifiedObject.name>90</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>CL-0</entsoe:IdentifiedObject.shortName>
+<cim:IdentifiedObject.description>Ratings for element NL-Line_5 - Limit</cim:IdentifiedObject.description>
+<cim:CurrentLimit.value>1688.400000</cim:CurrentLimit.value>
+<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_a2c3d48f-d768-4e1e-8841-6e9c4913f11f"/>
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_68cd26b8-d512-4104-a1d1-b2e8f9376ecc"/>
+</cim:CurrentLimit>
+<rdf:Description rdf:about="#_b50d912a-8ce8-4962-a21b-f2d91dcc430e">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_632b18c8-702d-4e45-ae4d-e294453b2e3e"/>
+</rdf:Description>
+<cim:CurrentLimit rdf:ID="_b50d912a-8ce8-4962-a21b-f2d91dcc430e1">
+<cim:IdentifiedObject.name>90</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>CL-1</entsoe:IdentifiedObject.shortName>
+<cim:IdentifiedObject.description>Ratings for element NL-Line_5 - Limit</cim:IdentifiedObject.description>
+<cim:CurrentLimit.value>1753.200000</cim:CurrentLimit.value>
+<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_a2c3d48f-d768-4e1e-8841-6e9c4913f11f"/>
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_68cd26b8-d512-4104-a1d1-b2e8f9376ecc"/>
+</cim:CurrentLimit>
+<rdf:Description rdf:about="#_a4b97f0b-39b8-452d-b51c-fd3b25fa1d9b">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_632b18c8-702d-4e45-ae4d-e294453b2e3e"/>
+</rdf:Description>
+<cim:CurrentLimit rdf:ID="_353ea6c9-8e25-4217-9ce1-01efa628ce59">
+<cim:IdentifiedObject.name>NL-Line_5 - CL-3</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>CL-3</entsoe:IdentifiedObject.shortName>
+<cim:IdentifiedObject.description>Ratings for element NL-Line_5 - Limit</cim:IdentifiedObject.description>
+<cim:CurrentLimit.value>1948.000000</cim:CurrentLimit.value>
+<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_a2c3d48f-d768-4e1e-8841-6e9c4913f11f"/>
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_f02ae32e-7530-4c43-9d5a-23750ccf9079"/>
+</cim:CurrentLimit>
+<cim:CurrentLimit rdf:ID="_752d8c91-c3ae-47c2-8ab6-adb14a888396">
+<cim:IdentifiedObject.name>NL-Line_5 - CL-4</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>CL-4</entsoe:IdentifiedObject.shortName>
+<cim:IdentifiedObject.description>Ratings for element NL-Line_5 - Limit</cim:IdentifiedObject.description>
+<cim:CurrentLimit.value>1876.000000</cim:CurrentLimit.value>
+<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_a2c3d48f-d768-4e1e-8841-6e9c4913f11f"/>
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_5e5c2d3c-66e4-455b-8ea8-c18cfcbe3ab2"/>
+</cim:CurrentLimit>
+<rdf:Description rdf:about="#_d3c7e111-afa0-4cc2-99d0-8c75e3d6fb91">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_632b18c8-702d-4e45-ae4d-e294453b2e3e"/>
+</rdf:Description>
+<cim:CurrentLimit rdf:ID="_d3c7e111-afa0-4cc2-99d0-8c75e3d6fb911">
+<cim:IdentifiedObject.name>90</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>CL-0</entsoe:IdentifiedObject.shortName>
+<cim:IdentifiedObject.description>Ratings for element NL-Line_5 - Limit</cim:IdentifiedObject.description>
+<cim:CurrentLimit.value>1688.400000</cim:CurrentLimit.value>
+<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_b4d8f5e2-7b7a-45eb-b65a-252843d6acf4"/>
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_68cd26b8-d512-4104-a1d1-b2e8f9376ecc"/>
+</cim:CurrentLimit>
+<rdf:Description rdf:about="#_c43551e9-eeee-415a-acf1-570fab88b426">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_632b18c8-702d-4e45-ae4d-e294453b2e3e"/>
+</rdf:Description>
+<cim:CurrentLimit rdf:ID="_c43551e9-eeee-415a-acf1-570fab88b4261">
+<cim:IdentifiedObject.name>90</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>CL-1</entsoe:IdentifiedObject.shortName>
+<cim:IdentifiedObject.description>Ratings for element NL-Line_5 - Limit</cim:IdentifiedObject.description>
+<cim:CurrentLimit.value>1753.200000</cim:CurrentLimit.value>
+<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_b4d8f5e2-7b7a-45eb-b65a-252843d6acf4"/>
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_68cd26b8-d512-4104-a1d1-b2e8f9376ecc"/>
+</cim:CurrentLimit>
+<rdf:Description rdf:about="#_db8675aa-6a3d-47a8-b864-a3e474c5c885">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_632b18c8-702d-4e45-ae4d-e294453b2e3e"/>
+</rdf:Description>
+<cim:CurrentLimit rdf:ID="_34a95b00-7ca0-4697-b3a9-6945c60536f8">
+<cim:IdentifiedObject.name>NL-Line_5 - CL-3</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>CL-3</entsoe:IdentifiedObject.shortName>
+<cim:IdentifiedObject.description>Ratings for element NL-Line_5 - Limit</cim:IdentifiedObject.description>
+<cim:CurrentLimit.value>1948.000000</cim:CurrentLimit.value>
+<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_b4d8f5e2-7b7a-45eb-b65a-252843d6acf4"/>
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_f02ae32e-7530-4c43-9d5a-23750ccf9079"/>
+</cim:CurrentLimit>
+<cim:CurrentLimit rdf:ID="_28c23a09-b7ec-4959-8e36-2c703c422134">
+<cim:IdentifiedObject.name>NL-Line_5 - CL-4</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>CL-4</entsoe:IdentifiedObject.shortName>
+<cim:IdentifiedObject.description>Ratings for element NL-Line_5 - Limit</cim:IdentifiedObject.description>
+<cim:CurrentLimit.value>1876.000000</cim:CurrentLimit.value>
+<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_b4d8f5e2-7b7a-45eb-b65a-252843d6acf4"/>
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_5e5c2d3c-66e4-455b-8ea8-c18cfcbe3ab2"/>
+</cim:CurrentLimit>
+<rdf:Description rdf:about="#_fff80a22-3a4b-4c22-94d2-2901e8085df1">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_632b18c8-702d-4e45-ae4d-e294453b2e3e"/>
+</rdf:Description>
+<cim:CurrentLimit rdf:ID="_fff80a22-3a4b-4c22-94d2-2901e8085df11">
+<cim:IdentifiedObject.name>90</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>CL-0</entsoe:IdentifiedObject.shortName>
+<cim:IdentifiedObject.description>Ratings for element NL-Line_4 - Limit</cim:IdentifiedObject.description>
+<cim:CurrentLimit.value>1416.600000</cim:CurrentLimit.value>
+<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_37cc4210-71c0-4328-a86b-df0f65e76ef4"/>
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_68cd26b8-d512-4104-a1d1-b2e8f9376ecc"/>
+</cim:CurrentLimit>
+<rdf:Description rdf:about="#_32ba352e-5877-4d42-b7e4-49a23b78297d">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_632b18c8-702d-4e45-ae4d-e294453b2e3e"/>
+</rdf:Description>
+<cim:CurrentLimit rdf:ID="_32ba352e-5877-4d42-b7e4-49a23b78297d1">
+<cim:IdentifiedObject.name>90</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>CL-1</entsoe:IdentifiedObject.shortName>
+<cim:IdentifiedObject.description>Ratings for element NL-Line_4 - Limit</cim:IdentifiedObject.description>
+<cim:CurrentLimit.value>1534.500000</cim:CurrentLimit.value>
+<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_37cc4210-71c0-4328-a86b-df0f65e76ef4"/>
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_68cd26b8-d512-4104-a1d1-b2e8f9376ecc"/>
+</cim:CurrentLimit>
+<rdf:Description rdf:about="#_b4659169-38a4-494f-b3e2-aa83dc9a6670">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_632b18c8-702d-4e45-ae4d-e294453b2e3e"/>
+</rdf:Description>
+<cim:CurrentLimit rdf:ID="_31f44cd5-a6ad-4be3-a5ac-0ff5aed1473e">
+<cim:IdentifiedObject.name>NL-Line_4 - CL-3</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>CL-3</entsoe:IdentifiedObject.shortName>
+<cim:IdentifiedObject.description>Ratings for element NL-Line_4 - Limit</cim:IdentifiedObject.description>
+<cim:CurrentLimit.value>1705.000000</cim:CurrentLimit.value>
+<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_37cc4210-71c0-4328-a86b-df0f65e76ef4"/>
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_f02ae32e-7530-4c43-9d5a-23750ccf9079"/>
+</cim:CurrentLimit>
+<cim:CurrentLimit rdf:ID="_f572f5bf-a87c-437c-abde-b21021489b40">
+<cim:IdentifiedObject.name>NL-Line_4 - CL-4</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>CL-4</entsoe:IdentifiedObject.shortName>
+<cim:IdentifiedObject.description>Ratings for element NL-Line_4 - Limit</cim:IdentifiedObject.description>
+<cim:CurrentLimit.value>1574.000000</cim:CurrentLimit.value>
+<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_37cc4210-71c0-4328-a86b-df0f65e76ef4"/>
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_5e5c2d3c-66e4-455b-8ea8-c18cfcbe3ab2"/>
+</cim:CurrentLimit>
+<rdf:Description rdf:about="#_4224b5aa-ef0b-4f31-b2a5-002c0c696721">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_632b18c8-702d-4e45-ae4d-e294453b2e3e"/>
+</rdf:Description>
+<cim:CurrentLimit rdf:ID="_4224b5aa-ef0b-4f31-b2a5-002c0c6967211">
+<cim:IdentifiedObject.name>90</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>CL-0</entsoe:IdentifiedObject.shortName>
+<cim:IdentifiedObject.description>Ratings for element NL-Line_4 - Limit</cim:IdentifiedObject.description>
+<cim:CurrentLimit.value>1416.600000</cim:CurrentLimit.value>
+<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_03943678-b63e-44d8-bc7d-9461da496268"/>
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_68cd26b8-d512-4104-a1d1-b2e8f9376ecc"/>
+</cim:CurrentLimit>
+<rdf:Description rdf:about="#_d6da4ddd-944f-48ab-bdb2-651883dc9dea">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_632b18c8-702d-4e45-ae4d-e294453b2e3e"/>
+</rdf:Description>
+<cim:CurrentLimit rdf:ID="_d6da4ddd-944f-48ab-bdb2-651883dc9dea1">
+<cim:IdentifiedObject.name>90</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>CL-1</entsoe:IdentifiedObject.shortName>
+<cim:IdentifiedObject.description>Ratings for element NL-Line_4 - Limit</cim:IdentifiedObject.description>
+<cim:CurrentLimit.value>1534.500000</cim:CurrentLimit.value>
+<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_03943678-b63e-44d8-bc7d-9461da496268"/>
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_68cd26b8-d512-4104-a1d1-b2e8f9376ecc"/>
+</cim:CurrentLimit>
+<rdf:Description rdf:about="#_0388b680-3feb-45a2-bd56-5a620472107b">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_632b18c8-702d-4e45-ae4d-e294453b2e3e"/>
+</rdf:Description>
+<cim:CurrentLimit rdf:ID="_d3defc5e-c223-47c8-81e6-5aa1e78f089e">
+<cim:IdentifiedObject.name>NL-Line_4 - CL-3</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>CL-3</entsoe:IdentifiedObject.shortName>
+<cim:IdentifiedObject.description>Ratings for element NL-Line_4 - Limit</cim:IdentifiedObject.description>
+<cim:CurrentLimit.value>1705.000000</cim:CurrentLimit.value>
+<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_03943678-b63e-44d8-bc7d-9461da496268"/>
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_f02ae32e-7530-4c43-9d5a-23750ccf9079"/>
+</cim:CurrentLimit>
+<cim:CurrentLimit rdf:ID="_6bffaf3f-fbc0-4cad-80e2-4dcf0d715441">
+<cim:IdentifiedObject.name>NL-Line_4 - CL-4</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>CL-4</entsoe:IdentifiedObject.shortName>
+<cim:IdentifiedObject.description>Ratings for element NL-Line_4 - Limit</cim:IdentifiedObject.description>
+<cim:CurrentLimit.value>1574.000000</cim:CurrentLimit.value>
+<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_03943678-b63e-44d8-bc7d-9461da496268"/>
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_5e5c2d3c-66e4-455b-8ea8-c18cfcbe3ab2"/>
+</cim:CurrentLimit>
+<rdf:Description rdf:about="#_3341e4e1-b1f0-4832-854f-4254ddb7459b">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_632b18c8-702d-4e45-ae4d-e294453b2e3e"/>
+</rdf:Description>
+<cim:CurrentLimit rdf:ID="_3341e4e1-b1f0-4832-854f-4254ddb7459b1">
+<cim:IdentifiedObject.name>90</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>CL-0</entsoe:IdentifiedObject.shortName>
+<cim:IdentifiedObject.description>Ratings for element NL-Line_2 - Limit</cim:IdentifiedObject.description>
+<cim:CurrentLimit.value>1169.100000</cim:CurrentLimit.value>
+<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_13ee714f-6df4-4039-8519-5cf4e84ab20d"/>
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_68cd26b8-d512-4104-a1d1-b2e8f9376ecc"/>
+</cim:CurrentLimit>
+<rdf:Description rdf:about="#_eaa17d90-1494-42b8-803c-0a6692c493a0">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_632b18c8-702d-4e45-ae4d-e294453b2e3e"/>
+</rdf:Description>
+<cim:CurrentLimit rdf:ID="_eaa17d90-1494-42b8-803c-0a6692c493a01">
+<cim:IdentifiedObject.name>90</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>CL-1</entsoe:IdentifiedObject.shortName>
+<cim:IdentifiedObject.description>Ratings for element NL-Line_2 - Limit</cim:IdentifiedObject.description>
+<cim:CurrentLimit.value>1233.900000</cim:CurrentLimit.value>
+<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_13ee714f-6df4-4039-8519-5cf4e84ab20d"/>
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_68cd26b8-d512-4104-a1d1-b2e8f9376ecc"/>
+</cim:CurrentLimit>
+<rdf:Description rdf:about="#_1cd93631-5573-48db-8444-0e85a91aa6f1">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_632b18c8-702d-4e45-ae4d-e294453b2e3e"/>
+</rdf:Description>
+<cim:CurrentLimit rdf:ID="_4a1ef614-0dcf-478c-8eb0-84805b800bdb">
+<cim:IdentifiedObject.name>NL-Line_2 - CL-3</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>CL-3</entsoe:IdentifiedObject.shortName>
+<cim:IdentifiedObject.description>Ratings for element NL-Line_2 - Limit</cim:IdentifiedObject.description>
+<cim:CurrentLimit.value>1371.000000</cim:CurrentLimit.value>
+<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_13ee714f-6df4-4039-8519-5cf4e84ab20d"/>
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_f02ae32e-7530-4c43-9d5a-23750ccf9079"/>
+</cim:CurrentLimit>
+<cim:CurrentLimit rdf:ID="_4bd8fe51-2bfe-42b5-b1a6-54fce5471502">
+<cim:IdentifiedObject.name>NL-Line_2 - CL-4</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>CL-4</entsoe:IdentifiedObject.shortName>
+<cim:IdentifiedObject.description>Ratings for element NL-Line_2 - Limit</cim:IdentifiedObject.description>
+<cim:CurrentLimit.value>1299.000000</cim:CurrentLimit.value>
+<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_13ee714f-6df4-4039-8519-5cf4e84ab20d"/>
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_5e5c2d3c-66e4-455b-8ea8-c18cfcbe3ab2"/>
+</cim:CurrentLimit>
+<rdf:Description rdf:about="#_b5172307-8c71-4c82-92ec-b05592694ab1">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_632b18c8-702d-4e45-ae4d-e294453b2e3e"/>
+</rdf:Description>
+<cim:CurrentLimit rdf:ID="_b5172307-8c71-4c82-92ec-b05592694ab11">
+<cim:IdentifiedObject.name>90</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>CL-0</entsoe:IdentifiedObject.shortName>
+<cim:IdentifiedObject.description>Ratings for element NL-Line_2 - Limit</cim:IdentifiedObject.description>
+<cim:CurrentLimit.value>1169.100000</cim:CurrentLimit.value>
+<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_7cf4108d-d355-48f5-8556-d42c37a8e2c8"/>
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_68cd26b8-d512-4104-a1d1-b2e8f9376ecc"/>
+</cim:CurrentLimit>
+<rdf:Description rdf:about="#_467f1c8f-fa42-45d5-88c1-9b8fea6f1cab">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_632b18c8-702d-4e45-ae4d-e294453b2e3e"/>
+</rdf:Description>
+<cim:CurrentLimit rdf:ID="_467f1c8f-fa42-45d5-88c1-9b8fea6f1cab1">
+<cim:IdentifiedObject.name>90</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>CL-1</entsoe:IdentifiedObject.shortName>
+<cim:IdentifiedObject.description>Ratings for element NL-Line_2 - Limit</cim:IdentifiedObject.description>
+<cim:CurrentLimit.value>1233.900000</cim:CurrentLimit.value>
+<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_7cf4108d-d355-48f5-8556-d42c37a8e2c8"/>
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_68cd26b8-d512-4104-a1d1-b2e8f9376ecc"/>
+</cim:CurrentLimit>
+<rdf:Description rdf:about="#_d73f50e0-00db-4f54-a087-b0d2204f229a">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_632b18c8-702d-4e45-ae4d-e294453b2e3e"/>
+</rdf:Description>
+<cim:CurrentLimit rdf:ID="_e0559671-6080-496d-a8af-4d779eb74f26">
+<cim:IdentifiedObject.name>NL-Line_2 - CL-3</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>CL-3</entsoe:IdentifiedObject.shortName>
+<cim:IdentifiedObject.description>Ratings for element NL-Line_2 - Limit</cim:IdentifiedObject.description>
+<cim:CurrentLimit.value>1371.000000</cim:CurrentLimit.value>
+<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_7cf4108d-d355-48f5-8556-d42c37a8e2c8"/>
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_f02ae32e-7530-4c43-9d5a-23750ccf9079"/>
+</cim:CurrentLimit>
+<cim:CurrentLimit rdf:ID="_7abb1d1c-738b-4c6a-b817-d27ac548713c">
+<cim:IdentifiedObject.name>NL-Line_2 - CL-4</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>CL-4</entsoe:IdentifiedObject.shortName>
+<cim:IdentifiedObject.description>Ratings for element NL-Line_2 - Limit</cim:IdentifiedObject.description>
+<cim:CurrentLimit.value>1299.000000</cim:CurrentLimit.value>
+<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_7cf4108d-d355-48f5-8556-d42c37a8e2c8"/>
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_5e5c2d3c-66e4-455b-8ea8-c18cfcbe3ab2"/>
+</cim:CurrentLimit>
+<rdf:Description rdf:about="#_2ddd3dac-4c0e-4355-b1eb-2e4bb45a2526">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_632b18c8-702d-4e45-ae4d-e294453b2e3e"/>
+</rdf:Description>
+<cim:CurrentLimit rdf:ID="_2ddd3dac-4c0e-4355-b1eb-2e4bb45a25261">
+<cim:IdentifiedObject.name>90</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>CL-0</entsoe:IdentifiedObject.shortName>
+<cim:IdentifiedObject.description>Ratings for element NL-Line_1 - Limit</cim:IdentifiedObject.description>
+<cim:CurrentLimit.value>1298.700000</cim:CurrentLimit.value>
+<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_79a1fb3a-a66a-468c-8c78-c25714c73eba"/>
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_68cd26b8-d512-4104-a1d1-b2e8f9376ecc"/>
+</cim:CurrentLimit>
+<rdf:Description rdf:about="#_3b9b581e-dd06-4be8-81b8-9abc72450c89">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_632b18c8-702d-4e45-ae4d-e294453b2e3e"/>
+</rdf:Description>
+<cim:CurrentLimit rdf:ID="_3b9b581e-dd06-4be8-81b8-9abc72450c891">
+<cim:IdentifiedObject.name>90</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>CL-1</entsoe:IdentifiedObject.shortName>
+<cim:IdentifiedObject.description>Ratings for element NL-Line_1 - Limit</cim:IdentifiedObject.description>
+<cim:CurrentLimit.value>1363.500000</cim:CurrentLimit.value>
+<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_79a1fb3a-a66a-468c-8c78-c25714c73eba"/>
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_68cd26b8-d512-4104-a1d1-b2e8f9376ecc"/>
+</cim:CurrentLimit>
+<rdf:Description rdf:about="#_45b85c9e-0788-4cbb-b71b-dc1d5de04e51">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_632b18c8-702d-4e45-ae4d-e294453b2e3e"/>
+</rdf:Description>
+<cim:CurrentLimit rdf:ID="_9f2bb8a6-c16e-4fc6-999d-903986f52fc3">
+<cim:IdentifiedObject.name>NL-Line_1 - CL-3</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>CL-3</entsoe:IdentifiedObject.shortName>
+<cim:IdentifiedObject.description>Ratings for element NL-Line_1 - Limit</cim:IdentifiedObject.description>
+<cim:CurrentLimit.value>1515.000000</cim:CurrentLimit.value>
+<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_79a1fb3a-a66a-468c-8c78-c25714c73eba"/>
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_f02ae32e-7530-4c43-9d5a-23750ccf9079"/>
+</cim:CurrentLimit>
+<cim:CurrentLimit rdf:ID="_0d2f15d9-2b8e-4bf8-a55f-1d3e52cc029e">
+<cim:IdentifiedObject.name>NL-Line_1 - CL-4</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>CL-4</entsoe:IdentifiedObject.shortName>
+<cim:IdentifiedObject.description>Ratings for element NL-Line_1 - Limit</cim:IdentifiedObject.description>
+<cim:CurrentLimit.value>1443.000000</cim:CurrentLimit.value>
+<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_79a1fb3a-a66a-468c-8c78-c25714c73eba"/>
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_5e5c2d3c-66e4-455b-8ea8-c18cfcbe3ab2"/>
+</cim:CurrentLimit>
+<rdf:Description rdf:about="#_802dd8b7-d55c-46bf-8a22-895e251fb8db">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_632b18c8-702d-4e45-ae4d-e294453b2e3e"/>
+</rdf:Description>
+<cim:CurrentLimit rdf:ID="_802dd8b7-d55c-46bf-8a22-895e251fb8db1">
+<cim:IdentifiedObject.name>90</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>CL-0</entsoe:IdentifiedObject.shortName>
+<cim:IdentifiedObject.description>Ratings for element NL-Line_1 - Limit</cim:IdentifiedObject.description>
+<cim:CurrentLimit.value>1298.700000</cim:CurrentLimit.value>
+<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_125eeb58-1c45-41b2-a981-7d5993b40cda"/>
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_68cd26b8-d512-4104-a1d1-b2e8f9376ecc"/>
+</cim:CurrentLimit>
+<rdf:Description rdf:about="#_5baace86-1d76-428b-9045-0d6b50024316">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_632b18c8-702d-4e45-ae4d-e294453b2e3e"/>
+</rdf:Description>
+<cim:CurrentLimit rdf:ID="_5baace86-1d76-428b-9045-0d6b500243161">
+<cim:IdentifiedObject.name>90</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>CL-1</entsoe:IdentifiedObject.shortName>
+<cim:IdentifiedObject.description>Ratings for element NL-Line_1 - Limit</cim:IdentifiedObject.description>
+<cim:CurrentLimit.value>1363.500000</cim:CurrentLimit.value>
+<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_125eeb58-1c45-41b2-a981-7d5993b40cda"/>
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_68cd26b8-d512-4104-a1d1-b2e8f9376ecc"/>
+</cim:CurrentLimit>
+<rdf:Description rdf:about="#_a228917a-44c9-4124-b7db-ea6408b3c5bb">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_632b18c8-702d-4e45-ae4d-e294453b2e3e"/>
+</rdf:Description>
+<cim:CurrentLimit rdf:ID="_fdc87350-7855-49da-8291-f2b64c055fc9">
+<cim:IdentifiedObject.name>NL-Line_1 - CL-3</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>CL-3</entsoe:IdentifiedObject.shortName>
+<cim:IdentifiedObject.description>Ratings for element NL-Line_1 - Limit</cim:IdentifiedObject.description>
+<cim:CurrentLimit.value>1515.000000</cim:CurrentLimit.value>
+<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_125eeb58-1c45-41b2-a981-7d5993b40cda"/>
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_f02ae32e-7530-4c43-9d5a-23750ccf9079"/>
+</cim:CurrentLimit>
+<cim:CurrentLimit rdf:ID="_eddb0332-32d1-4ec6-84d4-a1ee27b34d92">
+<cim:IdentifiedObject.name>NL-Line_1 - CL-4</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>CL-4</entsoe:IdentifiedObject.shortName>
+<cim:IdentifiedObject.description>Ratings for element NL-Line_1 - Limit</cim:IdentifiedObject.description>
+<cim:CurrentLimit.value>1443.000000</cim:CurrentLimit.value>
+<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_125eeb58-1c45-41b2-a981-7d5993b40cda"/>
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_5e5c2d3c-66e4-455b-8ea8-c18cfcbe3ab2"/>
+</cim:CurrentLimit>
+<rdf:Description rdf:about="#_5e7f87db-9758-4098-b19e-4f365915721f">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_632b18c8-702d-4e45-ae4d-e294453b2e3e"/>
+</rdf:Description>
+<cim:CurrentLimit rdf:ID="_5e7f87db-9758-4098-b19e-4f365915721f1">
+<cim:IdentifiedObject.name>90</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>CL-0</entsoe:IdentifiedObject.shortName>
+<cim:IdentifiedObject.description>Ratings for element NL-TR2_1 - Limit</cim:IdentifiedObject.description>
+<cim:CurrentLimit.value>433.710000</cim:CurrentLimit.value>
+<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_83f719ad-2083-44ea-9ebc-9f456c114bdb"/>
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_68cd26b8-d512-4104-a1d1-b2e8f9376ecc"/>
+</cim:CurrentLimit>
+<rdf:Description rdf:about="#_553477f0-ed39-499b-a07d-3c602bd8a13d">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_632b18c8-702d-4e45-ae4d-e294453b2e3e"/>
+</rdf:Description>
+<cim:CurrentLimit rdf:ID="_553477f0-ed39-499b-a07d-3c602bd8a13d1">
+<cim:IdentifiedObject.name>90</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>CL-1</entsoe:IdentifiedObject.shortName>
+<cim:IdentifiedObject.description>Ratings for element NL-TR2_1 - Limit</cim:IdentifiedObject.description>
+<cim:CurrentLimit.value>442.710000</cim:CurrentLimit.value>
+<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_83f719ad-2083-44ea-9ebc-9f456c114bdb"/>
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_68cd26b8-d512-4104-a1d1-b2e8f9376ecc"/>
+</cim:CurrentLimit>
+<rdf:Description rdf:about="#_150183f1-3144-4d18-b5ca-328efdead257">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_632b18c8-702d-4e45-ae4d-e294453b2e3e"/>
+</rdf:Description>
+<cim:CurrentLimit rdf:ID="_e3fac0eb-8f43-48bf-b0c1-2a895e02b1f4">
+<cim:IdentifiedObject.name>NL-TR2_1 - CL-3</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>CL-3</entsoe:IdentifiedObject.shortName>
+<cim:IdentifiedObject.description>Ratings for element NL-TR2_1 - Limit</cim:IdentifiedObject.description>
+<cim:CurrentLimit.value>491.900000</cim:CurrentLimit.value>
+<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_83f719ad-2083-44ea-9ebc-9f456c114bdb"/>
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_f02ae32e-7530-4c43-9d5a-23750ccf9079"/>
+</cim:CurrentLimit>
+<cim:CurrentLimit rdf:ID="_768e3806-c8d3-4b6e-9ac2-77a9d0414509">
+<cim:IdentifiedObject.name>NL-TR2_1 - CL-4</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>CL-4</entsoe:IdentifiedObject.shortName>
+<cim:IdentifiedObject.description>Ratings for element NL-TR2_1 - Limit</cim:IdentifiedObject.description>
+<cim:CurrentLimit.value>481.900000</cim:CurrentLimit.value>
+<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_83f719ad-2083-44ea-9ebc-9f456c114bdb"/>
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_5e5c2d3c-66e4-455b-8ea8-c18cfcbe3ab2"/>
+</cim:CurrentLimit>
+<rdf:Description rdf:about="#_bd6482bb-5e21-46df-a3c3-0e4a64d49f89">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_632b18c8-702d-4e45-ae4d-e294453b2e3e"/>
+</rdf:Description>
+<cim:CurrentLimit rdf:ID="_bd6482bb-5e21-46df-a3c3-0e4a64d49f891">
+<cim:IdentifiedObject.name>90</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>CL-0</entsoe:IdentifiedObject.shortName>
+<cim:IdentifiedObject.description>Ratings for element NL-TR2_1 - Limit</cim:IdentifiedObject.description>
+<cim:CurrentLimit.value>764.820000</cim:CurrentLimit.value>
+<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_d47a27cc-9fad-40f2-a08c-37e545c268df"/>
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_68cd26b8-d512-4104-a1d1-b2e8f9376ecc"/>
+</cim:CurrentLimit>
+<rdf:Description rdf:about="#_8122651e-22ba-4320-9032-c59969020565">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_632b18c8-702d-4e45-ae4d-e294453b2e3e"/>
+</rdf:Description>
+<cim:CurrentLimit rdf:ID="_8122651e-22ba-4320-9032-c599690205651">
+<cim:IdentifiedObject.name>90</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>CL-1</entsoe:IdentifiedObject.shortName>
+<cim:IdentifiedObject.description>Ratings for element NL-TR2_1 - Limit</cim:IdentifiedObject.description>
+<cim:CurrentLimit.value>773.820000</cim:CurrentLimit.value>
+<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_d47a27cc-9fad-40f2-a08c-37e545c268df"/>
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_68cd26b8-d512-4104-a1d1-b2e8f9376ecc"/>
+</cim:CurrentLimit>
+<rdf:Description rdf:about="#_89d45390-25dc-49a6-bb08-69b67f27cd39">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_632b18c8-702d-4e45-ae4d-e294453b2e3e"/>
+</rdf:Description>
+<cim:CurrentLimit rdf:ID="_2f5b3907-a4dc-4d32-9021-ea45367d4613">
+<cim:IdentifiedObject.name>NL-TR2_1 - CL-3</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>CL-3</entsoe:IdentifiedObject.shortName>
+<cim:IdentifiedObject.description>Ratings for element NL-TR2_1 - Limit</cim:IdentifiedObject.description>
+<cim:CurrentLimit.value>859.800000</cim:CurrentLimit.value>
+<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_d47a27cc-9fad-40f2-a08c-37e545c268df"/>
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_f02ae32e-7530-4c43-9d5a-23750ccf9079"/>
+</cim:CurrentLimit>
+<cim:CurrentLimit rdf:ID="_d0fa3a33-fb96-48f8-80c3-363286d91dbb">
+<cim:IdentifiedObject.name>NL-TR2_1 - CL-4</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>CL-4</entsoe:IdentifiedObject.shortName>
+<cim:IdentifiedObject.description>Ratings for element NL-TR2_1 - Limit</cim:IdentifiedObject.description>
+<cim:CurrentLimit.value>849.800000</cim:CurrentLimit.value>
+<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_d47a27cc-9fad-40f2-a08c-37e545c268df"/>
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_5e5c2d3c-66e4-455b-8ea8-c18cfcbe3ab2"/>
+</cim:CurrentLimit>
+<rdf:Description rdf:about="#_e2153eed-fb1f-44e2-b116-d045c5e50e3b">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_632b18c8-702d-4e45-ae4d-e294453b2e3e"/>
+</rdf:Description>
+<cim:CurrentLimit rdf:ID="_e2153eed-fb1f-44e2-b116-d045c5e50e3b1">
+<cim:IdentifiedObject.name>90</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>CL-0</entsoe:IdentifiedObject.shortName>
+<cim:IdentifiedObject.description>Ratings for element NL_TR2_2 - Limit</cim:IdentifiedObject.description>
+<cim:CurrentLimit.value>3065.940000</cim:CurrentLimit.value>
+<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_e7c1b1c7-aaeb-470a-9cb5-93a3ec269179"/>
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_68cd26b8-d512-4104-a1d1-b2e8f9376ecc"/>
+</cim:CurrentLimit>
+<rdf:Description rdf:about="#_b4f373a0-1d09-4f4f-9f29-f72ff6b4f62f">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_632b18c8-702d-4e45-ae4d-e294453b2e3e"/>
+</rdf:Description>
+<cim:CurrentLimit rdf:ID="_b4f373a0-1d09-4f4f-9f29-f72ff6b4f62f1">
+<cim:IdentifiedObject.name>90</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>CL-1</entsoe:IdentifiedObject.shortName>
+<cim:IdentifiedObject.description>Ratings for element NL_TR2_2 - Limit</cim:IdentifiedObject.description>
+<cim:CurrentLimit.value>3155.940000</cim:CurrentLimit.value>
+<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_e7c1b1c7-aaeb-470a-9cb5-93a3ec269179"/>
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_68cd26b8-d512-4104-a1d1-b2e8f9376ecc"/>
+</cim:CurrentLimit>
+<rdf:Description rdf:about="#_fa85553d-9769-45fe-9b79-cecafa01c4ba">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_632b18c8-702d-4e45-ae4d-e294453b2e3e"/>
+</rdf:Description>
+<cim:CurrentLimit rdf:ID="_fa40a92e-5de9-4fac-8977-2d95aad8fc8a">
+<cim:IdentifiedObject.name>NL_TR2_2 - CL-3</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>CL-3</entsoe:IdentifiedObject.shortName>
+<cim:IdentifiedObject.description>Ratings for element NL_TR2_2 - Limit</cim:IdentifiedObject.description>
+<cim:CurrentLimit.value>3506.600000</cim:CurrentLimit.value>
+<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_e7c1b1c7-aaeb-470a-9cb5-93a3ec269179"/>
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_f02ae32e-7530-4c43-9d5a-23750ccf9079"/>
+</cim:CurrentLimit>
+<cim:CurrentLimit rdf:ID="_9b1c2b26-e515-4638-8e50-824aa1f8c1cc">
+<cim:IdentifiedObject.name>NL_TR2_2 - CL-4</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>CL-4</entsoe:IdentifiedObject.shortName>
+<cim:IdentifiedObject.description>Ratings for element NL_TR2_2 - Limit</cim:IdentifiedObject.description>
+<cim:CurrentLimit.value>3406.600000</cim:CurrentLimit.value>
+<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_e7c1b1c7-aaeb-470a-9cb5-93a3ec269179"/>
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_5e5c2d3c-66e4-455b-8ea8-c18cfcbe3ab2"/>
+</cim:CurrentLimit>
+<rdf:Description rdf:about="#_2f71df7b-6118-4973-acea-7f65a563a979">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_632b18c8-702d-4e45-ae4d-e294453b2e3e"/>
+</rdf:Description>
+<cim:CurrentLimit rdf:ID="_2f71df7b-6118-4973-acea-7f65a563a9791">
+<cim:IdentifiedObject.name>90</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>CL-0</entsoe:IdentifiedObject.shortName>
+<cim:IdentifiedObject.description>Ratings for element NL_TR2_2 - Limit</cim:IdentifiedObject.description>
+<cim:CurrentLimit.value>42469.200000</cim:CurrentLimit.value>
+<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_261d13c4-1527-42a5-ad0d-a3b817971166"/>
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_68cd26b8-d512-4104-a1d1-b2e8f9376ecc"/>
+</cim:CurrentLimit>
+<rdf:Description rdf:about="#_176ae6ba-d38c-4f7c-8a60-038dc4980a39">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_632b18c8-702d-4e45-ae4d-e294453b2e3e"/>
+</rdf:Description>
+<cim:CurrentLimit rdf:ID="_176ae6ba-d38c-4f7c-8a60-038dc4980a391">
+<cim:IdentifiedObject.name>90</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>CL-1</entsoe:IdentifiedObject.shortName>
+<cim:IdentifiedObject.description>Ratings for element NL_TR2_2 - Limit</cim:IdentifiedObject.description>
+<cim:CurrentLimit.value>43369.200000</cim:CurrentLimit.value>
+<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_261d13c4-1527-42a5-ad0d-a3b817971166"/>
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_68cd26b8-d512-4104-a1d1-b2e8f9376ecc"/>
+</cim:CurrentLimit>
+<rdf:Description rdf:about="#_1a886514-5f7d-418a-99b7-02330ed01ca7">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_632b18c8-702d-4e45-ae4d-e294453b2e3e"/>
+</rdf:Description>
+<cim:CurrentLimit rdf:ID="_da2f831b-093d-4cd3-bc34-a910dfc7f7b0">
+<cim:IdentifiedObject.name>NL_TR2_2 - CL-3</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>CL-3</entsoe:IdentifiedObject.shortName>
+<cim:IdentifiedObject.description>Ratings for element NL_TR2_2 - Limit</cim:IdentifiedObject.description>
+<cim:CurrentLimit.value>48188.000000</cim:CurrentLimit.value>
+<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_261d13c4-1527-42a5-ad0d-a3b817971166"/>
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_f02ae32e-7530-4c43-9d5a-23750ccf9079"/>
+</cim:CurrentLimit>
+<cim:CurrentLimit rdf:ID="_7065c296-bf63-4cfc-bf69-cd236deb53f1">
+<cim:IdentifiedObject.name>NL_TR2_2 - CL-4</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>CL-4</entsoe:IdentifiedObject.shortName>
+<cim:IdentifiedObject.description>Ratings for element NL_TR2_2 - Limit</cim:IdentifiedObject.description>
+<cim:CurrentLimit.value>47188.000000</cim:CurrentLimit.value>
+<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_261d13c4-1527-42a5-ad0d-a3b817971166"/>
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_5e5c2d3c-66e4-455b-8ea8-c18cfcbe3ab2"/>
+</cim:CurrentLimit>
+<rdf:Description rdf:about="#_e2afb3a0-94ea-4f8f-b717-7b91c603d3dc">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_632b18c8-702d-4e45-ae4d-e294453b2e3e"/>
+</rdf:Description>
+<cim:CurrentLimit rdf:ID="_e2afb3a0-94ea-4f8f-b717-7b91c603d3dc1">
+<cim:IdentifiedObject.name>90</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>CL-0</entsoe:IdentifiedObject.shortName>
+<cim:IdentifiedObject.description>Ratings for element NL_TR2_3 - Limit</cim:IdentifiedObject.description>
+<cim:CurrentLimit.value>3155.940000</cim:CurrentLimit.value>
+<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_fd472104-d68c-4536-ba4a-5fd9349c0a65"/>
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_68cd26b8-d512-4104-a1d1-b2e8f9376ecc"/>
+</cim:CurrentLimit>
+<rdf:Description rdf:about="#_d4bc2ee3-43b8-46fb-9337-d82590af1c8b">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_632b18c8-702d-4e45-ae4d-e294453b2e3e"/>
+</rdf:Description>
+<cim:CurrentLimit rdf:ID="_d4bc2ee3-43b8-46fb-9337-d82590af1c8b1">
+<cim:IdentifiedObject.name>90</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>CL-1</entsoe:IdentifiedObject.shortName>
+<cim:IdentifiedObject.description>Ratings for element NL_TR2_3 - Limit</cim:IdentifiedObject.description>
+<cim:CurrentLimit.value>3335.940000</cim:CurrentLimit.value>
+<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_fd472104-d68c-4536-ba4a-5fd9349c0a65"/>
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_68cd26b8-d512-4104-a1d1-b2e8f9376ecc"/>
+</cim:CurrentLimit>
+<rdf:Description rdf:about="#_0c95b506-05a2-40d5-9f82-b9bf1e680a8d">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_632b18c8-702d-4e45-ae4d-e294453b2e3e"/>
+</rdf:Description>
+<cim:CurrentLimit rdf:ID="_f23e3627-cae0-406b-9693-a834eca242be">
+<cim:IdentifiedObject.name>NL_TR2_3 - CL-3</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>CL-3</entsoe:IdentifiedObject.shortName>
+<cim:IdentifiedObject.description>Ratings for element NL_TR2_3 - Limit</cim:IdentifiedObject.description>
+<cim:CurrentLimit.value>3706.600000</cim:CurrentLimit.value>
+<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_fd472104-d68c-4536-ba4a-5fd9349c0a65"/>
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_f02ae32e-7530-4c43-9d5a-23750ccf9079"/>
+</cim:CurrentLimit>
+<cim:CurrentLimit rdf:ID="_16fbe0be-bbe1-4408-a6b0-cce7699ba7cb">
+<cim:IdentifiedObject.name>NL_TR2_3 - CL-4</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>CL-4</entsoe:IdentifiedObject.shortName>
+<cim:IdentifiedObject.description>Ratings for element NL_TR2_3 - Limit</cim:IdentifiedObject.description>
+<cim:CurrentLimit.value>3506.600000</cim:CurrentLimit.value>
+<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_fd472104-d68c-4536-ba4a-5fd9349c0a65"/>
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_5e5c2d3c-66e4-455b-8ea8-c18cfcbe3ab2"/>
+</cim:CurrentLimit>
+<rdf:Description rdf:about="#_716e45d4-4092-4a1b-ba5f-c78e1da4f363">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_632b18c8-702d-4e45-ae4d-e294453b2e3e"/>
+</rdf:Description>
+<cim:CurrentLimit rdf:ID="_716e45d4-4092-4a1b-ba5f-c78e1da4f3631">
+<cim:IdentifiedObject.name>90</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>CL-0</entsoe:IdentifiedObject.shortName>
+<cim:IdentifiedObject.description>Ratings for element NL_TR2_3 - Limit</cim:IdentifiedObject.description>
+<cim:CurrentLimit.value>42469.200000</cim:CurrentLimit.value>
+<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_cf3e5341-6736-4b34-b4da-e4af2073765b"/>
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_68cd26b8-d512-4104-a1d1-b2e8f9376ecc"/>
+</cim:CurrentLimit>
+<rdf:Description rdf:about="#_23b11495-8c2c-47cc-a561-e215196afa2b">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_632b18c8-702d-4e45-ae4d-e294453b2e3e"/>
+</rdf:Description>
+<cim:CurrentLimit rdf:ID="_23b11495-8c2c-47cc-a561-e215196afa2b1">
+<cim:IdentifiedObject.name>90</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>CL-1</entsoe:IdentifiedObject.shortName>
+<cim:IdentifiedObject.description>Ratings for element NL_TR2_3 - Limit</cim:IdentifiedObject.description>
+<cim:CurrentLimit.value>44269.200000</cim:CurrentLimit.value>
+<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_cf3e5341-6736-4b34-b4da-e4af2073765b"/>
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_68cd26b8-d512-4104-a1d1-b2e8f9376ecc"/>
+</cim:CurrentLimit>
+<rdf:Description rdf:about="#_6a927421-36cd-487a-b6b7-61dd45470447">
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_632b18c8-702d-4e45-ae4d-e294453b2e3e"/>
+</rdf:Description>
+<cim:CurrentLimit rdf:ID="_9218de73-31b2-45f8-8a42-e985de17b80d">
+<cim:IdentifiedObject.name>NL_TR2_3 - CL-3</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>CL-3</entsoe:IdentifiedObject.shortName>
+<cim:IdentifiedObject.description>Ratings for element NL_TR2_3 - Limit</cim:IdentifiedObject.description>
+<cim:CurrentLimit.value>49188.000000</cim:CurrentLimit.value>
+<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_cf3e5341-6736-4b34-b4da-e4af2073765b"/>
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_f02ae32e-7530-4c43-9d5a-23750ccf9079"/>
+</cim:CurrentLimit>
+<cim:CurrentLimit rdf:ID="_8c338191-2b7b-49a3-bacc-f92a33911b33">
+<cim:IdentifiedObject.name>NL_TR2_3 - CL-4</cim:IdentifiedObject.name>
+<entsoe:IdentifiedObject.shortName>CL-4</entsoe:IdentifiedObject.shortName>
+<cim:IdentifiedObject.description>Ratings for element NL_TR2_3 - Limit</cim:IdentifiedObject.description>
+<cim:CurrentLimit.value>47188.000000</cim:CurrentLimit.value>
+<cim:OperationalLimit.OperationalLimitSet rdf:resource="#_cf3e5341-6736-4b34-b4da-e4af2073765b"/>
+<cim:OperationalLimit.OperationalLimitType rdf:resource="#_5e5c2d3c-66e4-455b-8ea8-c18cfcbe3ab2"/>
+</cim:CurrentLimit>
+</dm:forwardDifferences>
+</dm:DifferenceModel>
+</rdf:RDF>
