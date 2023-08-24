@@ -170,17 +170,17 @@
 		md:Model.modelingAuthoritySet "http://entsoe.eu/Boundary/CGMES/2.4.15" ;
 		md:Model.profile "http://entsoe.eu/CIM/TopologyBoundary/3/1" ;
 		md:Model.DependentOn <urn:uuid:2399cbd0-9a39-11e0-aa80-0800200c9a66> .
-	<urn:uuid:#_b675a570-cb6e-11e1-bcee-406c8f32ef58> rdf:type cim:ConnectivityNode ;
+	<urn:uuid:b675a570-cb6e-11e1-bcee-406c8f32ef58> rdf:type cim:ConnectivityNode ;
 		cim:ConnectivityNode.TopologicalNode <urn:uuid:d4affe50316740bdbbf4ae9c7cbf3cfd> .
-	<urn:uuid:#_b67c8340-cb6e-11e1-bcee-406c8f32ef58> rdf:type cim:ConnectivityNode ;
+	<urn:uuid:b67c8340-cb6e-11e1-bcee-406c8f32ef58> rdf:type cim:ConnectivityNode ;
 		cim:ConnectivityNode.TopologicalNode <urn:uuid:f03d65b2a51049ffa533e433721145c1> .
-	<urn:uuid:#_b67cf870-cb6e-11e1-bcee-406c8f32ef58> rdf:type cim:ConnectivityNode ;
+	<urn:uuid:b67cf870-cb6e-11e1-bcee-406c8f32ef58> rdf:type cim:ConnectivityNode ;
 		cim:ConnectivityNode.TopologicalNode <urn:uuid:9d25a1f9e5d14d47b6dcde99c4380b40> .
-	<urn:uuid:#_b66f15c0-cb6e-11e1-bcee-406c8f32ef58> rdf:type cim:ConnectivityNode ;
+	<urn:uuid:b66f15c0-cb6e-11e1-bcee-406c8f32ef58> rdf:type cim:ConnectivityNode ;
 		cim:ConnectivityNode.TopologicalNode <urn:uuid:8d7bad8bcc634e0796e362390d9040b6> .
-	<urn:uuid:#_b6978550-cb6e-11e1-bcee-406c8f32ef58> rdf:type cim:ConnectivityNode ;
+	<urn:uuid:b6978550-cb6e-11e1-bcee-406c8f32ef58> rdf:type cim:ConnectivityNode ;
 		cim:ConnectivityNode.TopologicalNode <urn:uuid:1fa19c281c8f4e1eaad9e1cab70f923e> .
-	<urn:uuid:#_1c4a9e9c-ef00-42c9-9845-f64f9ca1e57a> rdf:type cim:ConnectivityNode ;
+	<urn:uuid:1c4a9e9c-ef00-42c9-9845-f64f9ca1e57a> rdf:type cim:ConnectivityNode ;
 		cim:ConnectivityNode.TopologicalNode <urn:uuid:1098b1c9-dc85-40ce-b65c-39ae02a3afaa> .
 	<urn:uuid:f03d65b2a51049ffa533e433721145c1> rdf:type cim:TopologicalNode ;
 		cim:IdentifiedObject.description "RG CE; 400 kV; OHL" ;
