@@ -1,0 +1,49 @@
+BASE <http://iec.ch/TC57/2013/CIM-schema-cim16#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX cim: <http://iec.ch/TC57/2013/CIM-schema-cim16#>
+PREFIX entsoe: <http://entsoe.eu/CIM/SchemaExtension/3/1#>
+
+WITH <urn:uuid:5d32d257-1646-4906-a1f6-4d7ce3f91569>
+INSERT {
+	<urn:uuid:c79edc43-4a5e-4ba8-bd08-16fcdd1beee7> rdf:type <ConnectivityNode> ;
+		<ConnectivityNode.TopologicalNode> <urn:uuid:97d7d14a-7294-458f-a8d7-024700a08717> .
+
+	<urn:uuid:7e9dd682-86cd-4594-b58f-1a0534540aca> rdf:type <ConnectivityNode> ;
+		<ConnectivityNode.TopologicalNode> <urn:uuid:afddd60d-f7e6-419a-a5c2-be28d29beaf9> .
+
+	<urn:uuid:1520ab3c-9392-41c2-8873-39ec83a76c26> rdf:type <ConnectivityNode> ;
+		<ConnectivityNode.TopologicalNode> <urn:uuid:795a117d-7caf-4fc2-a8d9-dc8f4cf2344a> .
+
+	<urn:uuid:ecb6a97e-bd2d-40c0-91f6-99dc1e7f59e2> rdf:type <ConnectivityNode> ;
+		<ConnectivityNode.TopologicalNode> <urn:uuid:6bdc33de-d027-49b7-b98f-3b3d87716615> .
+
+	<urn:uuid:bd68fe72-ecac-45cc-9d34-33d95ed9a47a> rdf:type <ConnectivityNode> ;
+		<ConnectivityNode.TopologicalNode> <urn:uuid:97d7d14a-7294-458f-a8d7-024700a08717> .
+
+	<urn:uuid:e4743b84-976a-414d-a888-4362532c39e6> rdf:type <ConnectivityNode> ;
+		<ConnectivityNode.TopologicalNode> <urn:uuid:795a117d-7caf-4fc2-a8d9-dc8f4cf2344a> .
+
+	<urn:uuid:124b9180-9112-4b8a-a651-9c1bb9a031da> rdf:type <ConnectivityNode> ;
+		<ConnectivityNode.TopologicalNode> <urn:uuid:6bdc33de-d027-49b7-b98f-3b3d87716615> .
+
+	<urn:uuid:cae57656-3fc2-4f5e-9ab9-fa5b118a632a> rdf:type <ConnectivityNode> ;
+		<ConnectivityNode.TopologicalNode> <urn:uuid:afddd60d-f7e6-419a-a5c2-be28d29beaf9> .
+
+	<urn:uuid:90f78705-5ef4-479a-8d5a-70efc554e0ba> rdf:type <ConnectivityNode> ;
+		<ConnectivityNode.TopologicalNode> <urn:uuid:81b0e447-181e-4aec-8921-f1dd7813bebc> .
+
+	<urn:uuid:17eb9e2c-dd0d-4005-ac1c-c7174e3a88e1> rdf:type <ConnectivityNode> ;
+		<ConnectivityNode.TopologicalNode> <urn:uuid:81b0e447-181e-4aec-8921-f1dd7813bebc> .
+
+	<urn:uuid:5cb2cb9a-695c-458b-b63a-a84c025981e4> rdf:type <ConnectivityNode> ;
+		<ConnectivityNode.TopologicalNode> <urn:uuid:81b0e447-181e-4aec-8921-f1dd7813bebc> .
+
+	<urn:uuid:7221e0f9-008b-4273-8d40-b5d4c6efa0fe> rdf:type <ConnectivityNode> ;
+		<ConnectivityNode.TopologicalNode> <urn:uuid:81b0e447-181e-4aec-8921-f1dd7813bebc> .
+
+	<urn:uuid:f28134fe-076d-4605-aa92-b9e0bbe96841> rdf:type <ConnectivityNode> ;
+		<ConnectivityNode.TopologicalNode> <urn:uuid:795a117d-7caf-4fc2-a8d9-dc8f4cf2344a> .
+
+	<urn:uuid:546121e7-acf3-4bc2-ae49-446e550a1e5c> rdf:type <ConnectivityNode> ;
+		<ConnectivityNode.TopologicalNode> <urn:uuid:795a117d-7caf-4fc2-a8d9-dc8f4cf2344a> .
+}

@@ -1,0 +1,186 @@
+BASE <http://iec.ch/TC57/2013/CIM-schema-cim16#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX cim: <http://iec.ch/TC57/2013/CIM-schema-cim16#>
+PREFIX entsoe: <http://entsoe.eu/CIM/SchemaExtension/3/1#>
+
+WITH <urn:uuid:f2f43818-09c8-4252-9611-7af80c398d20>
+DELETE {
+	<urn:uuid:93cec50e-e92e-4773-b408-e2419dad090d> rdf:type <ConnectivityNode> ;
+		<ConnectivityNode.TopologicalNode> <urn:uuid:e44141af-f1dc-44d3-bfa4-b674e5c953d7> .
+
+	<urn:uuid:21032053-e646-46a7-9a09-6a9a96dbf108> rdf:type <ConnectivityNode> ;
+		<ConnectivityNode.TopologicalNode> <urn:uuid:f70f6bad-eb8d-4b8f-8431-4ab93581514e> .
+
+	<urn:uuid:84c93a56-e0ca-4deb-a2ce-5eeb10682cab> rdf:type <ConnectivityNode> ;
+		<ConnectivityNode.TopologicalNode> <urn:uuid:f96d552a-618d-4d0c-a39a-2dea3c411dee> .
+
+	<urn:uuid:29a37807-af63-402d-ac87-2e248d844793> rdf:type <ConnectivityNode> ;
+		<ConnectivityNode.TopologicalNode> <urn:uuid:f70f6bad-eb8d-4b8f-8431-4ab93581514e> .
+
+	<urn:uuid:bb6a1e59-1071-4985-b80f-d227cf133067> rdf:type <ConnectivityNode> ;
+		<ConnectivityNode.TopologicalNode> <urn:uuid:e44141af-f1dc-44d3-bfa4-b674e5c953d7> .
+
+	<urn:uuid:56ca173b-fd2d-4ef3-bc32-4ae86a318c39> rdf:type <ConnectivityNode> ;
+		<ConnectivityNode.TopologicalNode> <urn:uuid:5c74cb26-ce2f-40c6-951d-89091eb781b6> .
+
+	<urn:uuid:a09067cc-e7b3-4743-8134-f5e42b32e88a> rdf:type <ConnectivityNode> ;
+		<ConnectivityNode.TopologicalNode> <urn:uuid:99b219f3-4593-428b-a4da-124a54630178> .
+
+	<urn:uuid:36f63f4c-df3b-4507-baf5-bb4934c09183> rdf:type <ConnectivityNode> ;
+		<ConnectivityNode.TopologicalNode> <urn:uuid:f70f6bad-eb8d-4b8f-8431-4ab93581514e> .
+
+	<urn:uuid:d0aad282-7c05-4990-b0cf-d9168815048e> rdf:type <ConnectivityNode> ;
+		<ConnectivityNode.TopologicalNode> <urn:uuid:f70f6bad-eb8d-4b8f-8431-4ab93581514e> .
+
+	<urn:uuid:d5b267d8-29d8-434b-b3aa-08f8f3435fc0> rdf:type <ConnectivityNode> ;
+		<ConnectivityNode.TopologicalNode> <urn:uuid:5c74cb26-ce2f-40c6-951d-89091eb781b6> .
+
+	<urn:uuid:4836f99b-c6e9-4ee8-a956-b1e3da882d46> rdf:type <ConnectivityNode> ;
+		<ConnectivityNode.TopologicalNode> <urn:uuid:e44141af-f1dc-44d3-bfa4-b674e5c953d7> .
+
+	<urn:uuid:ae99bd74-26b1-443a-b1a5-656320283a36> rdf:type <ConnectivityNode> ;
+		<ConnectivityNode.TopologicalNode> <urn:uuid:f70f6bad-eb8d-4b8f-8431-4ab93581514e> .
+
+	<urn:uuid:bf851342-832e-4ea2-b2ad-b09729b3af23> rdf:type <ConnectivityNode> ;
+		<ConnectivityNode.TopologicalNode> <urn:uuid:99b219f3-4593-428b-a4da-124a54630178> .
+
+	<urn:uuid:0f074167-d8ad-40ed-b0fa-7dc7e9f5f77c> rdf:type <ConnectivityNode> ;
+		<ConnectivityNode.TopologicalNode> <urn:uuid:a81d08ed-f51d-4538-8d1e-fb2d0dbd128e> .
+
+	<urn:uuid:f51dce2d-2dc6-4cfe-9486-f9d9a5b0fe33> rdf:type <ConnectivityNode> ;
+		<ConnectivityNode.TopologicalNode> <urn:uuid:f96d552a-618d-4d0c-a39a-2dea3c411dee> .
+
+	<urn:uuid:1695eb20-9044-4133-a3fd-2147f55f170d> rdf:type <ConnectivityNode> ;
+		<ConnectivityNode.TopologicalNode> <urn:uuid:5c74cb26-ce2f-40c6-951d-89091eb781b6> .
+
+	<urn:uuid:f33cc626-2c46-46b6-8536-88f30ab532cb> rdf:type <ConnectivityNode> ;
+		<ConnectivityNode.TopologicalNode> <urn:uuid:e44141af-f1dc-44d3-bfa4-b674e5c953d7> .
+
+	<urn:uuid:3a849ea6-8dd5-4406-ac11-c89db47ef753> rdf:type <ConnectivityNode> ;
+		<ConnectivityNode.TopologicalNode> <urn:uuid:e44141af-f1dc-44d3-bfa4-b674e5c953d7> .
+
+	<urn:uuid:3293fcc7-4962-47df-a7c1-ce150600c388> rdf:type <ConnectivityNode> ;
+		<ConnectivityNode.TopologicalNode> <urn:uuid:5c74cb26-ce2f-40c6-951d-89091eb781b6> .
+
+	<urn:uuid:2dde989e-28c3-45f0-aa21-8695843ce894> rdf:type <ConnectivityNode> ;
+		<ConnectivityNode.TopologicalNode> <urn:uuid:99b219f3-4593-428b-a4da-124a54630178> .
+
+	<urn:uuid:18dca121-6c3b-440f-8bf4-8e365b8af551> rdf:type <ConnectivityNode> ;
+		<ConnectivityNode.TopologicalNode> <urn:uuid:99b219f3-4593-428b-a4da-124a54630178> .
+}
+INSERT {
+	<urn:uuid:d4a4a5d7-8391-4afd-898d-f34fee81136f> rdf:type <TopologicalNode> ;
+		<IdentifiedObject.name> "N1230813974" ;
+		<TopologicalNode.BaseVoltage> <urn:uuid:63893f24-5b4e-407c-9a1e-4ff71121f33c> ;
+		<TopologicalNode.ConnectivityNodeContainer> <urn:uuid:f43c6bf6-487d-49aa-8b8b-e87be99e14ec> .
+
+	<urn:uuid:5cae357a-731f-4ab1-b133-4f90795206c7> rdf:type <TopologicalNode> ;
+		<IdentifiedObject.name> "BE_HDC_BUS1" ;
+		<TopologicalNode.BaseVoltage> <urn:uuid:d1165f73-3a8c-475a-bbd6-0e1f82f3a44f> ;
+		<TopologicalNode.ConnectivityNodeContainer> <urn:uuid:bccf01d1-680c-4683-91b9-9d19748519cb> .
+
+	<urn:uuid:3f8ff03c-11fb-4325-8f60-4459c1b1cc1d> rdf:type <TopologicalNode> ;
+		<IdentifiedObject.name> "N1230816286" ;
+		<TopologicalNode.BaseVoltage> <urn:uuid:63893f24-5b4e-407c-9a1e-4ff71121f33c> ;
+		<TopologicalNode.ConnectivityNodeContainer> <urn:uuid:a7b130d2-2fb4-497e-a93e-2625f25d7b65> .
+
+	<urn:uuid:f3c8e35e-744f-431a-8505-dfe3c275616a> rdf:type <TopologicalNode> ;
+		<IdentifiedObject.name> "BE_HVDC_BUS2" ;
+		<TopologicalNode.BaseVoltage> <urn:uuid:d1165f73-3a8c-475a-bbd6-0e1f82f3a44f> ;
+		<TopologicalNode.ConnectivityNodeContainer> <urn:uuid:d966db16-ec73-4c00-a9bc-8aae3aaa0573> .
+
+	<urn:uuid:8995cef6-2c35-4fd9-b389-6d8fe77452c0> rdf:type <DCTopologicalNode> ;
+		<IdentifiedObject.name> "BE DC2" ;
+		<DCTopologicalNode.DCEquipmentContainer> <urn:uuid:dd540e79-688a-4dca-8e5b-473957abcbf3> .
+
+	<urn:uuid:ce3602dc-3ef6-4564-a6e5-56bee9194e82> rdf:type <DCNode> ;
+		<DCNode.DCTopologicalNode> <urn:uuid:8995cef6-2c35-4fd9-b389-6d8fe77452c0> .
+
+	<urn:uuid:746072fb-38eb-4cb0-b21b-8334ae0a3706> rdf:type <DCTopologicalNode> ;
+		<IdentifiedObject.name> "BE DC1" ;
+		<DCTopologicalNode.DCEquipmentContainer> <urn:uuid:613f5d6a-77e9-45bf-8fe9-0ce8f1a2b67e> .
+
+	<urn:uuid:46bfd877-42bd-4943-87ff-2e3b920caac3> rdf:type <DCNode> ;
+		<DCNode.DCTopologicalNode> <urn:uuid:746072fb-38eb-4cb0-b21b-8334ae0a3706> .
+
+	<urn:uuid:42f66964-6212-489c-9104-312332810193> rdf:type <DCTopologicalNode> ;
+		<IdentifiedObject.name> "BDC-1230813991" ;
+		<DCTopologicalNode.DCEquipmentContainer> <urn:uuid:613f5d6a-77e9-45bf-8fe9-0ce8f1a2b67e> .
+
+	<urn:uuid:18589681-dbcb-4cf7-b9c3-85cf6899e6a5> rdf:type <DCNode> ;
+		<DCNode.DCTopologicalNode> <urn:uuid:42f66964-6212-489c-9104-312332810193> .
+
+	<urn:uuid:d5bba8a8-edad-43d7-bfee-531209b18cbb> rdf:type <DCTopologicalNode> ;
+		<IdentifiedObject.name> "BDC-1230814011" ;
+		<DCTopologicalNode.DCEquipmentContainer> <urn:uuid:dd540e79-688a-4dca-8e5b-473957abcbf3> .
+
+	<urn:uuid:f6ff2811-41ab-42fb-86ca-c1081b3d863a> rdf:type <DCNode> ;
+		<DCNode.DCTopologicalNode> <urn:uuid:d5bba8a8-edad-43d7-bfee-531209b18cbb> .
+
+	<urn:uuid:f4b08679-7c6f-4d3f-b03b-5f770c5c40af> rdf:type <DCTopologicalNode> ;
+		<IdentifiedObject.name> "BE DC1" ;
+		<DCTopologicalNode.DCEquipmentContainer> <urn:uuid:613f5d6a-77e9-45bf-8fe9-0ce8f1a2b67e> .
+
+	<urn:uuid:6131cd1b-bc6d-4720-a5ee-e380fbc484ad> rdf:type <DCNode> ;
+		<DCNode.DCTopologicalNode> <urn:uuid:f4b08679-7c6f-4d3f-b03b-5f770c5c40af> .
+
+	<urn:uuid:7ed3835d-5e55-4c24-b70c-f9fe8e71f827> rdf:type <Terminal> ;
+		<Terminal.TopologicalNode> <urn:uuid:99b219f3-4593-428b-a4da-124a54630178> .
+
+	<urn:uuid:115125f9-24db-495f-b5b3-3269d3001a7d> rdf:type <Terminal> ;
+		<Terminal.TopologicalNode> <urn:uuid:d4a4a5d7-8391-4afd-898d-f34fee81136f> .
+
+	<urn:uuid:b2fade60-3a94-473e-8a2d-ae139984b90b> rdf:type <Terminal> ;
+		<Terminal.TopologicalNode> <urn:uuid:3f8ff03c-11fb-4325-8f60-4459c1b1cc1d> .
+
+	<urn:uuid:56ce08b1-65ee-4b9a-adbe-874310d60f52> rdf:type <Terminal> ;
+		<Terminal.TopologicalNode> <urn:uuid:f70f6bad-eb8d-4b8f-8431-4ab93581514e> .
+
+	<urn:uuid:3e077e04-686b-4569-9f34-7f9f843b2df0> rdf:type <Terminal> ;
+		<Terminal.TopologicalNode> <urn:uuid:d4a4a5d7-8391-4afd-898d-f34fee81136f> .
+
+	<urn:uuid:1ac095e2-6fca-4e21-87c2-f75e6f35bfd4> rdf:type <Terminal> ;
+		<Terminal.TopologicalNode> <urn:uuid:5cae357a-731f-4ab1-b133-4f90795206c7> .
+
+	<urn:uuid:65e95fda-30cc-4819-97ec-639c2cf62706> rdf:type <Terminal> ;
+		<Terminal.TopologicalNode> <urn:uuid:3f8ff03c-11fb-4325-8f60-4459c1b1cc1d> .
+
+	<urn:uuid:f0af576c-c25c-4daa-b5f5-b84f71229ba7> rdf:type <Terminal> ;
+		<Terminal.TopologicalNode> <urn:uuid:f3c8e35e-744f-431a-8505-dfe3c275616a> .
+
+	<urn:uuid:c1749ee7-2992-4fae-a164-80fa53b03daa> rdf:type <DCTerminal> ;
+		<DCBaseTerminal.DCTopologicalNode> <urn:uuid:f4b08679-7c6f-4d3f-b03b-5f770c5c40af> .
+
+	<urn:uuid:f3574393-735c-4342-b4e4-14450fac3321> rdf:type <DCTerminal> ;
+		<DCBaseTerminal.DCTopologicalNode> <urn:uuid:8995cef6-2c35-4fd9-b389-6d8fe77452c0> .
+
+	<urn:uuid:e32a67b6-c9de-427e-bbb7-dca09574eb9b> rdf:type <DCTerminal> ;
+		<DCBaseTerminal.DCTopologicalNode> <urn:uuid:d5bba8a8-edad-43d7-bfee-531209b18cbb> .
+
+	<urn:uuid:6c81ae32-e9b9-491b-858e-fbca03b8c9c9> rdf:type <DCTerminal> ;
+		<DCBaseTerminal.DCTopologicalNode> <urn:uuid:42f66964-6212-489c-9104-312332810193> .
+
+	<urn:uuid:8d52583b-1751-4431-91a9-91c0faaa1bc3> rdf:type <DCTerminal> ;
+		<DCBaseTerminal.DCTopologicalNode> <urn:uuid:746072fb-38eb-4cb0-b21b-8334ae0a3706> .
+
+	<urn:uuid:6939b3d9-2f07-46c0-9465-6ec4af021527> rdf:type <DCTerminal> ;
+		<DCBaseTerminal.DCTopologicalNode> <urn:uuid:f4b08679-7c6f-4d3f-b03b-5f770c5c40af> .
+
+	<urn:uuid:030ef54d-2d0b-46f0-afb5-17d9f075b384> rdf:type <Terminal> ;
+		<Terminal.TopologicalNode> <urn:uuid:5cae357a-731f-4ab1-b133-4f90795206c7> .
+
+	<urn:uuid:1a88aff8-2458-4e30-879f-09e91ac96fbf> rdf:type <ACDCConverterDCTerminal> ;
+		<DCBaseTerminal.DCTopologicalNode> <urn:uuid:746072fb-38eb-4cb0-b21b-8334ae0a3706> .
+
+	<urn:uuid:82a99295-c779-4164-af22-ed900537db0f> rdf:type <ACDCConverterDCTerminal> ;
+		<DCBaseTerminal.DCTopologicalNode> <urn:uuid:42f66964-6212-489c-9104-312332810193> .
+
+	<urn:uuid:60ae75d9-c5ac-44a4-b767-2492160acee4> rdf:type <Terminal> ;
+		<Terminal.TopologicalNode> <urn:uuid:f3c8e35e-744f-431a-8505-dfe3c275616a> .
+
+	<urn:uuid:e3134b15-8364-41cb-826a-461c5abb4a41> rdf:type <ACDCConverterDCTerminal> ;
+		<DCBaseTerminal.DCTopologicalNode> <urn:uuid:8995cef6-2c35-4fd9-b389-6d8fe77452c0> .
+
+	<urn:uuid:35b5887e-9614-4a69-8553-622d390716bc> rdf:type <ACDCConverterDCTerminal> ;
+		<DCBaseTerminal.DCTopologicalNode> <urn:uuid:d5bba8a8-edad-43d7-bfee-531209b18cbb> .
+}

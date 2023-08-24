@@ -1,0 +1,46 @@
+BASE <http://iec.ch/TC57/2013/CIM-schema-cim16#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX cim: <http://iec.ch/TC57/2013/CIM-schema-cim16#>
+PREFIX entsoe: <http://entsoe.eu/CIM/SchemaExtension/3/1#>
+
+WITH <urn:uuid:d400c631-75a0-4c30-8aed-832b0d282e73>
+DELETE {
+	<urn:uuid:ab7ece75-d726-48c8-a924-b0a9325e6d51> rdf:type rdf:Description ;
+		<Terminal.phases> "ABC" .
+
+	<urn:uuid:664a19e1-1dc2-48d5-b265-c0630981e61c> rdf:type rdf:Description ;
+		<TransformerEnd.rground> "0e+000" ;
+		<TransformerEnd.xground> "0.0" ;
+		<PowerTransformerEnd.connectionKind> "Y" .
+}
+INSERT {
+	<urn:uuid:1e951716-1c9e-413f-b919-9f822df4b38a> rdf:type <PetersenCoil> ;
+		<IdentifiedObject.name> "BE-TR2_2" ;
+		entsoe:IdentifiedObject.shortName "BE-T_2" ;
+		<Equipment.aggregate> "false" ;
+		<Equipment.EquipmentContainer> <urn:uuid:8bbd7e74-ae20-4dce-8780-c20f8e18c2e0> ;
+		<EarthFaultCompensator.r> "100.000000" ;
+		<PetersenCoil.xGroundNominal> "100.000000" ;
+		<PetersenCoil.xGroundMax> "1000.000000" ;
+		<PetersenCoil.xGroundMin> "10.000000" ;
+		<PetersenCoil.positionCurrent> "300.000000" ;
+		<PetersenCoil.offsetCurrent> "10.000000" ;
+		<PetersenCoil.nominalU> "400.000000" ;
+		<PetersenCoil.mode> "fixed" .
+
+	<urn:uuid:933972e9-dc35-4899-929b-4e217623cde9> rdf:type <Terminal> ;
+		<IdentifiedObject.name> "BE-TR2_2" ;
+		entsoe:IdentifiedObject.shortName "BE-T_2" ;
+		<ACDCTerminal.sequenceNumber> "1" ;
+		<Terminal.phases> "N" ;
+		<Terminal.ConductingEquipment> <urn:uuid:1e951716-1c9e-413f-b919-9f822df4b38a> ;
+		<Terminal.ConnectivityNode> <urn:uuid:56ca173b-fd2d-4ef3-bc32-4ae86a318c39> .
+
+	<urn:uuid:ab7ece75-d726-48c8-a924-b0a9325e6d51> rdf:type rdf:Description ;
+		<Terminal.phases> "ABCN" .
+
+	<urn:uuid:664a19e1-1dc2-48d5-b265-c0630981e61c> rdf:type rdf:Description ;
+		<TransformerEnd.rground> "100.000000" ;
+		<TransformerEnd.xground> "100.0000000000" ;
+		<PowerTransformerEnd.connectionKind> "Yn" .
+}

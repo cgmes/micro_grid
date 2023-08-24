@@ -1,0 +1,20 @@
+BASE <http://iec.ch/TC57/2013/CIM-schema-cim16#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX cim: <http://iec.ch/TC57/2013/CIM-schema-cim16#>
+PREFIX entsoe: <http://entsoe.eu/CIM/SchemaExtension/3/1#>
+
+WITH <urn:uuid:d400c631-75a0-4c30-8aed-832b0d282e73>
+DELETE {
+	<urn:uuid:51AB-2E-F1-031323239373533303630> rdf:type rdf:Description ;
+		<CurveData.y2value> "200.000000" .
+
+	<urn:uuid:51AB-2E-F1-231323239373533303630> rdf:type rdf:Description ;
+		<CurveData.y2value> "200.000000" .
+}
+INSERT {
+	<urn:uuid:51AB-2E-F1-031323239373533303630> rdf:type rdf:Description ;
+		<CurveData.y2value> "250.000000" .
+
+	<urn:uuid:51AB-2E-F1-231323239373533303630> rdf:type rdf:Description ;
+		<CurveData.y2value> "250.000000" .
+}

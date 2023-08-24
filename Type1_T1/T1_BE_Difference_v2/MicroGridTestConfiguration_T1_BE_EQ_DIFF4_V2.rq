@@ -1,0 +1,80 @@
+BASE <http://iec.ch/TC57/2013/CIM-schema-cim16#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX cim: <http://iec.ch/TC57/2013/CIM-schema-cim16#>
+PREFIX entsoe: <http://entsoe.eu/CIM/SchemaExtension/3/1#>
+
+WITH <urn:uuid:d400c631-75a0-4c30-8aed-832b0d282e73>
+DELETE {
+	<urn:uuid:5b7a4d43-09ec-4033-882d-64a76d557631> rdf:type <GeneratingUnit> ;
+		<IdentifiedObject.name> "Gen-1229753024" ;
+		<IdentifiedObject.description> "Machine" ;
+		<GeneratingUnit.initialP> "118.000000" ;
+		<GeneratingUnit.nominalP> "255.000000" ;
+		<GeneratingUnit.maxOperatingP> "200.000000" ;
+		<GeneratingUnit.minOperatingP> "50.000000" ;
+		<GeneratingUnit.genControlSource> "offAGC" ;
+		<Equipment.aggregate> "false" ;
+		<Equipment.EquipmentContainer> <urn:uuid:37e14a0f-5e34-4647-a062-8bfd9305fa9d> .
+
+	<urn:uuid:550ebe0d-f2b2-48c1-991f-cebea43a21aa> rdf:type <SynchronousMachine> ;
+		<IdentifiedObject.name> "BE-G2" ;
+		entsoe:IdentifiedObject.shortName "BE-G2" ;
+		<IdentifiedObject.description> "Machine" ;
+		<Equipment.aggregate> "false" ;
+		<Equipment.EquipmentContainer> <urn:uuid:929ba893-c9dc-44d7-b1fd-30834bd3ab85> ;
+		<SynchronousMachine.qPercent> "100.000000" ;
+		<SynchronousMachine.maxQ> "200.000000" ;
+		<SynchronousMachine.minQ> "-200.000000" ;
+		<RotatingMachine.ratedS> "300.000000" ;
+		<SynchronousMachine.type> "generator" ;
+		<RegulatingCondEq.RegulatingControl> <urn:uuid:84bf5be8-eb59-4555-b131-fce4d2d7775d> ;
+		<RotatingMachine.GeneratingUnit> <urn:uuid:5b7a4d43-09ec-4033-882d-64a76d557631> ;
+		<RotatingMachine.ratedU> "21.000000" ;
+		<RotatingMachine.ratedPowerFactor> "0.850000" ;
+		<SynchronousMachine.shortCircuitRotorType> "turboSeries1" ;
+		<SynchronousMachine.r0> "0e+000" ;
+		<SynchronousMachine.r2> "0e+000" ;
+		<SynchronousMachine.x0> "0.130000" ;
+		<SynchronousMachine.x2> "0.170000" ;
+		<SynchronousMachine.earthingStarPointR> "0e+000" ;
+		<SynchronousMachine.earthingStarPointX> "0e+000" ;
+		<SynchronousMachine.r> "0e+000" ;
+		<SynchronousMachine.satDirectSubtransX> "0.200000" ;
+		<SynchronousMachine.satDirectSyncX> "2.000000" ;
+		<SynchronousMachine.satDirectTransX> "0e+000" ;
+		<SynchronousMachine.mu> "0e+000" ;
+		<SynchronousMachine.ikk> "0e+000" ;
+		<SynchronousMachine.voltageRegulationRange> "0e+000" ;
+		<SynchronousMachine.earthing> "true" .
+
+	<urn:uuid:84bf5be8-eb59-4555-b131-fce4d2d7775d> rdf:type <RegulatingControl> ;
+		<IdentifiedObject.name> "BE-G2" ;
+		entsoe:IdentifiedObject.shortName "BE-G2" ;
+		<RegulatingControl.mode> "voltage" ;
+		<RegulatingControl.Terminal> <urn:uuid:4bb5407b-b4a5-416c-80ad-1a778ada2b9b> .
+
+	<urn:uuid:4bb5407b-b4a5-416c-80ad-1a778ada2b9b> rdf:type rdf:Description ;
+		<IdentifiedObject.name> "BE-G2 - T1" ;
+		entsoe:IdentifiedObject.shortName "BE-G2" ;
+		<Terminal.ConductingEquipment> <urn:uuid:550ebe0d-f2b2-48c1-991f-cebea43a21aa> .
+}
+INSERT {
+	<urn:uuid:81d30eac-e291-4ce4-a133-4c134a207650> rdf:type <EnergySource> ;
+		<IdentifiedObject.name> "ACGENC-1230999187" ;
+		<Equipment.aggregate> "false" ;
+		<Equipment.EquipmentContainer> <urn:uuid:929ba893-c9dc-44d7-b1fd-30834bd3ab85> ;
+		<EnergySource.r> "0.009194" ;
+		<EnergySource.r0> "0e+000" ;
+		<EnergySource.rn> "0e+000" ;
+		<EnergySource.x> "0.091941" ;
+		<EnergySource.x0> "0e+000" ;
+		<EnergySource.xn> "0e+000" ;
+		<EnergySource.nominalVoltage> "21.000000" ;
+		<EnergySource.voltageMagnitude> "21.987000" ;
+		<EnergySource.voltageAngle> "-0.116326" ;
+		entsoe:EnergySource.EnergySchedulingType <urn:uuid:24C12434-E42B-497f-928F-119C6AE92079> .
+
+	<urn:uuid:4bb5407b-b4a5-416c-80ad-1a778ada2b9b> rdf:type rdf:Description ;
+		<IdentifiedObject.name> "ACGENC-1230999187 - T1" ;
+		<Terminal.ConductingEquipment> <urn:uuid:81d30eac-e291-4ce4-a133-4c134a207650> .
+}

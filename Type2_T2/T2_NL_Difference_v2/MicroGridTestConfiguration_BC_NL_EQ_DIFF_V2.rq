@@ -1,0 +1,1049 @@
+BASE <http://iec.ch/TC57/2013/CIM-schema-cim16#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX cim: <http://iec.ch/TC57/2013/CIM-schema-cim16#>
+PREFIX entsoe: <http://entsoe.eu/CIM/SchemaExtension/3/1#>
+
+WITH <urn:uuid:77b55f87-fc1e-4046-9599-6c6b4f991a86>
+DELETE {
+	<urn:uuid:250e948b-70ae-4139-971b-4f0053425b60> rdf:type <OperationalLimitType> ;
+		<IdentifiedObject.name> "TATL20" ;
+		entsoe:IdentifiedObject.shortName "tatl" ;
+		<OperationalLimitType.direction> "absoluteValue" ;
+		entsoe:OperationalLimitType.limitType "tatl" ;
+		<OperationalLimitType.acceptableDuration> "20.000000" .
+
+	<urn:uuid:18c8d038-31ea-4d92-9e7e-4b8a397f30a5> rdf:type <OperationalLimitType> ;
+		<IdentifiedObject.name> "TATL10" ;
+		entsoe:IdentifiedObject.shortName "tatl" ;
+		<OperationalLimitType.direction> "absoluteValue" ;
+		entsoe:OperationalLimitType.limitType "tatl" ;
+		<OperationalLimitType.acceptableDuration> "10.000000" .
+
+	<urn:uuid:1aee0921-7cbe-481c-9078-daf66ab2a950> rdf:type <OperationalLimitType> ;
+		<IdentifiedObject.name> "PATL" ;
+		entsoe:IdentifiedObject.shortName "patl" ;
+		<OperationalLimitType.direction> "absoluteValue" ;
+		entsoe:OperationalLimitType.limitType "patl" .
+
+	<urn:uuid:dd9c5b59-0728-45ca-9930-0dff2a9fb390> rdf:type <OperationalLimitType> ;
+		<IdentifiedObject.name> "TC" ;
+		entsoe:IdentifiedObject.shortName "tc" ;
+		<OperationalLimitType.direction> "absoluteValue" ;
+		entsoe:OperationalLimitType.limitType "tc" .
+
+	<urn:uuid:820d95d7-26d4-4311-8b1f-026f8605b86d> rdf:type <EquivalentInjection> ;
+		<IdentifiedObject.name> "NL-Inj-XZE_ST24" ;
+		entsoe:IdentifiedObject.shortName "NL-I-XZE_ST2" ;
+		<IdentifiedObject.description> "Eq_Injection" ;
+		<EquivalentInjection.regulationCapability> "false" ;
+		<EquivalentInjection.r> "0e+000" ;
+		<EquivalentInjection.x> "0e+000" ;
+		<EquivalentInjection.r2> "0e+000" ;
+		<EquivalentInjection.x2> "0e+000" ;
+		<EquivalentInjection.r0> "0e+000" ;
+		<EquivalentInjection.x0> "0e+000" .
+
+	<urn:uuid:26e50b4b-9a19-420d-98ce-bc4f11971cd7> rdf:type <Terminal> ;
+		<IdentifiedObject.name> "NL-Inj-XZE_ST24 - T1" ;
+		entsoe:IdentifiedObject.shortName "NL-I-XZE_ST2" ;
+		<ACDCTerminal.sequenceNumber> "1" ;
+		<Terminal.phases> "ABC" ;
+		<Terminal.ConductingEquipment> <urn:uuid:820d95d7-26d4-4311-8b1f-026f8605b86d> ;
+		<Terminal.ConnectivityNode> <urn:uuid:b6978550-cb6e-11e1-bcee-406c8f32ef58> .
+
+	<urn:uuid:d4831248-07f3-4d9a-a06b-d39461cd16a2> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:250e948b-70ae-4139-971b-4f0053425b60> .
+
+	<urn:uuid:b50d912a-8ce8-4962-a21b-f2d91dcc430e> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:18c8d038-31ea-4d92-9e7e-4b8a397f30a5> .
+
+	<urn:uuid:a4b97f0b-39b8-452d-b51c-fd3b25fa1d9b> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:1aee0921-7cbe-481c-9078-daf66ab2a950> .
+
+	<urn:uuid:d3c7e111-afa0-4cc2-99d0-8c75e3d6fb91> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:250e948b-70ae-4139-971b-4f0053425b60> .
+
+	<urn:uuid:c43551e9-eeee-415a-acf1-570fab88b426> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:18c8d038-31ea-4d92-9e7e-4b8a397f30a5> .
+
+	<urn:uuid:db8675aa-6a3d-47a8-b864-a3e474c5c885> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:1aee0921-7cbe-481c-9078-daf66ab2a950> .
+
+	<urn:uuid:fff80a22-3a4b-4c22-94d2-2901e8085df1> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:250e948b-70ae-4139-971b-4f0053425b60> .
+
+	<urn:uuid:32ba352e-5877-4d42-b7e4-49a23b78297d> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:18c8d038-31ea-4d92-9e7e-4b8a397f30a5> .
+
+	<urn:uuid:b4659169-38a4-494f-b3e2-aa83dc9a6670> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:1aee0921-7cbe-481c-9078-daf66ab2a950> .
+
+	<urn:uuid:4224b5aa-ef0b-4f31-b2a5-002c0c696721> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:250e948b-70ae-4139-971b-4f0053425b60> .
+
+	<urn:uuid:d6da4ddd-944f-48ab-bdb2-651883dc9dea> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:18c8d038-31ea-4d92-9e7e-4b8a397f30a5> .
+
+	<urn:uuid:0388b680-3feb-45a2-bd56-5a620472107b> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:1aee0921-7cbe-481c-9078-daf66ab2a950> .
+
+	<urn:uuid:a279a3dc-550b-426c-af3a-61b7be508dcc> rdf:type <ACLineSegment> ;
+		<IdentifiedObject.name> "NL-Line_3" ;
+		entsoe:IdentifiedObject.shortName "NL-L_3" ;
+		entsoe:IdentifiedObject.energyIdentCodeEic "10T-AT-DE-00009W" ;
+		<IdentifiedObject.description> "10T-AT-DE-00009W" ;
+		<Equipment.EquipmentContainer> <urn:uuid:644936cc-1ea0-46f3-93e6-eed0e0cc8bee> ;
+		<ACLineSegment.r> "5.060000" ;
+		<ACLineSegment.x> "69.000000" ;
+		<ACLineSegment.bch> "0.0000202319" ;
+		<Conductor.length> "23.000000" ;
+		<ACLineSegment.gch> "0.0000230000" ;
+		<Equipment.aggregate> "false" ;
+		<ConductingEquipment.BaseVoltage> <urn:uuid:7891a026ba2c42098556665efd13ba94> ;
+		<ACLineSegment.r0> "15.180000" ;
+		<ACLineSegment.x0> "207.000000" ;
+		<ACLineSegment.b0ch> "0.0000455217" ;
+		<ACLineSegment.g0ch> "0.0000230000" ;
+		<ACLineSegment.shortCircuitEndTemperature> "160.0000000000" .
+
+	<urn:uuid:5dfee914-a4fd-4bde-a5b4-c4caa6378d10> rdf:type <Terminal> ;
+		<IdentifiedObject.name> "NL-Line_3 - T1" ;
+		entsoe:IdentifiedObject.shortName "NL-L_3" ;
+		entsoe:IdentifiedObject.energyIdentCodeEic "10T-AT-DE-00009W" ;
+		<ACDCTerminal.sequenceNumber> "1" ;
+		<Terminal.phases> "ABC" ;
+		<Terminal.ConductingEquipment> <urn:uuid:a279a3dc-550b-426c-af3a-61b7be508dcc> ;
+		<Terminal.ConnectivityNode> <urn:uuid:f28134fe-076d-4605-aa92-b9e0bbe96841> .
+
+	<urn:uuid:6aecb9ba-5835-4b70-89bc-96d687e45779> rdf:type <Terminal> ;
+		<IdentifiedObject.name> "NL-Line_3 - T2" ;
+		entsoe:IdentifiedObject.shortName "NL-L_3" ;
+		entsoe:IdentifiedObject.energyIdentCodeEic "10T-AT-DE-00009W" ;
+		<ACDCTerminal.sequenceNumber> "2" ;
+		<Terminal.phases> "ABC" ;
+		<Terminal.ConductingEquipment> <urn:uuid:a279a3dc-550b-426c-af3a-61b7be508dcc> ;
+		<Terminal.ConnectivityNode> <urn:uuid:b6978550-cb6e-11e1-bcee-406c8f32ef58> .
+
+	<urn:uuid:9a03e8ee-e832-43c8-b38e-0d43f8ef7355> rdf:type <OperationalLimitSet> ;
+		<IdentifiedObject.name> "Limits at Port 1" ;
+		<IdentifiedObject.description> "Limit-Ratings for branch NL-Line_3 at Port 1" ;
+		<OperationalLimitSet.Terminal> <urn:uuid:5dfee914-a4fd-4bde-a5b4-c4caa6378d10> .
+
+	<urn:uuid:9dd40a3a-c6df-4f16-876c-bd11c538324b> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL-Line_3 - CL-0" ;
+		entsoe:IdentifiedObject.shortName "CL-0" ;
+		<IdentifiedObject.description> "Ratings for element NL-Line_3 - Limit" ;
+		<CurrentLimit.value> "1312.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:9a03e8ee-e832-43c8-b38e-0d43f8ef7355> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:250e948b-70ae-4139-971b-4f0053425b60> .
+
+	<urn:uuid:150d1dcb-f7b6-4fcd-bce9-e39c6ddf15aa> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL-Line_3 - CL-1" ;
+		entsoe:IdentifiedObject.shortName "CL-1" ;
+		<IdentifiedObject.description> "Ratings for element NL-Line_3 - Limit" ;
+		<CurrentLimit.value> "1443.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:9a03e8ee-e832-43c8-b38e-0d43f8ef7355> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:18c8d038-31ea-4d92-9e7e-4b8a397f30a5> .
+
+	<urn:uuid:317c3033-0409-4f57-9209-4baae4b5e165> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL-Line_3 - CL-2" ;
+		entsoe:IdentifiedObject.shortName "CL-2" ;
+		<IdentifiedObject.description> "Ratings for element NL-Line_3 - Limit" ;
+		<CurrentLimit.value> "1180.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:9a03e8ee-e832-43c8-b38e-0d43f8ef7355> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:1aee0921-7cbe-481c-9078-daf66ab2a950> .
+
+	<urn:uuid:317c3033-0409-4f57-9209-4baae4b5e1651> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "90" ;
+		entsoe:IdentifiedObject.shortName "CL-2" ;
+		<IdentifiedObject.description> "Ratings for element NL-Line_3 - Limit" ;
+		<CurrentLimit.value> "1062.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:9a03e8ee-e832-43c8-b38e-0d43f8ef7355> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:68cd26b8-d512-4104-a1d1-b2e8f9376ecc> .
+
+	<urn:uuid:e29f4055-0267-4d9e-a889-8afc2326e870> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL-Line_3 - CL-3" ;
+		entsoe:IdentifiedObject.shortName "CL-3" ;
+		<IdentifiedObject.description> "Ratings for element NL-Line_3 - Limit" ;
+		<CurrentLimit.value> "2000.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:9a03e8ee-e832-43c8-b38e-0d43f8ef7355> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:dd9c5b59-0728-45ca-9930-0dff2a9fb390> .
+
+	<urn:uuid:e29f4055-0267-4d9e-a889-8afc2326e8702> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "90" ;
+		entsoe:IdentifiedObject.shortName "CL-3" ;
+		<IdentifiedObject.description> "Ratings for element NL-Line_3 - Limit" ;
+		<CurrentLimit.value> "1800.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:9a03e8ee-e832-43c8-b38e-0d43f8ef7355> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:a1cc9747-6819-429e-bd5f-23ffdb1d7376> .
+
+	<urn:uuid:14e9e317-a168-44a2-82ef-7c76190108a2> rdf:type <OperationalLimitSet> ;
+		<IdentifiedObject.name> "Limits at Port 2" ;
+		<IdentifiedObject.description> "Limit-Ratings for branch NL-Line_3 at Port 2" ;
+		<OperationalLimitSet.Terminal> <urn:uuid:6aecb9ba-5835-4b70-89bc-96d687e45779> .
+
+	<urn:uuid:75caf931-a43f-4e4a-a831-fe9a729feb72> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL-Line_3 - CL-0" ;
+		entsoe:IdentifiedObject.shortName "CL-0" ;
+		<IdentifiedObject.description> "Ratings for element NL-Line_3 - Limit" ;
+		<CurrentLimit.value> "1312.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:14e9e317-a168-44a2-82ef-7c76190108a2> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:250e948b-70ae-4139-971b-4f0053425b60> .
+
+	<urn:uuid:bec4e785-5143-4ad4-b7b0-aea8e33be7e6> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL-Line_3 - CL-1" ;
+		entsoe:IdentifiedObject.shortName "CL-1" ;
+		<IdentifiedObject.description> "Ratings for element NL-Line_3 - Limit" ;
+		<CurrentLimit.value> "1443.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:14e9e317-a168-44a2-82ef-7c76190108a2> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:18c8d038-31ea-4d92-9e7e-4b8a397f30a5> .
+
+	<urn:uuid:62be08ea-2a9e-4284-9642-2947cb2c5f1b> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL-Line_3 - CL-2" ;
+		entsoe:IdentifiedObject.shortName "CL-2" ;
+		<IdentifiedObject.description> "Ratings for element NL-Line_3 - Limit" ;
+		<CurrentLimit.value> "1180.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:14e9e317-a168-44a2-82ef-7c76190108a2> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:1aee0921-7cbe-481c-9078-daf66ab2a950> .
+
+	<urn:uuid:62be08ea-2a9e-4284-9642-2947cb2c5f1b1> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "90" ;
+		entsoe:IdentifiedObject.shortName "CL-2" ;
+		<IdentifiedObject.description> "Ratings for element NL-Line_3 - Limit" ;
+		<CurrentLimit.value> "1062.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:14e9e317-a168-44a2-82ef-7c76190108a2> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:68cd26b8-d512-4104-a1d1-b2e8f9376ecc> .
+
+	<urn:uuid:22274f03-885c-4ea8-931d-862beec6edd1> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL-Line_3 - CL-3" ;
+		entsoe:IdentifiedObject.shortName "CL-3" ;
+		<IdentifiedObject.description> "Ratings for element NL-Line_3 - Limit" ;
+		<CurrentLimit.value> "2000.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:14e9e317-a168-44a2-82ef-7c76190108a2> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:dd9c5b59-0728-45ca-9930-0dff2a9fb390> .
+
+	<urn:uuid:22274f03-885c-4ea8-931d-862beec6edd12> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "90" ;
+		entsoe:IdentifiedObject.shortName "CL-3" ;
+		<IdentifiedObject.description> "Ratings for element NL-Line_3 - Limit" ;
+		<CurrentLimit.value> "1800.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:14e9e317-a168-44a2-82ef-7c76190108a2> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:a1cc9747-6819-429e-bd5f-23ffdb1d7376> .
+
+	<urn:uuid:644936cc-1ea0-46f3-93e6-eed0e0cc8bee> rdf:type <Line> ;
+		<IdentifiedObject.name> "container of NL-Line_3" ;
+		<Line.Region> <urn:uuid:c1d5bfe48f8011e08e4d00247eb1f55e> .
+
+	<urn:uuid:3341e4e1-b1f0-4832-854f-4254ddb7459b> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:250e948b-70ae-4139-971b-4f0053425b60> .
+
+	<urn:uuid:eaa17d90-1494-42b8-803c-0a6692c493a0> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:18c8d038-31ea-4d92-9e7e-4b8a397f30a5> .
+
+	<urn:uuid:1cd93631-5573-48db-8444-0e85a91aa6f1> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:1aee0921-7cbe-481c-9078-daf66ab2a950> .
+
+	<urn:uuid:b5172307-8c71-4c82-92ec-b05592694ab1> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:250e948b-70ae-4139-971b-4f0053425b60> .
+
+	<urn:uuid:467f1c8f-fa42-45d5-88c1-9b8fea6f1cab> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:18c8d038-31ea-4d92-9e7e-4b8a397f30a5> .
+
+	<urn:uuid:d73f50e0-00db-4f54-a087-b0d2204f229a> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:1aee0921-7cbe-481c-9078-daf66ab2a950> .
+
+	<urn:uuid:2ddd3dac-4c0e-4355-b1eb-2e4bb45a2526> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:250e948b-70ae-4139-971b-4f0053425b60> .
+
+	<urn:uuid:3b9b581e-dd06-4be8-81b8-9abc72450c89> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:18c8d038-31ea-4d92-9e7e-4b8a397f30a5> .
+
+	<urn:uuid:45b85c9e-0788-4cbb-b71b-dc1d5de04e51> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:1aee0921-7cbe-481c-9078-daf66ab2a950> .
+
+	<urn:uuid:802dd8b7-d55c-46bf-8a22-895e251fb8db> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:250e948b-70ae-4139-971b-4f0053425b60> .
+
+	<urn:uuid:5baace86-1d76-428b-9045-0d6b50024316> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:18c8d038-31ea-4d92-9e7e-4b8a397f30a5> .
+
+	<urn:uuid:a228917a-44c9-4124-b7db-ea6408b3c5bb> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:1aee0921-7cbe-481c-9078-daf66ab2a950> .
+
+	<urn:uuid:5e7f87db-9758-4098-b19e-4f365915721f> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:250e948b-70ae-4139-971b-4f0053425b60> .
+
+	<urn:uuid:553477f0-ed39-499b-a07d-3c602bd8a13d> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:18c8d038-31ea-4d92-9e7e-4b8a397f30a5> .
+
+	<urn:uuid:150183f1-3144-4d18-b5ca-328efdead257> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:1aee0921-7cbe-481c-9078-daf66ab2a950> .
+
+	<urn:uuid:bd6482bb-5e21-46df-a3c3-0e4a64d49f89> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:250e948b-70ae-4139-971b-4f0053425b60> .
+
+	<urn:uuid:8122651e-22ba-4320-9032-c59969020565> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:18c8d038-31ea-4d92-9e7e-4b8a397f30a5> .
+
+	<urn:uuid:89d45390-25dc-49a6-bb08-69b67f27cd39> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:1aee0921-7cbe-481c-9078-daf66ab2a950> .
+
+	<urn:uuid:e2153eed-fb1f-44e2-b116-d045c5e50e3b> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:250e948b-70ae-4139-971b-4f0053425b60> .
+
+	<urn:uuid:b4f373a0-1d09-4f4f-9f29-f72ff6b4f62f> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:18c8d038-31ea-4d92-9e7e-4b8a397f30a5> .
+
+	<urn:uuid:fa85553d-9769-45fe-9b79-cecafa01c4ba> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:1aee0921-7cbe-481c-9078-daf66ab2a950> .
+
+	<urn:uuid:2f71df7b-6118-4973-acea-7f65a563a979> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:250e948b-70ae-4139-971b-4f0053425b60> .
+
+	<urn:uuid:176ae6ba-d38c-4f7c-8a60-038dc4980a39> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:18c8d038-31ea-4d92-9e7e-4b8a397f30a5> .
+
+	<urn:uuid:1a886514-5f7d-418a-99b7-02330ed01ca7> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:1aee0921-7cbe-481c-9078-daf66ab2a950> .
+
+	<urn:uuid:e2afb3a0-94ea-4f8f-b717-7b91c603d3dc> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:250e948b-70ae-4139-971b-4f0053425b60> .
+
+	<urn:uuid:d4bc2ee3-43b8-46fb-9337-d82590af1c8b> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:18c8d038-31ea-4d92-9e7e-4b8a397f30a5> .
+
+	<urn:uuid:0c95b506-05a2-40d5-9f82-b9bf1e680a8d> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:1aee0921-7cbe-481c-9078-daf66ab2a950> .
+
+	<urn:uuid:716e45d4-4092-4a1b-ba5f-c78e1da4f363> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:250e948b-70ae-4139-971b-4f0053425b60> .
+
+	<urn:uuid:23b11495-8c2c-47cc-a561-e215196afa2b> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:18c8d038-31ea-4d92-9e7e-4b8a397f30a5> .
+
+	<urn:uuid:6a927421-36cd-487a-b6b7-61dd45470447> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:1aee0921-7cbe-481c-9078-daf66ab2a950> .
+}
+INSERT {
+	<urn:uuid:632b18c8-702d-4e45-ae4d-e294453b2e3e> rdf:type <OperationalLimitType> ;
+		<IdentifiedObject.name> "PATL" ;
+		entsoe:IdentifiedObject.shortName "patl" ;
+		<OperationalLimitType.direction> "absoluteValue" ;
+		entsoe:OperationalLimitType.limitType "patl" .
+
+	<urn:uuid:f02ae32e-7530-4c43-9d5a-23750ccf9079> rdf:type <OperationalLimitType> ;
+		<IdentifiedObject.name> "TATL10" ;
+		entsoe:IdentifiedObject.shortName "tatl" ;
+		<OperationalLimitType.direction> "absoluteValue" ;
+		entsoe:OperationalLimitType.limitType "tatl" ;
+		<OperationalLimitType.acceptableDuration> "10.000000" .
+
+	<urn:uuid:5e5c2d3c-66e4-455b-8ea8-c18cfcbe3ab2> rdf:type <OperationalLimitType> ;
+		<IdentifiedObject.name> "TATL20" ;
+		entsoe:IdentifiedObject.shortName "tatl" ;
+		<OperationalLimitType.direction> "absoluteValue" ;
+		entsoe:OperationalLimitType.limitType "tatl" ;
+		<OperationalLimitType.acceptableDuration> "20.000000" .
+
+	<urn:uuid:a3792f84-a59a-4c22-9672-5b604f7b3320> rdf:type <EquivalentInjection> ;
+		<IdentifiedObject.name> "NL-Inj-XZE_ST24" ;
+		entsoe:IdentifiedObject.shortName "NL-I-XZE_ST2" ;
+		<IdentifiedObject.description> "Eq_Injection" ;
+		<EquivalentInjection.regulationCapability> "false" ;
+		<EquivalentInjection.r> "0e+000" ;
+		<EquivalentInjection.x> "0e+000" ;
+		<EquivalentInjection.r2> "0e+000" ;
+		<EquivalentInjection.x2> "0e+000" ;
+		<EquivalentInjection.r0> "0e+000" ;
+		<EquivalentInjection.x0> "0e+000" .
+
+	<urn:uuid:6abb6f6b-35af-4754-aac0-ccbe6a4d8c90> rdf:type <Terminal> ;
+		<IdentifiedObject.name> "NL-Inj-XZE_ST24 - T1" ;
+		entsoe:IdentifiedObject.shortName "NL-I-XZE_ST2" ;
+		<ACDCTerminal.sequenceNumber> "1" ;
+		<Terminal.phases> "ABC" ;
+		<Terminal.ConductingEquipment> <urn:uuid:a3792f84-a59a-4c22-9672-5b604f7b3320> ;
+		<Terminal.ConnectivityNode> <urn:uuid:1c4a9e9c-ef00-42c9-9845-f64f9ca1e57a> .
+
+	<urn:uuid:882271f9-1793-4fc2-8b2e-12a37292f364> rdf:type <ACLineSegment> ;
+		<IdentifiedObject.name> "L1230812310" ;
+		<Equipment.EquipmentContainer> <urn:uuid:28c58ea6-954e-4cd8-8b64-7163343262e3> ;
+		<ACLineSegment.r> "0.100000" ;
+		<ACLineSegment.x> "0.100000" ;
+		<ACLineSegment.bch> "0.0" ;
+		<Conductor.length> "1.000000" ;
+		<ACLineSegment.gch> "0.0" ;
+		<Equipment.aggregate> "false" ;
+		<ConductingEquipment.BaseVoltage> <urn:uuid:7891a026ba2c42098556665efd13ba94> ;
+		<ACLineSegment.r0> "0.300000" ;
+		<ACLineSegment.x0> "0.300000" ;
+		<ACLineSegment.b0ch> "0.0" ;
+		<ACLineSegment.g0ch> "0.0" ;
+		<ACLineSegment.shortCircuitEndTemperature> "160.0000000000" .
+
+	<urn:uuid:b7a26740-334e-46d4-a98d-303fa6fad2d3> rdf:type <Terminal> ;
+		<IdentifiedObject.name> "L1230812310 - T1" ;
+		<ACDCTerminal.sequenceNumber> "1" ;
+		<Terminal.phases> "ABC" ;
+		<Terminal.ConductingEquipment> <urn:uuid:882271f9-1793-4fc2-8b2e-12a37292f364> ;
+		<Terminal.ConnectivityNode> <urn:uuid:e4743b84-976a-414d-a888-4362532c39e6> .
+
+	<urn:uuid:e22768d9-7ccf-44a5-b364-d13afe6a5d01> rdf:type <Terminal> ;
+		<IdentifiedObject.name> "L1230812310 - T2" ;
+		<ACDCTerminal.sequenceNumber> "2" ;
+		<Terminal.phases> "ABC" ;
+		<Terminal.ConductingEquipment> <urn:uuid:882271f9-1793-4fc2-8b2e-12a37292f364> ;
+		<Terminal.ConnectivityNode> <urn:uuid:1c4a9e9c-ef00-42c9-9845-f64f9ca1e57a> .
+
+	<urn:uuid:d2c78bd1-5ae7-4fb7-b1f5-93e318727ac5> rdf:type <OperationalLimitSet> ;
+		<IdentifiedObject.name> "Limits at Port 1" ;
+		<IdentifiedObject.description> "Limit-Ratings for branch L1230812310 at Port 1" ;
+		<OperationalLimitSet.Terminal> <urn:uuid:b7a26740-334e-46d4-a98d-303fa6fad2d3> .
+
+	<urn:uuid:962e8149-1462-4797-a7b0-3764f7237047> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "L1230812310 - CL-0" ;
+		entsoe:IdentifiedObject.shortName "CL-0" ;
+		<IdentifiedObject.description> "Ratings for element L1230812310 - Limit" ;
+		<CurrentLimit.value> "1300.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:d2c78bd1-5ae7-4fb7-b1f5-93e318727ac5> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:5e5c2d3c-66e4-455b-8ea8-c18cfcbe3ab2> .
+
+	<urn:uuid:13b0828c-7e4d-495c-beac-c8432ac447c8> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "L1230812310 - CL-1" ;
+		entsoe:IdentifiedObject.shortName "CL-1" ;
+		<IdentifiedObject.description> "Ratings for element L1230812310 - Limit" ;
+		<CurrentLimit.value> "1500.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:d2c78bd1-5ae7-4fb7-b1f5-93e318727ac5> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:f02ae32e-7530-4c43-9d5a-23750ccf9079> .
+
+	<urn:uuid:1d28aa6a-8e76-4254-a02b-68f392400b08> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "L1230812310 - CL-2" ;
+		entsoe:IdentifiedObject.shortName "CL-2" ;
+		<IdentifiedObject.description> "Ratings for element L1230812310 - Limit" ;
+		<CurrentLimit.value> "1000.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:d2c78bd1-5ae7-4fb7-b1f5-93e318727ac5> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:632b18c8-702d-4e45-ae4d-e294453b2e3e> .
+
+	<urn:uuid:1d28aa6a-8e76-4254-a02b-68f392400b081> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "90" ;
+		entsoe:IdentifiedObject.shortName "CL-2" ;
+		<IdentifiedObject.description> "Ratings for element L1230812310 - Limit" ;
+		<CurrentLimit.value> "900.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:d2c78bd1-5ae7-4fb7-b1f5-93e318727ac5> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:68cd26b8-d512-4104-a1d1-b2e8f9376ecc> .
+
+	<urn:uuid:ba061ff8-d0c0-4e3f-bb67-32261e973374> rdf:type <OperationalLimitSet> ;
+		<IdentifiedObject.name> "Limits at Port 2" ;
+		<IdentifiedObject.description> "Limit-Ratings for branch L1230812310 at Port 2" ;
+		<OperationalLimitSet.Terminal> <urn:uuid:e22768d9-7ccf-44a5-b364-d13afe6a5d01> .
+
+	<urn:uuid:3ecba241-5810-4e1c-aa29-bfccdecb0880> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "L1230812310 - CL-0" ;
+		entsoe:IdentifiedObject.shortName "CL-0" ;
+		<IdentifiedObject.description> "Ratings for element L1230812310 - Limit" ;
+		<CurrentLimit.value> "1300.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:ba061ff8-d0c0-4e3f-bb67-32261e973374> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:5e5c2d3c-66e4-455b-8ea8-c18cfcbe3ab2> .
+
+	<urn:uuid:7324aae2-fe99-43bc-a2e9-6060412f048a> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "L1230812310 - CL-1" ;
+		entsoe:IdentifiedObject.shortName "CL-1" ;
+		<IdentifiedObject.description> "Ratings for element L1230812310 - Limit" ;
+		<CurrentLimit.value> "1500.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:ba061ff8-d0c0-4e3f-bb67-32261e973374> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:f02ae32e-7530-4c43-9d5a-23750ccf9079> .
+
+	<urn:uuid:96701b80-9c5d-4ade-8dd3-de52e903396a> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "L1230812310 - CL-2" ;
+		entsoe:IdentifiedObject.shortName "CL-2" ;
+		<IdentifiedObject.description> "Ratings for element L1230812310 - Limit" ;
+		<CurrentLimit.value> "1000.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:ba061ff8-d0c0-4e3f-bb67-32261e973374> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:632b18c8-702d-4e45-ae4d-e294453b2e3e> .
+
+	<urn:uuid:96701b80-9c5d-4ade-8dd3-de52e903396a1> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "90" ;
+		entsoe:IdentifiedObject.shortName "CL-2" ;
+		<IdentifiedObject.description> "Ratings for element L1230812310 - Limit" ;
+		<CurrentLimit.value> "900.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:ba061ff8-d0c0-4e3f-bb67-32261e973374> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:68cd26b8-d512-4104-a1d1-b2e8f9376ecc> .
+
+	<urn:uuid:28c58ea6-954e-4cd8-8b64-7163343262e3> rdf:type <Line> ;
+		<IdentifiedObject.name> "container of L1230812310" ;
+		<Line.Region> <urn:uuid:c1d5bfe48f8011e08e4d00247eb1f55e> .
+
+	<urn:uuid:d4831248-07f3-4d9a-a06b-d39461cd16a2> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:632b18c8-702d-4e45-ae4d-e294453b2e3e> .
+
+	<urn:uuid:d4831248-07f3-4d9a-a06b-d39461cd16a21> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "90" ;
+		entsoe:IdentifiedObject.shortName "CL-0" ;
+		<IdentifiedObject.description> "Ratings for element NL-Line_5 - Limit" ;
+		<CurrentLimit.value> "1688.400000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:a2c3d48f-d768-4e1e-8841-6e9c4913f11f> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:68cd26b8-d512-4104-a1d1-b2e8f9376ecc> .
+
+	<urn:uuid:b50d912a-8ce8-4962-a21b-f2d91dcc430e> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:632b18c8-702d-4e45-ae4d-e294453b2e3e> .
+
+	<urn:uuid:b50d912a-8ce8-4962-a21b-f2d91dcc430e1> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "90" ;
+		entsoe:IdentifiedObject.shortName "CL-1" ;
+		<IdentifiedObject.description> "Ratings for element NL-Line_5 - Limit" ;
+		<CurrentLimit.value> "1753.200000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:a2c3d48f-d768-4e1e-8841-6e9c4913f11f> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:68cd26b8-d512-4104-a1d1-b2e8f9376ecc> .
+
+	<urn:uuid:a4b97f0b-39b8-452d-b51c-fd3b25fa1d9b> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:632b18c8-702d-4e45-ae4d-e294453b2e3e> .
+
+	<urn:uuid:353ea6c9-8e25-4217-9ce1-01efa628ce59> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL-Line_5 - CL-3" ;
+		entsoe:IdentifiedObject.shortName "CL-3" ;
+		<IdentifiedObject.description> "Ratings for element NL-Line_5 - Limit" ;
+		<CurrentLimit.value> "1948.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:a2c3d48f-d768-4e1e-8841-6e9c4913f11f> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:f02ae32e-7530-4c43-9d5a-23750ccf9079> .
+
+	<urn:uuid:752d8c91-c3ae-47c2-8ab6-adb14a888396> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL-Line_5 - CL-4" ;
+		entsoe:IdentifiedObject.shortName "CL-4" ;
+		<IdentifiedObject.description> "Ratings for element NL-Line_5 - Limit" ;
+		<CurrentLimit.value> "1876.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:a2c3d48f-d768-4e1e-8841-6e9c4913f11f> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:5e5c2d3c-66e4-455b-8ea8-c18cfcbe3ab2> .
+
+	<urn:uuid:d3c7e111-afa0-4cc2-99d0-8c75e3d6fb91> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:632b18c8-702d-4e45-ae4d-e294453b2e3e> .
+
+	<urn:uuid:d3c7e111-afa0-4cc2-99d0-8c75e3d6fb911> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "90" ;
+		entsoe:IdentifiedObject.shortName "CL-0" ;
+		<IdentifiedObject.description> "Ratings for element NL-Line_5 - Limit" ;
+		<CurrentLimit.value> "1688.400000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:b4d8f5e2-7b7a-45eb-b65a-252843d6acf4> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:68cd26b8-d512-4104-a1d1-b2e8f9376ecc> .
+
+	<urn:uuid:c43551e9-eeee-415a-acf1-570fab88b426> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:632b18c8-702d-4e45-ae4d-e294453b2e3e> .
+
+	<urn:uuid:c43551e9-eeee-415a-acf1-570fab88b4261> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "90" ;
+		entsoe:IdentifiedObject.shortName "CL-1" ;
+		<IdentifiedObject.description> "Ratings for element NL-Line_5 - Limit" ;
+		<CurrentLimit.value> "1753.200000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:b4d8f5e2-7b7a-45eb-b65a-252843d6acf4> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:68cd26b8-d512-4104-a1d1-b2e8f9376ecc> .
+
+	<urn:uuid:db8675aa-6a3d-47a8-b864-a3e474c5c885> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:632b18c8-702d-4e45-ae4d-e294453b2e3e> .
+
+	<urn:uuid:34a95b00-7ca0-4697-b3a9-6945c60536f8> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL-Line_5 - CL-3" ;
+		entsoe:IdentifiedObject.shortName "CL-3" ;
+		<IdentifiedObject.description> "Ratings for element NL-Line_5 - Limit" ;
+		<CurrentLimit.value> "1948.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:b4d8f5e2-7b7a-45eb-b65a-252843d6acf4> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:f02ae32e-7530-4c43-9d5a-23750ccf9079> .
+
+	<urn:uuid:28c23a09-b7ec-4959-8e36-2c703c422134> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL-Line_5 - CL-4" ;
+		entsoe:IdentifiedObject.shortName "CL-4" ;
+		<IdentifiedObject.description> "Ratings for element NL-Line_5 - Limit" ;
+		<CurrentLimit.value> "1876.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:b4d8f5e2-7b7a-45eb-b65a-252843d6acf4> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:5e5c2d3c-66e4-455b-8ea8-c18cfcbe3ab2> .
+
+	<urn:uuid:fff80a22-3a4b-4c22-94d2-2901e8085df1> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:632b18c8-702d-4e45-ae4d-e294453b2e3e> .
+
+	<urn:uuid:fff80a22-3a4b-4c22-94d2-2901e8085df11> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "90" ;
+		entsoe:IdentifiedObject.shortName "CL-0" ;
+		<IdentifiedObject.description> "Ratings for element NL-Line_4 - Limit" ;
+		<CurrentLimit.value> "1416.600000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:37cc4210-71c0-4328-a86b-df0f65e76ef4> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:68cd26b8-d512-4104-a1d1-b2e8f9376ecc> .
+
+	<urn:uuid:32ba352e-5877-4d42-b7e4-49a23b78297d> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:632b18c8-702d-4e45-ae4d-e294453b2e3e> .
+
+	<urn:uuid:32ba352e-5877-4d42-b7e4-49a23b78297d1> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "90" ;
+		entsoe:IdentifiedObject.shortName "CL-1" ;
+		<IdentifiedObject.description> "Ratings for element NL-Line_4 - Limit" ;
+		<CurrentLimit.value> "1534.500000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:37cc4210-71c0-4328-a86b-df0f65e76ef4> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:68cd26b8-d512-4104-a1d1-b2e8f9376ecc> .
+
+	<urn:uuid:b4659169-38a4-494f-b3e2-aa83dc9a6670> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:632b18c8-702d-4e45-ae4d-e294453b2e3e> .
+
+	<urn:uuid:31f44cd5-a6ad-4be3-a5ac-0ff5aed1473e> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL-Line_4 - CL-3" ;
+		entsoe:IdentifiedObject.shortName "CL-3" ;
+		<IdentifiedObject.description> "Ratings for element NL-Line_4 - Limit" ;
+		<CurrentLimit.value> "1705.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:37cc4210-71c0-4328-a86b-df0f65e76ef4> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:f02ae32e-7530-4c43-9d5a-23750ccf9079> .
+
+	<urn:uuid:f572f5bf-a87c-437c-abde-b21021489b40> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL-Line_4 - CL-4" ;
+		entsoe:IdentifiedObject.shortName "CL-4" ;
+		<IdentifiedObject.description> "Ratings for element NL-Line_4 - Limit" ;
+		<CurrentLimit.value> "1574.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:37cc4210-71c0-4328-a86b-df0f65e76ef4> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:5e5c2d3c-66e4-455b-8ea8-c18cfcbe3ab2> .
+
+	<urn:uuid:4224b5aa-ef0b-4f31-b2a5-002c0c696721> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:632b18c8-702d-4e45-ae4d-e294453b2e3e> .
+
+	<urn:uuid:4224b5aa-ef0b-4f31-b2a5-002c0c6967211> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "90" ;
+		entsoe:IdentifiedObject.shortName "CL-0" ;
+		<IdentifiedObject.description> "Ratings for element NL-Line_4 - Limit" ;
+		<CurrentLimit.value> "1416.600000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:03943678-b63e-44d8-bc7d-9461da496268> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:68cd26b8-d512-4104-a1d1-b2e8f9376ecc> .
+
+	<urn:uuid:d6da4ddd-944f-48ab-bdb2-651883dc9dea> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:632b18c8-702d-4e45-ae4d-e294453b2e3e> .
+
+	<urn:uuid:d6da4ddd-944f-48ab-bdb2-651883dc9dea1> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "90" ;
+		entsoe:IdentifiedObject.shortName "CL-1" ;
+		<IdentifiedObject.description> "Ratings for element NL-Line_4 - Limit" ;
+		<CurrentLimit.value> "1534.500000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:03943678-b63e-44d8-bc7d-9461da496268> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:68cd26b8-d512-4104-a1d1-b2e8f9376ecc> .
+
+	<urn:uuid:0388b680-3feb-45a2-bd56-5a620472107b> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:632b18c8-702d-4e45-ae4d-e294453b2e3e> .
+
+	<urn:uuid:d3defc5e-c223-47c8-81e6-5aa1e78f089e> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL-Line_4 - CL-3" ;
+		entsoe:IdentifiedObject.shortName "CL-3" ;
+		<IdentifiedObject.description> "Ratings for element NL-Line_4 - Limit" ;
+		<CurrentLimit.value> "1705.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:03943678-b63e-44d8-bc7d-9461da496268> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:f02ae32e-7530-4c43-9d5a-23750ccf9079> .
+
+	<urn:uuid:6bffaf3f-fbc0-4cad-80e2-4dcf0d715441> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL-Line_4 - CL-4" ;
+		entsoe:IdentifiedObject.shortName "CL-4" ;
+		<IdentifiedObject.description> "Ratings for element NL-Line_4 - Limit" ;
+		<CurrentLimit.value> "1574.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:03943678-b63e-44d8-bc7d-9461da496268> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:5e5c2d3c-66e4-455b-8ea8-c18cfcbe3ab2> .
+
+	<urn:uuid:3341e4e1-b1f0-4832-854f-4254ddb7459b> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:632b18c8-702d-4e45-ae4d-e294453b2e3e> .
+
+	<urn:uuid:3341e4e1-b1f0-4832-854f-4254ddb7459b1> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "90" ;
+		entsoe:IdentifiedObject.shortName "CL-0" ;
+		<IdentifiedObject.description> "Ratings for element NL-Line_2 - Limit" ;
+		<CurrentLimit.value> "1169.100000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:13ee714f-6df4-4039-8519-5cf4e84ab20d> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:68cd26b8-d512-4104-a1d1-b2e8f9376ecc> .
+
+	<urn:uuid:eaa17d90-1494-42b8-803c-0a6692c493a0> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:632b18c8-702d-4e45-ae4d-e294453b2e3e> .
+
+	<urn:uuid:eaa17d90-1494-42b8-803c-0a6692c493a01> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "90" ;
+		entsoe:IdentifiedObject.shortName "CL-1" ;
+		<IdentifiedObject.description> "Ratings for element NL-Line_2 - Limit" ;
+		<CurrentLimit.value> "1233.900000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:13ee714f-6df4-4039-8519-5cf4e84ab20d> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:68cd26b8-d512-4104-a1d1-b2e8f9376ecc> .
+
+	<urn:uuid:1cd93631-5573-48db-8444-0e85a91aa6f1> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:632b18c8-702d-4e45-ae4d-e294453b2e3e> .
+
+	<urn:uuid:4a1ef614-0dcf-478c-8eb0-84805b800bdb> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL-Line_2 - CL-3" ;
+		entsoe:IdentifiedObject.shortName "CL-3" ;
+		<IdentifiedObject.description> "Ratings for element NL-Line_2 - Limit" ;
+		<CurrentLimit.value> "1371.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:13ee714f-6df4-4039-8519-5cf4e84ab20d> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:f02ae32e-7530-4c43-9d5a-23750ccf9079> .
+
+	<urn:uuid:4bd8fe51-2bfe-42b5-b1a6-54fce5471502> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL-Line_2 - CL-4" ;
+		entsoe:IdentifiedObject.shortName "CL-4" ;
+		<IdentifiedObject.description> "Ratings for element NL-Line_2 - Limit" ;
+		<CurrentLimit.value> "1299.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:13ee714f-6df4-4039-8519-5cf4e84ab20d> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:5e5c2d3c-66e4-455b-8ea8-c18cfcbe3ab2> .
+
+	<urn:uuid:b5172307-8c71-4c82-92ec-b05592694ab1> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:632b18c8-702d-4e45-ae4d-e294453b2e3e> .
+
+	<urn:uuid:b5172307-8c71-4c82-92ec-b05592694ab11> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "90" ;
+		entsoe:IdentifiedObject.shortName "CL-0" ;
+		<IdentifiedObject.description> "Ratings for element NL-Line_2 - Limit" ;
+		<CurrentLimit.value> "1169.100000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:7cf4108d-d355-48f5-8556-d42c37a8e2c8> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:68cd26b8-d512-4104-a1d1-b2e8f9376ecc> .
+
+	<urn:uuid:467f1c8f-fa42-45d5-88c1-9b8fea6f1cab> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:632b18c8-702d-4e45-ae4d-e294453b2e3e> .
+
+	<urn:uuid:467f1c8f-fa42-45d5-88c1-9b8fea6f1cab1> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "90" ;
+		entsoe:IdentifiedObject.shortName "CL-1" ;
+		<IdentifiedObject.description> "Ratings for element NL-Line_2 - Limit" ;
+		<CurrentLimit.value> "1233.900000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:7cf4108d-d355-48f5-8556-d42c37a8e2c8> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:68cd26b8-d512-4104-a1d1-b2e8f9376ecc> .
+
+	<urn:uuid:d73f50e0-00db-4f54-a087-b0d2204f229a> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:632b18c8-702d-4e45-ae4d-e294453b2e3e> .
+
+	<urn:uuid:e0559671-6080-496d-a8af-4d779eb74f26> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL-Line_2 - CL-3" ;
+		entsoe:IdentifiedObject.shortName "CL-3" ;
+		<IdentifiedObject.description> "Ratings for element NL-Line_2 - Limit" ;
+		<CurrentLimit.value> "1371.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:7cf4108d-d355-48f5-8556-d42c37a8e2c8> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:f02ae32e-7530-4c43-9d5a-23750ccf9079> .
+
+	<urn:uuid:7abb1d1c-738b-4c6a-b817-d27ac548713c> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL-Line_2 - CL-4" ;
+		entsoe:IdentifiedObject.shortName "CL-4" ;
+		<IdentifiedObject.description> "Ratings for element NL-Line_2 - Limit" ;
+		<CurrentLimit.value> "1299.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:7cf4108d-d355-48f5-8556-d42c37a8e2c8> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:5e5c2d3c-66e4-455b-8ea8-c18cfcbe3ab2> .
+
+	<urn:uuid:2ddd3dac-4c0e-4355-b1eb-2e4bb45a2526> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:632b18c8-702d-4e45-ae4d-e294453b2e3e> .
+
+	<urn:uuid:2ddd3dac-4c0e-4355-b1eb-2e4bb45a25261> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "90" ;
+		entsoe:IdentifiedObject.shortName "CL-0" ;
+		<IdentifiedObject.description> "Ratings for element NL-Line_1 - Limit" ;
+		<CurrentLimit.value> "1298.700000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:79a1fb3a-a66a-468c-8c78-c25714c73eba> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:68cd26b8-d512-4104-a1d1-b2e8f9376ecc> .
+
+	<urn:uuid:3b9b581e-dd06-4be8-81b8-9abc72450c89> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:632b18c8-702d-4e45-ae4d-e294453b2e3e> .
+
+	<urn:uuid:3b9b581e-dd06-4be8-81b8-9abc72450c891> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "90" ;
+		entsoe:IdentifiedObject.shortName "CL-1" ;
+		<IdentifiedObject.description> "Ratings for element NL-Line_1 - Limit" ;
+		<CurrentLimit.value> "1363.500000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:79a1fb3a-a66a-468c-8c78-c25714c73eba> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:68cd26b8-d512-4104-a1d1-b2e8f9376ecc> .
+
+	<urn:uuid:45b85c9e-0788-4cbb-b71b-dc1d5de04e51> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:632b18c8-702d-4e45-ae4d-e294453b2e3e> .
+
+	<urn:uuid:9f2bb8a6-c16e-4fc6-999d-903986f52fc3> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL-Line_1 - CL-3" ;
+		entsoe:IdentifiedObject.shortName "CL-3" ;
+		<IdentifiedObject.description> "Ratings for element NL-Line_1 - Limit" ;
+		<CurrentLimit.value> "1515.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:79a1fb3a-a66a-468c-8c78-c25714c73eba> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:f02ae32e-7530-4c43-9d5a-23750ccf9079> .
+
+	<urn:uuid:0d2f15d9-2b8e-4bf8-a55f-1d3e52cc029e> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL-Line_1 - CL-4" ;
+		entsoe:IdentifiedObject.shortName "CL-4" ;
+		<IdentifiedObject.description> "Ratings for element NL-Line_1 - Limit" ;
+		<CurrentLimit.value> "1443.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:79a1fb3a-a66a-468c-8c78-c25714c73eba> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:5e5c2d3c-66e4-455b-8ea8-c18cfcbe3ab2> .
+
+	<urn:uuid:802dd8b7-d55c-46bf-8a22-895e251fb8db> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:632b18c8-702d-4e45-ae4d-e294453b2e3e> .
+
+	<urn:uuid:802dd8b7-d55c-46bf-8a22-895e251fb8db1> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "90" ;
+		entsoe:IdentifiedObject.shortName "CL-0" ;
+		<IdentifiedObject.description> "Ratings for element NL-Line_1 - Limit" ;
+		<CurrentLimit.value> "1298.700000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:125eeb58-1c45-41b2-a981-7d5993b40cda> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:68cd26b8-d512-4104-a1d1-b2e8f9376ecc> .
+
+	<urn:uuid:5baace86-1d76-428b-9045-0d6b50024316> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:632b18c8-702d-4e45-ae4d-e294453b2e3e> .
+
+	<urn:uuid:5baace86-1d76-428b-9045-0d6b500243161> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "90" ;
+		entsoe:IdentifiedObject.shortName "CL-1" ;
+		<IdentifiedObject.description> "Ratings for element NL-Line_1 - Limit" ;
+		<CurrentLimit.value> "1363.500000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:125eeb58-1c45-41b2-a981-7d5993b40cda> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:68cd26b8-d512-4104-a1d1-b2e8f9376ecc> .
+
+	<urn:uuid:a228917a-44c9-4124-b7db-ea6408b3c5bb> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:632b18c8-702d-4e45-ae4d-e294453b2e3e> .
+
+	<urn:uuid:fdc87350-7855-49da-8291-f2b64c055fc9> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL-Line_1 - CL-3" ;
+		entsoe:IdentifiedObject.shortName "CL-3" ;
+		<IdentifiedObject.description> "Ratings for element NL-Line_1 - Limit" ;
+		<CurrentLimit.value> "1515.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:125eeb58-1c45-41b2-a981-7d5993b40cda> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:f02ae32e-7530-4c43-9d5a-23750ccf9079> .
+
+	<urn:uuid:eddb0332-32d1-4ec6-84d4-a1ee27b34d92> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL-Line_1 - CL-4" ;
+		entsoe:IdentifiedObject.shortName "CL-4" ;
+		<IdentifiedObject.description> "Ratings for element NL-Line_1 - Limit" ;
+		<CurrentLimit.value> "1443.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:125eeb58-1c45-41b2-a981-7d5993b40cda> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:5e5c2d3c-66e4-455b-8ea8-c18cfcbe3ab2> .
+
+	<urn:uuid:5e7f87db-9758-4098-b19e-4f365915721f> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:632b18c8-702d-4e45-ae4d-e294453b2e3e> .
+
+	<urn:uuid:5e7f87db-9758-4098-b19e-4f365915721f1> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "90" ;
+		entsoe:IdentifiedObject.shortName "CL-0" ;
+		<IdentifiedObject.description> "Ratings for element NL-TR2_1 - Limit" ;
+		<CurrentLimit.value> "433.710000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:83f719ad-2083-44ea-9ebc-9f456c114bdb> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:68cd26b8-d512-4104-a1d1-b2e8f9376ecc> .
+
+	<urn:uuid:553477f0-ed39-499b-a07d-3c602bd8a13d> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:632b18c8-702d-4e45-ae4d-e294453b2e3e> .
+
+	<urn:uuid:553477f0-ed39-499b-a07d-3c602bd8a13d1> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "90" ;
+		entsoe:IdentifiedObject.shortName "CL-1" ;
+		<IdentifiedObject.description> "Ratings for element NL-TR2_1 - Limit" ;
+		<CurrentLimit.value> "442.710000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:83f719ad-2083-44ea-9ebc-9f456c114bdb> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:68cd26b8-d512-4104-a1d1-b2e8f9376ecc> .
+
+	<urn:uuid:150183f1-3144-4d18-b5ca-328efdead257> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:632b18c8-702d-4e45-ae4d-e294453b2e3e> .
+
+	<urn:uuid:e3fac0eb-8f43-48bf-b0c1-2a895e02b1f4> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL-TR2_1 - CL-3" ;
+		entsoe:IdentifiedObject.shortName "CL-3" ;
+		<IdentifiedObject.description> "Ratings for element NL-TR2_1 - Limit" ;
+		<CurrentLimit.value> "491.900000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:83f719ad-2083-44ea-9ebc-9f456c114bdb> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:f02ae32e-7530-4c43-9d5a-23750ccf9079> .
+
+	<urn:uuid:768e3806-c8d3-4b6e-9ac2-77a9d0414509> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL-TR2_1 - CL-4" ;
+		entsoe:IdentifiedObject.shortName "CL-4" ;
+		<IdentifiedObject.description> "Ratings for element NL-TR2_1 - Limit" ;
+		<CurrentLimit.value> "481.900000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:83f719ad-2083-44ea-9ebc-9f456c114bdb> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:5e5c2d3c-66e4-455b-8ea8-c18cfcbe3ab2> .
+
+	<urn:uuid:bd6482bb-5e21-46df-a3c3-0e4a64d49f89> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:632b18c8-702d-4e45-ae4d-e294453b2e3e> .
+
+	<urn:uuid:bd6482bb-5e21-46df-a3c3-0e4a64d49f891> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "90" ;
+		entsoe:IdentifiedObject.shortName "CL-0" ;
+		<IdentifiedObject.description> "Ratings for element NL-TR2_1 - Limit" ;
+		<CurrentLimit.value> "764.820000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:d47a27cc-9fad-40f2-a08c-37e545c268df> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:68cd26b8-d512-4104-a1d1-b2e8f9376ecc> .
+
+	<urn:uuid:8122651e-22ba-4320-9032-c59969020565> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:632b18c8-702d-4e45-ae4d-e294453b2e3e> .
+
+	<urn:uuid:8122651e-22ba-4320-9032-c599690205651> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "90" ;
+		entsoe:IdentifiedObject.shortName "CL-1" ;
+		<IdentifiedObject.description> "Ratings for element NL-TR2_1 - Limit" ;
+		<CurrentLimit.value> "773.820000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:d47a27cc-9fad-40f2-a08c-37e545c268df> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:68cd26b8-d512-4104-a1d1-b2e8f9376ecc> .
+
+	<urn:uuid:89d45390-25dc-49a6-bb08-69b67f27cd39> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:632b18c8-702d-4e45-ae4d-e294453b2e3e> .
+
+	<urn:uuid:2f5b3907-a4dc-4d32-9021-ea45367d4613> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL-TR2_1 - CL-3" ;
+		entsoe:IdentifiedObject.shortName "CL-3" ;
+		<IdentifiedObject.description> "Ratings for element NL-TR2_1 - Limit" ;
+		<CurrentLimit.value> "859.800000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:d47a27cc-9fad-40f2-a08c-37e545c268df> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:f02ae32e-7530-4c43-9d5a-23750ccf9079> .
+
+	<urn:uuid:d0fa3a33-fb96-48f8-80c3-363286d91dbb> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL-TR2_1 - CL-4" ;
+		entsoe:IdentifiedObject.shortName "CL-4" ;
+		<IdentifiedObject.description> "Ratings for element NL-TR2_1 - Limit" ;
+		<CurrentLimit.value> "849.800000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:d47a27cc-9fad-40f2-a08c-37e545c268df> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:5e5c2d3c-66e4-455b-8ea8-c18cfcbe3ab2> .
+
+	<urn:uuid:e2153eed-fb1f-44e2-b116-d045c5e50e3b> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:632b18c8-702d-4e45-ae4d-e294453b2e3e> .
+
+	<urn:uuid:e2153eed-fb1f-44e2-b116-d045c5e50e3b1> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "90" ;
+		entsoe:IdentifiedObject.shortName "CL-0" ;
+		<IdentifiedObject.description> "Ratings for element NL_TR2_2 - Limit" ;
+		<CurrentLimit.value> "3065.940000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:e7c1b1c7-aaeb-470a-9cb5-93a3ec269179> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:68cd26b8-d512-4104-a1d1-b2e8f9376ecc> .
+
+	<urn:uuid:b4f373a0-1d09-4f4f-9f29-f72ff6b4f62f> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:632b18c8-702d-4e45-ae4d-e294453b2e3e> .
+
+	<urn:uuid:b4f373a0-1d09-4f4f-9f29-f72ff6b4f62f1> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "90" ;
+		entsoe:IdentifiedObject.shortName "CL-1" ;
+		<IdentifiedObject.description> "Ratings for element NL_TR2_2 - Limit" ;
+		<CurrentLimit.value> "3155.940000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:e7c1b1c7-aaeb-470a-9cb5-93a3ec269179> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:68cd26b8-d512-4104-a1d1-b2e8f9376ecc> .
+
+	<urn:uuid:fa85553d-9769-45fe-9b79-cecafa01c4ba> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:632b18c8-702d-4e45-ae4d-e294453b2e3e> .
+
+	<urn:uuid:fa40a92e-5de9-4fac-8977-2d95aad8fc8a> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL_TR2_2 - CL-3" ;
+		entsoe:IdentifiedObject.shortName "CL-3" ;
+		<IdentifiedObject.description> "Ratings for element NL_TR2_2 - Limit" ;
+		<CurrentLimit.value> "3506.600000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:e7c1b1c7-aaeb-470a-9cb5-93a3ec269179> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:f02ae32e-7530-4c43-9d5a-23750ccf9079> .
+
+	<urn:uuid:9b1c2b26-e515-4638-8e50-824aa1f8c1cc> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL_TR2_2 - CL-4" ;
+		entsoe:IdentifiedObject.shortName "CL-4" ;
+		<IdentifiedObject.description> "Ratings for element NL_TR2_2 - Limit" ;
+		<CurrentLimit.value> "3406.600000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:e7c1b1c7-aaeb-470a-9cb5-93a3ec269179> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:5e5c2d3c-66e4-455b-8ea8-c18cfcbe3ab2> .
+
+	<urn:uuid:2f71df7b-6118-4973-acea-7f65a563a979> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:632b18c8-702d-4e45-ae4d-e294453b2e3e> .
+
+	<urn:uuid:2f71df7b-6118-4973-acea-7f65a563a9791> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "90" ;
+		entsoe:IdentifiedObject.shortName "CL-0" ;
+		<IdentifiedObject.description> "Ratings for element NL_TR2_2 - Limit" ;
+		<CurrentLimit.value> "42469.200000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:261d13c4-1527-42a5-ad0d-a3b817971166> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:68cd26b8-d512-4104-a1d1-b2e8f9376ecc> .
+
+	<urn:uuid:176ae6ba-d38c-4f7c-8a60-038dc4980a39> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:632b18c8-702d-4e45-ae4d-e294453b2e3e> .
+
+	<urn:uuid:176ae6ba-d38c-4f7c-8a60-038dc4980a391> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "90" ;
+		entsoe:IdentifiedObject.shortName "CL-1" ;
+		<IdentifiedObject.description> "Ratings for element NL_TR2_2 - Limit" ;
+		<CurrentLimit.value> "43369.200000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:261d13c4-1527-42a5-ad0d-a3b817971166> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:68cd26b8-d512-4104-a1d1-b2e8f9376ecc> .
+
+	<urn:uuid:1a886514-5f7d-418a-99b7-02330ed01ca7> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:632b18c8-702d-4e45-ae4d-e294453b2e3e> .
+
+	<urn:uuid:da2f831b-093d-4cd3-bc34-a910dfc7f7b0> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL_TR2_2 - CL-3" ;
+		entsoe:IdentifiedObject.shortName "CL-3" ;
+		<IdentifiedObject.description> "Ratings for element NL_TR2_2 - Limit" ;
+		<CurrentLimit.value> "48188.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:261d13c4-1527-42a5-ad0d-a3b817971166> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:f02ae32e-7530-4c43-9d5a-23750ccf9079> .
+
+	<urn:uuid:7065c296-bf63-4cfc-bf69-cd236deb53f1> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL_TR2_2 - CL-4" ;
+		entsoe:IdentifiedObject.shortName "CL-4" ;
+		<IdentifiedObject.description> "Ratings for element NL_TR2_2 - Limit" ;
+		<CurrentLimit.value> "47188.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:261d13c4-1527-42a5-ad0d-a3b817971166> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:5e5c2d3c-66e4-455b-8ea8-c18cfcbe3ab2> .
+
+	<urn:uuid:e2afb3a0-94ea-4f8f-b717-7b91c603d3dc> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:632b18c8-702d-4e45-ae4d-e294453b2e3e> .
+
+	<urn:uuid:e2afb3a0-94ea-4f8f-b717-7b91c603d3dc1> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "90" ;
+		entsoe:IdentifiedObject.shortName "CL-0" ;
+		<IdentifiedObject.description> "Ratings for element NL_TR2_3 - Limit" ;
+		<CurrentLimit.value> "3155.940000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:fd472104-d68c-4536-ba4a-5fd9349c0a65> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:68cd26b8-d512-4104-a1d1-b2e8f9376ecc> .
+
+	<urn:uuid:d4bc2ee3-43b8-46fb-9337-d82590af1c8b> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:632b18c8-702d-4e45-ae4d-e294453b2e3e> .
+
+	<urn:uuid:d4bc2ee3-43b8-46fb-9337-d82590af1c8b1> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "90" ;
+		entsoe:IdentifiedObject.shortName "CL-1" ;
+		<IdentifiedObject.description> "Ratings for element NL_TR2_3 - Limit" ;
+		<CurrentLimit.value> "3335.940000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:fd472104-d68c-4536-ba4a-5fd9349c0a65> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:68cd26b8-d512-4104-a1d1-b2e8f9376ecc> .
+
+	<urn:uuid:0c95b506-05a2-40d5-9f82-b9bf1e680a8d> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:632b18c8-702d-4e45-ae4d-e294453b2e3e> .
+
+	<urn:uuid:f23e3627-cae0-406b-9693-a834eca242be> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL_TR2_3 - CL-3" ;
+		entsoe:IdentifiedObject.shortName "CL-3" ;
+		<IdentifiedObject.description> "Ratings for element NL_TR2_3 - Limit" ;
+		<CurrentLimit.value> "3706.600000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:fd472104-d68c-4536-ba4a-5fd9349c0a65> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:f02ae32e-7530-4c43-9d5a-23750ccf9079> .
+
+	<urn:uuid:16fbe0be-bbe1-4408-a6b0-cce7699ba7cb> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL_TR2_3 - CL-4" ;
+		entsoe:IdentifiedObject.shortName "CL-4" ;
+		<IdentifiedObject.description> "Ratings for element NL_TR2_3 - Limit" ;
+		<CurrentLimit.value> "3506.600000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:fd472104-d68c-4536-ba4a-5fd9349c0a65> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:5e5c2d3c-66e4-455b-8ea8-c18cfcbe3ab2> .
+
+	<urn:uuid:716e45d4-4092-4a1b-ba5f-c78e1da4f363> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:632b18c8-702d-4e45-ae4d-e294453b2e3e> .
+
+	<urn:uuid:716e45d4-4092-4a1b-ba5f-c78e1da4f3631> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "90" ;
+		entsoe:IdentifiedObject.shortName "CL-0" ;
+		<IdentifiedObject.description> "Ratings for element NL_TR2_3 - Limit" ;
+		<CurrentLimit.value> "42469.200000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:cf3e5341-6736-4b34-b4da-e4af2073765b> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:68cd26b8-d512-4104-a1d1-b2e8f9376ecc> .
+
+	<urn:uuid:23b11495-8c2c-47cc-a561-e215196afa2b> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:632b18c8-702d-4e45-ae4d-e294453b2e3e> .
+
+	<urn:uuid:23b11495-8c2c-47cc-a561-e215196afa2b1> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "90" ;
+		entsoe:IdentifiedObject.shortName "CL-1" ;
+		<IdentifiedObject.description> "Ratings for element NL_TR2_3 - Limit" ;
+		<CurrentLimit.value> "44269.200000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:cf3e5341-6736-4b34-b4da-e4af2073765b> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:68cd26b8-d512-4104-a1d1-b2e8f9376ecc> .
+
+	<urn:uuid:6a927421-36cd-487a-b6b7-61dd45470447> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:632b18c8-702d-4e45-ae4d-e294453b2e3e> .
+
+	<urn:uuid:9218de73-31b2-45f8-8a42-e985de17b80d> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL_TR2_3 - CL-3" ;
+		entsoe:IdentifiedObject.shortName "CL-3" ;
+		<IdentifiedObject.description> "Ratings for element NL_TR2_3 - Limit" ;
+		<CurrentLimit.value> "49188.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:cf3e5341-6736-4b34-b4da-e4af2073765b> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:f02ae32e-7530-4c43-9d5a-23750ccf9079> .
+
+	<urn:uuid:8c338191-2b7b-49a3-bacc-f92a33911b33> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL_TR2_3 - CL-4" ;
+		entsoe:IdentifiedObject.shortName "CL-4" ;
+		<IdentifiedObject.description> "Ratings for element NL_TR2_3 - Limit" ;
+		<CurrentLimit.value> "47188.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:cf3e5341-6736-4b34-b4da-e4af2073765b> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:5e5c2d3c-66e4-455b-8ea8-c18cfcbe3ab2> .
+}

@@ -1,0 +1,36 @@
+BASE <http://iec.ch/TC57/2013/CIM-schema-cim16#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX cim: <http://iec.ch/TC57/2013/CIM-schema-cim16#>
+PREFIX entsoe: <http://entsoe.eu/CIM/SchemaExtension/3/1#>
+
+WITH <urn:uuid:77b55f87-fc1e-4046-9599-6c6b4f991a86>
+DELETE {
+	<urn:uuid:ca80ee09-3bed-4884-bc28-6dc89d067289> rdf:type <GeneratingUnit> ;
+		<IdentifiedObject.name> "Gen-12910" ;
+		<IdentifiedObject.description> "Machine" ;
+		<GeneratingUnit.initialP> "140.000000" ;
+		<GeneratingUnit.nominalP> "225.000000" ;
+		<GeneratingUnit.maxOperatingP> "250.000000" ;
+		<GeneratingUnit.minOperatingP> "130.000000" ;
+		<GeneratingUnit.genControlSource> "offAGC" ;
+		<Equipment.aggregate> "false" ;
+		<Equipment.EquipmentContainer> <urn:uuid:c49942d6-8b01-4b01-b5e8-f1180f84906c> .
+}
+INSERT {
+	<urn:uuid:ca80ee09-3bed-4884-bc28-6dc89d067289> rdf:type <ThermalGeneratingUnit> ;
+		<IdentifiedObject.name> "Gen-12910" ;
+		<IdentifiedObject.description> "Machine" ;
+		<GeneratingUnit.initialP> "140.000000" ;
+		<GeneratingUnit.nominalP> "225.000000" ;
+		<GeneratingUnit.maxOperatingP> "250.000000" ;
+		<GeneratingUnit.minOperatingP> "130.000000" ;
+		<GeneratingUnit.genControlSource> "offAGC" ;
+		<Equipment.aggregate> "false" ;
+		<Equipment.EquipmentContainer> <urn:uuid:c49942d6-8b01-4b01-b5e8-f1180f84906c> .
+
+	<urn:uuid:6bb6db5d-4ce3-4f62-a0e1-8d12791449e5> rdf:type <FossilFuel> ;
+		<IdentifiedObject.name> "Gen-12910" ;
+		<IdentifiedObject.description> "Machine" ;
+		<FossilFuel.fossilFuelType> "oil" ;
+		<FossilFuel.ThermalGeneratingUnit> <urn:uuid:ca80ee09-3bed-4884-bc28-6dc89d067289> .
+}

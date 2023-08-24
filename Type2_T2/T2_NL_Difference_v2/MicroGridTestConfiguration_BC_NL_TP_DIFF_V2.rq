@@ -1,0 +1,26 @@
+BASE <http://iec.ch/TC57/2013/CIM-schema-cim16#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX cim: <http://iec.ch/TC57/2013/CIM-schema-cim16#>
+PREFIX entsoe: <http://entsoe.eu/CIM/SchemaExtension/3/1#>
+
+WITH <urn:uuid:5d32d257-1646-4906-a1f6-4d7ce3f91569>
+DELETE {
+	<urn:uuid:5dfee914-a4fd-4bde-a5b4-c4caa6378d10> rdf:type <Terminal> ;
+		<Terminal.TopologicalNode> <urn:uuid:795a117d-7caf-4fc2-a8d9-dc8f4cf2344a> .
+
+	<urn:uuid:6aecb9ba-5835-4b70-89bc-96d687e45779> rdf:type <Terminal> ;
+		<Terminal.TopologicalNode> <urn:uuid:1fa19c281c8f4e1eaad9e1cab70f923e> .
+
+	<urn:uuid:26e50b4b-9a19-420d-98ce-bc4f11971cd7> rdf:type <Terminal> ;
+		<Terminal.TopologicalNode> <urn:uuid:1fa19c281c8f4e1eaad9e1cab70f923e> .
+}
+INSERT {
+	<urn:uuid:b7a26740-334e-46d4-a98d-303fa6fad2d3> rdf:type <Terminal> ;
+		<Terminal.TopologicalNode> <urn:uuid:795a117d-7caf-4fc2-a8d9-dc8f4cf2344a> .
+
+	<urn:uuid:e22768d9-7ccf-44a5-b364-d13afe6a5d01> rdf:type <Terminal> ;
+		<Terminal.TopologicalNode> <urn:uuid:1098b1c9-dc85-40ce-b65c-39ae02a3afaa> .
+
+	<urn:uuid:6abb6f6b-35af-4754-aac0-ccbe6a4d8c90> rdf:type <Terminal> ;
+		<Terminal.TopologicalNode> <urn:uuid:1098b1c9-dc85-40ce-b65c-39ae02a3afaa> .
+}

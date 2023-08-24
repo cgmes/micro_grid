@@ -1,0 +1,1602 @@
+BASE <http://iec.ch/TC57/2013/CIM-schema-cim16#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX cim: <http://iec.ch/TC57/2013/CIM-schema-cim16#>
+PREFIX entsoe: <http://entsoe.eu/CIM/SchemaExtension/3/1#>
+
+WITH <urn:uuid:77b55f87-fc1e-4046-9599-6c6b4f991a86>
+DELETE {
+	<urn:uuid:dd9c5b59-0728-45ca-9930-0dff2a9fb390> rdf:type <OperationalLimitType> ;
+		<IdentifiedObject.name> "TC" ;
+		entsoe:IdentifiedObject.shortName "tc" ;
+		<OperationalLimitType.direction> "absoluteValue" ;
+		entsoe:OperationalLimitType.limitType "tc" .
+
+	<urn:uuid:68cd26b8-d512-4104-a1d1-b2e8f9376ecc> rdf:type <OperationalLimitType> ;
+		<IdentifiedObject.name> "PATLT" ;
+		entsoe:IdentifiedObject.shortName "patlt" ;
+		<OperationalLimitType.direction> "absoluteValue" ;
+		entsoe:OperationalLimitType.limitType "patlt" .
+
+	<urn:uuid:a1cc9747-6819-429e-bd5f-23ffdb1d7376> rdf:type <OperationalLimitType> ;
+		<IdentifiedObject.name> "TCT" ;
+		entsoe:IdentifiedObject.shortName "tct" ;
+		<OperationalLimitType.direction> "absoluteValue" ;
+		entsoe:OperationalLimitType.limitType "tct" .
+
+	<urn:uuid:a4b97f0b-39b8-452d-b51c-fd3b25fa1d9b1> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:68cd26b8-d512-4104-a1d1-b2e8f9376ecc> .
+
+	<urn:uuid:db8675aa-6a3d-47a8-b864-a3e474c5c8851> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:68cd26b8-d512-4104-a1d1-b2e8f9376ecc> .
+
+	<urn:uuid:b4659169-38a4-494f-b3e2-aa83dc9a66701> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:68cd26b8-d512-4104-a1d1-b2e8f9376ecc> .
+
+	<urn:uuid:0388b680-3feb-45a2-bd56-5a620472107b1> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:68cd26b8-d512-4104-a1d1-b2e8f9376ecc> .
+
+	<urn:uuid:317c3033-0409-4f57-9209-4baae4b5e1651> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:68cd26b8-d512-4104-a1d1-b2e8f9376ecc> .
+
+	<urn:uuid:e29f4055-0267-4d9e-a889-8afc2326e870> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:dd9c5b59-0728-45ca-9930-0dff2a9fb390> .
+
+	<urn:uuid:e29f4055-0267-4d9e-a889-8afc2326e8702> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "90" ;
+		entsoe:IdentifiedObject.shortName "CL-3" ;
+		<IdentifiedObject.description> "Ratings for element NL-Line_3 - Limit" ;
+		<CurrentLimit.value> "1800.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:9a03e8ee-e832-43c8-b38e-0d43f8ef7355> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:a1cc9747-6819-429e-bd5f-23ffdb1d7376> .
+
+	<urn:uuid:62be08ea-2a9e-4284-9642-2947cb2c5f1b1> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:68cd26b8-d512-4104-a1d1-b2e8f9376ecc> .
+
+	<urn:uuid:22274f03-885c-4ea8-931d-862beec6edd1> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:dd9c5b59-0728-45ca-9930-0dff2a9fb390> .
+
+	<urn:uuid:22274f03-885c-4ea8-931d-862beec6edd12> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "90" ;
+		entsoe:IdentifiedObject.shortName "CL-3" ;
+		<IdentifiedObject.description> "Ratings for element NL-Line_3 - Limit" ;
+		<CurrentLimit.value> "1800.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:14e9e317-a168-44a2-82ef-7c76190108a2> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:a1cc9747-6819-429e-bd5f-23ffdb1d7376> .
+
+	<urn:uuid:1cd93631-5573-48db-8444-0e85a91aa6f11> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:68cd26b8-d512-4104-a1d1-b2e8f9376ecc> .
+
+	<urn:uuid:d73f50e0-00db-4f54-a087-b0d2204f229a1> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:68cd26b8-d512-4104-a1d1-b2e8f9376ecc> .
+
+	<urn:uuid:45b85c9e-0788-4cbb-b71b-dc1d5de04e511> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:68cd26b8-d512-4104-a1d1-b2e8f9376ecc> .
+
+	<urn:uuid:a228917a-44c9-4124-b7db-ea6408b3c5bb1> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:68cd26b8-d512-4104-a1d1-b2e8f9376ecc> .
+
+	<urn:uuid:e8a7eaec-51d6-4571-b3d9-c36d52073c33> rdf:type rdf:Description ;
+		entsoe:IdentifiedObject.shortName "NL-T_1" .
+
+	<urn:uuid:e3e0c496-5837-4f0f-a596-cc421940f73f> rdf:type rdf:Description ;
+		entsoe:IdentifiedObject.shortName "NL-T_1" .
+
+	<urn:uuid:c1d5c1448f8011e08e4d00247eb1f55e> rdf:type <PowerTransformerEnd> ;
+		<IdentifiedObject.name> "NL-TR2_1" ;
+		entsoe:IdentifiedObject.shortName "NL-T_1" ;
+		<PowerTransformerEnd.r> "1.350000" ;
+		<PowerTransformerEnd.x> "27.967436" ;
+		<PowerTransformerEnd.b> "-0.0000044445" ;
+		<PowerTransformerEnd.g> "0.0000005625" ;
+		<PowerTransformerEnd.r0> "1.350000" ;
+		<PowerTransformerEnd.x0> "27.967436" ;
+		<PowerTransformerEnd.b0> "0.0" ;
+		<PowerTransformerEnd.g0> "0.0" ;
+		<TransformerEnd.rground> "0e+000" ;
+		<TransformerEnd.xground> "0.0" ;
+		<PowerTransformerEnd.ratedS> "320.000000" ;
+		<PowerTransformerEnd.ratedU> "400.000000" ;
+		<TransformerEnd.endNumber> "1" ;
+		<PowerTransformerEnd.phaseAngleClock> "0" ;
+		<TransformerEnd.grounded> "true" ;
+		<PowerTransformerEnd.connectionKind> "Yn" ;
+		<TransformerEnd.BaseVoltage> <urn:uuid:65dd04e792584b3b912374e35dec032e> ;
+		<PowerTransformerEnd.PowerTransformer> <urn:uuid:e8a7eaec-51d6-4571-b3d9-c36d52073c33> ;
+		<TransformerEnd.Terminal> <urn:uuid:e3e0c496-5837-4f0f-a596-cc421940f73f> .
+
+	<urn:uuid:5e7f87db-9758-4098-b19e-4f365915721f> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL-TR2_1 - CL-0" ;
+		entsoe:IdentifiedObject.shortName "CL-0" ;
+		<IdentifiedObject.description> "Ratings for element NL-TR2_1 - Limit" ;
+		<CurrentLimit.value> "481.900000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:83f719ad-2083-44ea-9ebc-9f456c114bdb> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:250e948b-70ae-4139-971b-4f0053425b60> .
+
+	<urn:uuid:553477f0-ed39-499b-a07d-3c602bd8a13d> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL-TR2_1 - CL-1" ;
+		entsoe:IdentifiedObject.shortName "CL-1" ;
+		<IdentifiedObject.description> "Ratings for element NL-TR2_1 - Limit" ;
+		<CurrentLimit.value> "491.900000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:83f719ad-2083-44ea-9ebc-9f456c114bdb> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:18c8d038-31ea-4d92-9e7e-4b8a397f30a5> .
+
+	<urn:uuid:150183f1-3144-4d18-b5ca-328efdead257> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL-TR2_1 - CL-2" ;
+		entsoe:IdentifiedObject.shortName "CL-2" ;
+		<IdentifiedObject.description> "Ratings for element NL-TR2_1 - Limit" ;
+		<CurrentLimit.value> "461.900000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:83f719ad-2083-44ea-9ebc-9f456c114bdb> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:1aee0921-7cbe-481c-9078-daf66ab2a950> .
+
+	<urn:uuid:150183f1-3144-4d18-b5ca-328efdead2571> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "90" ;
+		entsoe:IdentifiedObject.shortName "CL-2" ;
+		<IdentifiedObject.description> "Ratings for element NL-TR2_1 - Limit" ;
+		<CurrentLimit.value> "415.710000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:83f719ad-2083-44ea-9ebc-9f456c114bdb> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:68cd26b8-d512-4104-a1d1-b2e8f9376ecc> .
+
+	<urn:uuid:1aaa0997-7715-4400-9435-ce74a8f67a24> rdf:type <TapChangerControl> ;
+		<IdentifiedObject.name> "NL-TR2_1" ;
+		entsoe:IdentifiedObject.shortName "NL-T_1" ;
+		<RegulatingControl.mode> "voltage" ;
+		<RegulatingControl.Terminal> <urn:uuid:e3e0c496-5837-4f0f-a596-cc421940f73f> .
+
+	<urn:uuid:c1d5c14b8f8011e08e4d00247eb1f55e> rdf:type <RatioTapChanger> ;
+		<IdentifiedObject.name> "NL-TR2_1" ;
+		entsoe:IdentifiedObject.shortName "NL-T_1" ;
+		<TapChanger.neutralU> "400.000000" ;
+		<TapChanger.lowStep> "-20" ;
+		<TapChanger.highStep> "20" ;
+		<TapChanger.neutralStep> "0" ;
+		<TapChanger.normalStep> "-2" ;
+		<RatioTapChanger.stepVoltageIncrement> "0.800000" ;
+		<TapChanger.ltcFlag> "true" ;
+		<TapChanger.TapChangerControl> <urn:uuid:1aaa0997-7715-4400-9435-ce74a8f67a24> ;
+		<RatioTapChanger.tculControlMode> "volt" ;
+		<RatioTapChanger.TransformerEnd> <urn:uuid:c1d5c1448f8011e08e4d00247eb1f55e> .
+
+	<urn:uuid:baa7aef1-afcd-4981-97c0-ccec7b5ad4e0> rdf:type rdf:Description ;
+		entsoe:IdentifiedObject.shortName "NL-T_1" .
+
+	<urn:uuid:c1d5c14d8f8011e08e4d00247eb1f55e> rdf:type <PowerTransformerEnd> ;
+		<IdentifiedObject.name> "NL-TR2_1" ;
+		entsoe:IdentifiedObject.shortName "NL-T_1" ;
+		<PowerTransformerEnd.r> "0e+000" ;
+		<PowerTransformerEnd.x> "0e+000" ;
+		<PowerTransformerEnd.b> "0.0" ;
+		<PowerTransformerEnd.g> "0.0" ;
+		<PowerTransformerEnd.r0> "0e+000" ;
+		<PowerTransformerEnd.x0> "0e+000" ;
+		<PowerTransformerEnd.b0> "0.0" ;
+		<PowerTransformerEnd.g0> "0.0" ;
+		<TransformerEnd.rground> "0e+000" ;
+		<TransformerEnd.xground> "0.0" ;
+		<PowerTransformerEnd.ratedS> "320.000000" ;
+		<PowerTransformerEnd.ratedU> "220.000000" ;
+		<TransformerEnd.endNumber> "2" ;
+		<PowerTransformerEnd.phaseAngleClock> "0" ;
+		<TransformerEnd.grounded> "true" ;
+		<PowerTransformerEnd.connectionKind> "Yn" ;
+		<TransformerEnd.BaseVoltage> <urn:uuid:7891a026ba2c42098556665efd13ba94> ;
+		<PowerTransformerEnd.PowerTransformer> <urn:uuid:e8a7eaec-51d6-4571-b3d9-c36d52073c33> ;
+		<TransformerEnd.Terminal> <urn:uuid:baa7aef1-afcd-4981-97c0-ccec7b5ad4e0> .
+
+	<urn:uuid:bd6482bb-5e21-46df-a3c3-0e4a64d49f89> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL-TR2_1 - CL-0" ;
+		entsoe:IdentifiedObject.shortName "CL-0" ;
+		<IdentifiedObject.description> "Ratings for element NL-TR2_1 - Limit" ;
+		<CurrentLimit.value> "849.800000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:d47a27cc-9fad-40f2-a08c-37e545c268df> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:250e948b-70ae-4139-971b-4f0053425b60> .
+
+	<urn:uuid:8122651e-22ba-4320-9032-c59969020565> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL-TR2_1 - CL-1" ;
+		entsoe:IdentifiedObject.shortName "CL-1" ;
+		<IdentifiedObject.description> "Ratings for element NL-TR2_1 - Limit" ;
+		<CurrentLimit.value> "859.800000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:d47a27cc-9fad-40f2-a08c-37e545c268df> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:18c8d038-31ea-4d92-9e7e-4b8a397f30a5> .
+
+	<urn:uuid:89d45390-25dc-49a6-bb08-69b67f27cd39> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL-TR2_1 - CL-2" ;
+		entsoe:IdentifiedObject.shortName "CL-2" ;
+		<IdentifiedObject.description> "Ratings for element NL-TR2_1 - Limit" ;
+		<CurrentLimit.value> "839.800000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:d47a27cc-9fad-40f2-a08c-37e545c268df> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:1aee0921-7cbe-481c-9078-daf66ab2a950> .
+
+	<urn:uuid:89d45390-25dc-49a6-bb08-69b67f27cd391> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "90" ;
+		entsoe:IdentifiedObject.shortName "CL-2" ;
+		<IdentifiedObject.description> "Ratings for element NL-TR2_1 - Limit" ;
+		<CurrentLimit.value> "755.820000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:d47a27cc-9fad-40f2-a08c-37e545c268df> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:68cd26b8-d512-4104-a1d1-b2e8f9376ecc> .
+
+	<urn:uuid:2184f365-8cd5-4b5d-8a28-9d68603bb6a4> rdf:type rdf:Description ;
+		entsoe:IdentifiedObject.shortName "NL_T_2" ;
+		<IdentifiedObject.description> "trafo" .
+
+	<urn:uuid:1128e664-0653-448a-9068-e37f1a097c05> rdf:type rdf:Description ;
+		entsoe:IdentifiedObject.shortName "NL_T_2" .
+
+	<urn:uuid:c1d5c1518f8011e08e4d00247eb1f55e> rdf:type <PowerTransformerEnd> ;
+		<IdentifiedObject.name> "NL_TR2_2" ;
+		entsoe:IdentifiedObject.shortName "NL_T_2" ;
+		<PowerTransformerEnd.r> "0.069143" ;
+		<PowerTransformerEnd.x> "5.377333" ;
+		<PowerTransformerEnd.b> "-0.0001420227" ;
+		<PowerTransformerEnd.g> "0.0000181818" ;
+		<PowerTransformerEnd.r0> "0.069143" ;
+		<PowerTransformerEnd.x0> "5.377333" ;
+		<PowerTransformerEnd.b0> "0.0" ;
+		<PowerTransformerEnd.g0> "0.0" ;
+		<TransformerEnd.rground> "0e+000" ;
+		<TransformerEnd.xground> "0.0" ;
+		<PowerTransformerEnd.ratedS> "1260.000000" ;
+		<PowerTransformerEnd.ratedU> "220.000000" ;
+		<TransformerEnd.endNumber> "1" ;
+		<PowerTransformerEnd.phaseAngleClock> "0" ;
+		<TransformerEnd.grounded> "true" ;
+		<PowerTransformerEnd.connectionKind> "Yn" ;
+		<TransformerEnd.BaseVoltage> <urn:uuid:7891a026ba2c42098556665efd13ba94> ;
+		<PowerTransformerEnd.PowerTransformer> <urn:uuid:2184f365-8cd5-4b5d-8a28-9d68603bb6a4> ;
+		<TransformerEnd.Terminal> <urn:uuid:1128e664-0653-448a-9068-e37f1a097c05> .
+
+	<urn:uuid:e2153eed-fb1f-44e2-b116-d045c5e50e3b> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL_TR2_2 - CL-0" ;
+		entsoe:IdentifiedObject.shortName "CL-0" ;
+		<IdentifiedObject.description> "Ratings for element NL_TR2_2 - Limit" ;
+		<CurrentLimit.value> "3406.600000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:e7c1b1c7-aaeb-470a-9cb5-93a3ec269179> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:250e948b-70ae-4139-971b-4f0053425b60> .
+
+	<urn:uuid:b4f373a0-1d09-4f4f-9f29-f72ff6b4f62f> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL_TR2_2 - CL-1" ;
+		entsoe:IdentifiedObject.shortName "CL-1" ;
+		<IdentifiedObject.description> "Ratings for element NL_TR2_2 - Limit" ;
+		<CurrentLimit.value> "3506.600000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:e7c1b1c7-aaeb-470a-9cb5-93a3ec269179> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:18c8d038-31ea-4d92-9e7e-4b8a397f30a5> .
+
+	<urn:uuid:fa85553d-9769-45fe-9b79-cecafa01c4ba> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL_TR2_2 - CL-2" ;
+		entsoe:IdentifiedObject.shortName "CL-2" ;
+		<IdentifiedObject.description> "Ratings for element NL_TR2_2 - Limit" ;
+		<CurrentLimit.value> "3306.600000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:e7c1b1c7-aaeb-470a-9cb5-93a3ec269179> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:1aee0921-7cbe-481c-9078-daf66ab2a950> .
+
+	<urn:uuid:fa85553d-9769-45fe-9b79-cecafa01c4ba1> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "90" ;
+		entsoe:IdentifiedObject.shortName "CL-2" ;
+		<IdentifiedObject.description> "Ratings for element NL_TR2_2 - Limit" ;
+		<CurrentLimit.value> "2975.940000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:e7c1b1c7-aaeb-470a-9cb5-93a3ec269179> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:68cd26b8-d512-4104-a1d1-b2e8f9376ecc> .
+
+	<urn:uuid:aae0af33-62c8-4062-8364-885d3372f808> rdf:type <TapChangerControl> ;
+		<IdentifiedObject.name> "NL_TR2_2" ;
+		entsoe:IdentifiedObject.shortName "NL_T_2" ;
+		<RegulatingControl.mode> "voltage" ;
+		<RegulatingControl.Terminal> <urn:uuid:da232169-1c36-495a-8af6-a0d7d2b39f52> .
+
+	<urn:uuid:c1d5c1588f8011e08e4d00247eb1f55e> rdf:type <RatioTapChanger> ;
+		<IdentifiedObject.name> "NL_TR2_2" ;
+		entsoe:IdentifiedObject.shortName "NL_T_2" ;
+		<TapChanger.neutralU> "220.000000" ;
+		<TapChanger.lowStep> "0" ;
+		<TapChanger.highStep> "33" ;
+		<TapChanger.neutralStep> "17" ;
+		<TapChanger.normalStep> "17" ;
+		<RatioTapChanger.stepVoltageIncrement> "0.625000" ;
+		<TapChanger.ltcFlag> "true" ;
+		<TapChanger.TapChangerControl> <urn:uuid:aae0af33-62c8-4062-8364-885d3372f808> ;
+		<RatioTapChanger.tculControlMode> "volt" ;
+		<RatioTapChanger.TransformerEnd> <urn:uuid:c1d5c1518f8011e08e4d00247eb1f55e> .
+
+	<urn:uuid:da232169-1c36-495a-8af6-a0d7d2b39f52> rdf:type rdf:Description ;
+		entsoe:IdentifiedObject.shortName "NL_T_2" .
+
+	<urn:uuid:c1d5c15a8f8011e08e4d00247eb1f55e> rdf:type <PowerTransformerEnd> ;
+		<IdentifiedObject.name> "NL_TR2_2" ;
+		entsoe:IdentifiedObject.shortName "NL_T_2" ;
+		<PowerTransformerEnd.r> "0e+000" ;
+		<PowerTransformerEnd.x> "0e+000" ;
+		<PowerTransformerEnd.b> "0.0" ;
+		<PowerTransformerEnd.g> "0.0" ;
+		<PowerTransformerEnd.r0> "0e+000" ;
+		<PowerTransformerEnd.x0> "0e+000" ;
+		<PowerTransformerEnd.b0> "0.0" ;
+		<PowerTransformerEnd.g0> "0.0" ;
+		<TransformerEnd.rground> "0e+000" ;
+		<TransformerEnd.xground> "0.0" ;
+		<PowerTransformerEnd.ratedS> "1260.000000" ;
+		<PowerTransformerEnd.ratedU> "15.750000" ;
+		<TransformerEnd.endNumber> "2" ;
+		<PowerTransformerEnd.phaseAngleClock> "0" ;
+		<TransformerEnd.grounded> "true" ;
+		<PowerTransformerEnd.connectionKind> "Yn" ;
+		<TransformerEnd.BaseVoltage> <urn:uuid:c1d5bff18f8011e08e4d00247eb1f55e> ;
+		<PowerTransformerEnd.PowerTransformer> <urn:uuid:2184f365-8cd5-4b5d-8a28-9d68603bb6a4> ;
+		<TransformerEnd.Terminal> <urn:uuid:da232169-1c36-495a-8af6-a0d7d2b39f52> .
+
+	<urn:uuid:2f71df7b-6118-4973-acea-7f65a563a979> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL_TR2_2 - CL-0" ;
+		entsoe:IdentifiedObject.shortName "CL-0" ;
+		<IdentifiedObject.description> "Ratings for element NL_TR2_2 - Limit" ;
+		<CurrentLimit.value> "47188.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:261d13c4-1527-42a5-ad0d-a3b817971166> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:250e948b-70ae-4139-971b-4f0053425b60> .
+
+	<urn:uuid:176ae6ba-d38c-4f7c-8a60-038dc4980a39> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL_TR2_2 - CL-1" ;
+		entsoe:IdentifiedObject.shortName "CL-1" ;
+		<IdentifiedObject.description> "Ratings for element NL_TR2_2 - Limit" ;
+		<CurrentLimit.value> "48188.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:261d13c4-1527-42a5-ad0d-a3b817971166> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:18c8d038-31ea-4d92-9e7e-4b8a397f30a5> .
+
+	<urn:uuid:1a886514-5f7d-418a-99b7-02330ed01ca7> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL_TR2_2 - CL-2" ;
+		entsoe:IdentifiedObject.shortName "CL-2" ;
+		<IdentifiedObject.description> "Ratings for element NL_TR2_2 - Limit" ;
+		<CurrentLimit.value> "46188.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:261d13c4-1527-42a5-ad0d-a3b817971166> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:1aee0921-7cbe-481c-9078-daf66ab2a950> .
+
+	<urn:uuid:1a886514-5f7d-418a-99b7-02330ed01ca71> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "90" ;
+		entsoe:IdentifiedObject.shortName "CL-2" ;
+		<IdentifiedObject.description> "Ratings for element NL_TR2_2 - Limit" ;
+		<CurrentLimit.value> "41569.200000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:261d13c4-1527-42a5-ad0d-a3b817971166> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:68cd26b8-d512-4104-a1d1-b2e8f9376ecc> .
+
+	<urn:uuid:80016742-31b3-432a-b00a-300667a1e572> rdf:type rdf:Description ;
+		entsoe:IdentifiedObject.shortName "NL_T_3" .
+
+	<urn:uuid:bd61b1f9-474d-424e-9709-42f75337c477> rdf:type rdf:Description ;
+		entsoe:IdentifiedObject.shortName "NL_T_3" .
+
+	<urn:uuid:c1d5c15e8f8011e08e4d00247eb1f55e> rdf:type <PowerTransformerEnd> ;
+		<IdentifiedObject.name> "NL_TR2_3" ;
+		entsoe:IdentifiedObject.shortName "NL_T_3" ;
+		<PowerTransformerEnd.r> "0.065302" ;
+		<PowerTransformerEnd.x> "5.377381" ;
+		<PowerTransformerEnd.b> "-0.0001420227" ;
+		<PowerTransformerEnd.g> "0.0000181818" ;
+		<PowerTransformerEnd.r0> "0.069143" ;
+		<PowerTransformerEnd.x0> "5.377333" ;
+		<PowerTransformerEnd.b0> "0.0" ;
+		<PowerTransformerEnd.g0> "0.0" ;
+		<TransformerEnd.rground> "0e+000" ;
+		<TransformerEnd.xground> "0.0" ;
+		<PowerTransformerEnd.ratedS> "1260.000000" ;
+		<PowerTransformerEnd.ratedU> "220.000000" ;
+		<TransformerEnd.endNumber> "1" ;
+		<PowerTransformerEnd.phaseAngleClock> "0" ;
+		<TransformerEnd.grounded> "true" ;
+		<PowerTransformerEnd.connectionKind> "Yn" ;
+		<TransformerEnd.BaseVoltage> <urn:uuid:7891a026ba2c42098556665efd13ba94> ;
+		<PowerTransformerEnd.PowerTransformer> <urn:uuid:80016742-31b3-432a-b00a-300667a1e572> ;
+		<TransformerEnd.Terminal> <urn:uuid:bd61b1f9-474d-424e-9709-42f75337c477> .
+
+	<urn:uuid:e2afb3a0-94ea-4f8f-b717-7b91c603d3dc> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL_TR2_3 - CL-0" ;
+		entsoe:IdentifiedObject.shortName "CL-0" ;
+		<IdentifiedObject.description> "Ratings for element NL_TR2_3 - Limit" ;
+		<CurrentLimit.value> "3506.600000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:fd472104-d68c-4536-ba4a-5fd9349c0a65> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:250e948b-70ae-4139-971b-4f0053425b60> .
+
+	<urn:uuid:d4bc2ee3-43b8-46fb-9337-d82590af1c8b> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL_TR2_3 - CL-1" ;
+		entsoe:IdentifiedObject.shortName "CL-1" ;
+		<IdentifiedObject.description> "Ratings for element NL_TR2_3 - Limit" ;
+		<CurrentLimit.value> "3706.600000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:fd472104-d68c-4536-ba4a-5fd9349c0a65> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:18c8d038-31ea-4d92-9e7e-4b8a397f30a5> .
+
+	<urn:uuid:0c95b506-05a2-40d5-9f82-b9bf1e680a8d> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL_TR2_3 - CL-2" ;
+		entsoe:IdentifiedObject.shortName "CL-2" ;
+		<IdentifiedObject.description> "Ratings for element NL_TR2_3 - Limit" ;
+		<CurrentLimit.value> "3306.600000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:fd472104-d68c-4536-ba4a-5fd9349c0a65> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:1aee0921-7cbe-481c-9078-daf66ab2a950> .
+
+	<urn:uuid:0c95b506-05a2-40d5-9f82-b9bf1e680a8d1> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "90" ;
+		entsoe:IdentifiedObject.shortName "CL-2" ;
+		<IdentifiedObject.description> "Ratings for element NL_TR2_3 - Limit" ;
+		<CurrentLimit.value> "2975.940000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:fd472104-d68c-4536-ba4a-5fd9349c0a65> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:68cd26b8-d512-4104-a1d1-b2e8f9376ecc> .
+
+	<urn:uuid:76971b35-279e-4d3c-8873-76c6abde82c4> rdf:type <TapChangerControl> ;
+		<IdentifiedObject.name> "NL_TR2_3" ;
+		entsoe:IdentifiedObject.shortName "NL_T_3" ;
+		<RegulatingControl.mode> "voltage" ;
+		<RegulatingControl.Terminal> <urn:uuid:4f1c405f-07c9-4fb0-b64e-551896a29aa8> .
+
+	<urn:uuid:c1d5c1658f8011e08e4d00247eb1f55e> rdf:type <RatioTapChanger> ;
+		<IdentifiedObject.name> "NL_TR2_3" ;
+		entsoe:IdentifiedObject.shortName "NL_T_3" ;
+		<TapChanger.neutralU> "220.000000" ;
+		<TapChanger.lowStep> "-15" ;
+		<TapChanger.highStep> "15" ;
+		<TapChanger.neutralStep> "0" ;
+		<TapChanger.normalStep> "5" ;
+		<RatioTapChanger.stepVoltageIncrement> "0.625000" ;
+		<TapChanger.ltcFlag> "true" ;
+		<TapChanger.TapChangerControl> <urn:uuid:76971b35-279e-4d3c-8873-76c6abde82c4> ;
+		<RatioTapChanger.tculControlMode> "volt" ;
+		<RatioTapChanger.TransformerEnd> <urn:uuid:c1d5c15e8f8011e08e4d00247eb1f55e> .
+
+	<urn:uuid:4f1c405f-07c9-4fb0-b64e-551896a29aa8> rdf:type rdf:Description ;
+		entsoe:IdentifiedObject.shortName "NL_T_3" .
+
+	<urn:uuid:c1d5c1678f8011e08e4d00247eb1f55e> rdf:type <PowerTransformerEnd> ;
+		<IdentifiedObject.name> "NL_TR2_3" ;
+		entsoe:IdentifiedObject.shortName "NL_T_3" ;
+		<PowerTransformerEnd.r> "0e+000" ;
+		<PowerTransformerEnd.x> "0e+000" ;
+		<PowerTransformerEnd.b> "0.0" ;
+		<PowerTransformerEnd.g> "0.0" ;
+		<PowerTransformerEnd.r0> "0e+000" ;
+		<PowerTransformerEnd.x0> "0e+000" ;
+		<PowerTransformerEnd.b0> "0.0" ;
+		<PowerTransformerEnd.g0> "0.0" ;
+		<TransformerEnd.rground> "0e+000" ;
+		<TransformerEnd.xground> "0.0" ;
+		<PowerTransformerEnd.ratedS> "1260.000000" ;
+		<PowerTransformerEnd.ratedU> "15.750000" ;
+		<TransformerEnd.endNumber> "2" ;
+		<PowerTransformerEnd.phaseAngleClock> "0" ;
+		<TransformerEnd.grounded> "true" ;
+		<PowerTransformerEnd.connectionKind> "Yn" ;
+		<TransformerEnd.BaseVoltage> <urn:uuid:c1d5bff18f8011e08e4d00247eb1f55e> ;
+		<PowerTransformerEnd.PowerTransformer> <urn:uuid:80016742-31b3-432a-b00a-300667a1e572> ;
+		<TransformerEnd.Terminal> <urn:uuid:4f1c405f-07c9-4fb0-b64e-551896a29aa8> .
+
+	<urn:uuid:716e45d4-4092-4a1b-ba5f-c78e1da4f363> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL_TR2_3 - CL-0" ;
+		entsoe:IdentifiedObject.shortName "CL-0" ;
+		<IdentifiedObject.description> "Ratings for element NL_TR2_3 - Limit" ;
+		<CurrentLimit.value> "47188.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:cf3e5341-6736-4b34-b4da-e4af2073765b> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:250e948b-70ae-4139-971b-4f0053425b60> .
+
+	<urn:uuid:23b11495-8c2c-47cc-a561-e215196afa2b> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL_TR2_3 - CL-1" ;
+		entsoe:IdentifiedObject.shortName "CL-1" ;
+		<IdentifiedObject.description> "Ratings for element NL_TR2_3 - Limit" ;
+		<CurrentLimit.value> "49188.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:cf3e5341-6736-4b34-b4da-e4af2073765b> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:18c8d038-31ea-4d92-9e7e-4b8a397f30a5> .
+
+	<urn:uuid:6a927421-36cd-487a-b6b7-61dd45470447> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL_TR2_3 - CL-2" ;
+		entsoe:IdentifiedObject.shortName "CL-2" ;
+		<IdentifiedObject.description> "Ratings for element NL_TR2_3 - Limit" ;
+		<CurrentLimit.value> "46188.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:cf3e5341-6736-4b34-b4da-e4af2073765b> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:1aee0921-7cbe-481c-9078-daf66ab2a950> .
+
+	<urn:uuid:6a927421-36cd-487a-b6b7-61dd454704471> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "90" ;
+		entsoe:IdentifiedObject.shortName "CL-2" ;
+		<IdentifiedObject.description> "Ratings for element NL_TR2_3 - Limit" ;
+		<CurrentLimit.value> "41569.200000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:cf3e5341-6736-4b34-b4da-e4af2073765b> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:68cd26b8-d512-4104-a1d1-b2e8f9376ecc> .
+}
+INSERT {
+	<urn:uuid:9caf8092-8c73-4d97-a752-4b4725725aa1> rdf:type <OperationalLimitType> ;
+		<IdentifiedObject.name> "TC" ;
+		entsoe:IdentifiedObject.shortName "tc" ;
+		<OperationalLimitType.direction> "absoluteValue" ;
+		entsoe:OperationalLimitType.limitType "tc" .
+
+	<urn:uuid:fd6c0e03-5026-4ac1-9d2b-6090d0c2585a> rdf:type <OperationalLimitType> ;
+		<IdentifiedObject.name> "PATLT" ;
+		entsoe:IdentifiedObject.shortName "patlt" ;
+		<OperationalLimitType.direction> "absoluteValue" ;
+		entsoe:OperationalLimitType.limitType "patlt" .
+
+	<urn:uuid:c3074def-e436-49ef-a7f5-c1afd0ea48c6> rdf:type <OperationalLimitType> ;
+		<IdentifiedObject.name> "TCT" ;
+		entsoe:IdentifiedObject.shortName "tct" ;
+		<OperationalLimitType.direction> "absoluteValue" ;
+		entsoe:OperationalLimitType.limitType "tct" .
+
+	<urn:uuid:a4b97f0b-39b8-452d-b51c-fd3b25fa1d9b1> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:fd6c0e03-5026-4ac1-9d2b-6090d0c2585a> .
+
+	<urn:uuid:db8675aa-6a3d-47a8-b864-a3e474c5c8851> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:fd6c0e03-5026-4ac1-9d2b-6090d0c2585a> .
+
+	<urn:uuid:b4659169-38a4-494f-b3e2-aa83dc9a66701> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:fd6c0e03-5026-4ac1-9d2b-6090d0c2585a> .
+
+	<urn:uuid:bc5f7b01-fe61-4653-b3bf-0878f770c981> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL-Line_4 - CL-3" ;
+		entsoe:IdentifiedObject.shortName "CL-3" ;
+		<IdentifiedObject.description> "Ratings for element NL-Line_4 - Limit" ;
+		<CurrentLimit.value> "2000.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:37cc4210-71c0-4328-a86b-df0f65e76ef4> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:9caf8092-8c73-4d97-a752-4b4725725aa1> .
+
+	<urn:uuid:bc5f7b01-fe61-4653-b3bf-0878f770c9812> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "90" ;
+		entsoe:IdentifiedObject.shortName "CL-3" ;
+		<IdentifiedObject.description> "Ratings for element NL-Line_4 - Limit" ;
+		<CurrentLimit.value> "1800.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:37cc4210-71c0-4328-a86b-df0f65e76ef4> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:c3074def-e436-49ef-a7f5-c1afd0ea48c6> .
+
+	<urn:uuid:0388b680-3feb-45a2-bd56-5a620472107b1> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:fd6c0e03-5026-4ac1-9d2b-6090d0c2585a> .
+
+	<urn:uuid:12f824f0-136e-4583-a2ef-faa90251aa67> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL-Line_4 - CL-3" ;
+		entsoe:IdentifiedObject.shortName "CL-3" ;
+		<IdentifiedObject.description> "Ratings for element NL-Line_4 - Limit" ;
+		<CurrentLimit.value> "2000.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:03943678-b63e-44d8-bc7d-9461da496268> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:9caf8092-8c73-4d97-a752-4b4725725aa1> .
+
+	<urn:uuid:12f824f0-136e-4583-a2ef-faa90251aa672> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "90" ;
+		entsoe:IdentifiedObject.shortName "CL-3" ;
+		<IdentifiedObject.description> "Ratings for element NL-Line_4 - Limit" ;
+		<CurrentLimit.value> "1800.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:03943678-b63e-44d8-bc7d-9461da496268> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:c3074def-e436-49ef-a7f5-c1afd0ea48c6> .
+
+	<urn:uuid:317c3033-0409-4f57-9209-4baae4b5e1651> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:fd6c0e03-5026-4ac1-9d2b-6090d0c2585a> .
+
+	<urn:uuid:e29f4055-0267-4d9e-a889-8afc2326e870> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:1aee0921-7cbe-481c-9078-daf66ab2a950> .
+
+	<urn:uuid:e29f4055-0267-4d9e-a889-8afc2326e8701> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "90" ;
+		entsoe:IdentifiedObject.shortName "CL-3" ;
+		<IdentifiedObject.description> "Ratings for element NL-Line_3 - Limit" ;
+		<CurrentLimit.value> "1800.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:9a03e8ee-e832-43c8-b38e-0d43f8ef7355> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:fd6c0e03-5026-4ac1-9d2b-6090d0c2585a> .
+
+	<urn:uuid:62be08ea-2a9e-4284-9642-2947cb2c5f1b1> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:fd6c0e03-5026-4ac1-9d2b-6090d0c2585a> .
+
+	<urn:uuid:22274f03-885c-4ea8-931d-862beec6edd1> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:1aee0921-7cbe-481c-9078-daf66ab2a950> .
+
+	<urn:uuid:22274f03-885c-4ea8-931d-862beec6edd11> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "90" ;
+		entsoe:IdentifiedObject.shortName "CL-3" ;
+		<IdentifiedObject.description> "Ratings for element NL-Line_3 - Limit" ;
+		<CurrentLimit.value> "1800.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:14e9e317-a168-44a2-82ef-7c76190108a2> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:fd6c0e03-5026-4ac1-9d2b-6090d0c2585a> .
+
+	<urn:uuid:1cd93631-5573-48db-8444-0e85a91aa6f11> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:fd6c0e03-5026-4ac1-9d2b-6090d0c2585a> .
+
+	<urn:uuid:d73f50e0-00db-4f54-a087-b0d2204f229a1> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:fd6c0e03-5026-4ac1-9d2b-6090d0c2585a> .
+
+	<urn:uuid:45b85c9e-0788-4cbb-b71b-dc1d5de04e511> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:fd6c0e03-5026-4ac1-9d2b-6090d0c2585a> .
+
+	<urn:uuid:a228917a-44c9-4124-b7db-ea6408b3c5bb1> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:fd6c0e03-5026-4ac1-9d2b-6090d0c2585a> .
+
+	<urn:uuid:c614f321-2c88-4fa3-b98a-8ec3cde73db4> rdf:type <PowerTransformerEnd> ;
+		<IdentifiedObject.name> "NL-TR2_1" ;
+		<PowerTransformerEnd.r> "1.350000" ;
+		<PowerTransformerEnd.x> "27.967436" ;
+		<PowerTransformerEnd.b> "-0.0000044445" ;
+		<PowerTransformerEnd.g> "0.0000005625" ;
+		<PowerTransformerEnd.r0> "1.350000" ;
+		<PowerTransformerEnd.x0> "27.967436" ;
+		<PowerTransformerEnd.b0> "0.0" ;
+		<PowerTransformerEnd.g0> "0.0" ;
+		<TransformerEnd.rground> "0e+000" ;
+		<TransformerEnd.xground> "0.0" ;
+		<PowerTransformerEnd.ratedS> "320.000000" ;
+		<PowerTransformerEnd.ratedU> "400.000000" ;
+		<TransformerEnd.endNumber> "1" ;
+		<PowerTransformerEnd.phaseAngleClock> "0" ;
+		<TransformerEnd.grounded> "true" ;
+		<PowerTransformerEnd.connectionKind> "Yn" ;
+		<TransformerEnd.BaseVoltage> <urn:uuid:65dd04e792584b3b912374e35dec032e> ;
+		<PowerTransformerEnd.PowerTransformer> <urn:uuid:e8a7eaec-51d6-4571-b3d9-c36d52073c33> ;
+		<TransformerEnd.Terminal> <urn:uuid:e3e0c496-5837-4f0f-a596-cc421940f73f> .
+
+	<urn:uuid:a3f2ec85-fb80-4aff-b4d1-c0258a879bcb> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL-TR2_1 - CL-0" ;
+		entsoe:IdentifiedObject.shortName "CL-0" ;
+		<IdentifiedObject.description> "Ratings for element NL-TR2_1 - Limit" ;
+		<CurrentLimit.value> "461.900000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:83f719ad-2083-44ea-9ebc-9f456c114bdb> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:1aee0921-7cbe-481c-9078-daf66ab2a950> .
+
+	<urn:uuid:a3f2ec85-fb80-4aff-b4d1-c0258a879bcb1> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "90" ;
+		entsoe:IdentifiedObject.shortName "CL-0" ;
+		<IdentifiedObject.description> "Ratings for element NL-TR2_1 - Limit" ;
+		<CurrentLimit.value> "415.710000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:83f719ad-2083-44ea-9ebc-9f456c114bdb> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:fd6c0e03-5026-4ac1-9d2b-6090d0c2585a> .
+
+	<urn:uuid:1a5ab6b8-6ac0-4675-b619-cca3120bd6a2> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL-TR2_1 - CL-1" ;
+		entsoe:IdentifiedObject.shortName "CL-1" ;
+		<IdentifiedObject.description> "Ratings for element NL-TR2_1 - Limit" ;
+		<CurrentLimit.value> "481.900000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:83f719ad-2083-44ea-9ebc-9f456c114bdb> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:18c8d038-31ea-4d92-9e7e-4b8a397f30a5> .
+
+	<urn:uuid:dc871da2-728b-48f3-b2da-44485e4bd819> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL-TR2_1 - CL-2" ;
+		entsoe:IdentifiedObject.shortName "CL-2" ;
+		<IdentifiedObject.description> "Ratings for element NL-TR2_1 - Limit" ;
+		<CurrentLimit.value> "471.900000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:83f719ad-2083-44ea-9ebc-9f456c114bdb> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:250e948b-70ae-4139-971b-4f0053425b60> .
+
+	<urn:uuid:f8acf291-9908-413e-bfd6-b2b98e2bf361> rdf:type <TapChangerControl> ;
+		<IdentifiedObject.name> "NL-TR2_1" ;
+		<RegulatingControl.mode> "activePower" ;
+		<RegulatingControl.Terminal> <urn:uuid:e3e0c496-5837-4f0f-a596-cc421940f73f> .
+
+	<urn:uuid:341327c4-9224-40bf-bc33-7a3bb0bae680> rdf:type <PhaseTapChangerLinear> ;
+		<IdentifiedObject.name> "NL-TR2_1" ;
+		<TapChanger.neutralU> "400.000000" ;
+		<TapChanger.lowStep> "-20" ;
+		<TapChanger.highStep> "20" ;
+		<TapChanger.neutralStep> "0" ;
+		<TapChanger.normalStep> "8" ;
+		<PhaseTapChangerLinear.xMin> "26.119588" ;
+		<PhaseTapChangerLinear.xMax> "29.715401" ;
+		<PhaseTapChangerLinear.stepPhaseShiftIncrement> "-2.000000" ;
+		<PhaseTapChanger.TransformerEnd> <urn:uuid:c614f321-2c88-4fa3-b98a-8ec3cde73db4> ;
+		<TapChanger.ltcFlag> "true" ;
+		<TapChanger.TapChangerControl> <urn:uuid:f8acf291-9908-413e-bfd6-b2b98e2bf361> .
+
+	<urn:uuid:0dec3883-a2b6-4353-83cc-d4dd5df513a6> rdf:type <PowerTransformerEnd> ;
+		<IdentifiedObject.name> "NL-TR2_1" ;
+		<PowerTransformerEnd.r> "0e+000" ;
+		<PowerTransformerEnd.x> "0e+000" ;
+		<PowerTransformerEnd.b> "0.0" ;
+		<PowerTransformerEnd.g> "0.0" ;
+		<PowerTransformerEnd.r0> "0e+000" ;
+		<PowerTransformerEnd.x0> "0e+000" ;
+		<PowerTransformerEnd.b0> "0.0" ;
+		<PowerTransformerEnd.g0> "0.0" ;
+		<TransformerEnd.rground> "0e+000" ;
+		<TransformerEnd.xground> "0.0" ;
+		<PowerTransformerEnd.ratedS> "320.000000" ;
+		<PowerTransformerEnd.ratedU> "220.000000" ;
+		<TransformerEnd.endNumber> "2" ;
+		<PowerTransformerEnd.phaseAngleClock> "0" ;
+		<TransformerEnd.grounded> "true" ;
+		<PowerTransformerEnd.connectionKind> "Yn" ;
+		<TransformerEnd.BaseVoltage> <urn:uuid:7891a026ba2c42098556665efd13ba94> ;
+		<PowerTransformerEnd.PowerTransformer> <urn:uuid:e8a7eaec-51d6-4571-b3d9-c36d52073c33> ;
+		<TransformerEnd.Terminal> <urn:uuid:baa7aef1-afcd-4981-97c0-ccec7b5ad4e0> .
+
+	<urn:uuid:e5dd8835-56f7-4d59-942e-29a1102339f4> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL-TR2_1 - CL-0" ;
+		entsoe:IdentifiedObject.shortName "CL-0" ;
+		<IdentifiedObject.description> "Ratings for element NL-TR2_1 - Limit" ;
+		<CurrentLimit.value> "839.800000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:d47a27cc-9fad-40f2-a08c-37e545c268df> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:1aee0921-7cbe-481c-9078-daf66ab2a950> .
+
+	<urn:uuid:e5dd8835-56f7-4d59-942e-29a1102339f41> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "90" ;
+		entsoe:IdentifiedObject.shortName "CL-0" ;
+		<IdentifiedObject.description> "Ratings for element NL-TR2_1 - Limit" ;
+		<CurrentLimit.value> "755.820000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:d47a27cc-9fad-40f2-a08c-37e545c268df> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:fd6c0e03-5026-4ac1-9d2b-6090d0c2585a> .
+
+	<urn:uuid:4b75b6e2-a78c-4128-b1eb-778c000f1548> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL-TR2_1 - CL-1" ;
+		entsoe:IdentifiedObject.shortName "CL-1" ;
+		<IdentifiedObject.description> "Ratings for element NL-TR2_1 - Limit" ;
+		<CurrentLimit.value> "879.800000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:d47a27cc-9fad-40f2-a08c-37e545c268df> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:18c8d038-31ea-4d92-9e7e-4b8a397f30a5> .
+
+	<urn:uuid:84914c2f-af2e-4ddd-a257-934f997cebdb> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL-TR2_1 - CL-2" ;
+		entsoe:IdentifiedObject.shortName "CL-2" ;
+		<IdentifiedObject.description> "Ratings for element NL-TR2_1 - Limit" ;
+		<CurrentLimit.value> "859.800000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:d47a27cc-9fad-40f2-a08c-37e545c268df> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:250e948b-70ae-4139-971b-4f0053425b60> .
+
+	<urn:uuid:0dbed103-fc51-4df4-a6fa-0dee4c57f3a3> rdf:type <PowerTransformerEnd> ;
+		<IdentifiedObject.name> "NL_TR2_2" ;
+		<PowerTransformerEnd.r> "0.069143" ;
+		<PowerTransformerEnd.x> "5.377333" ;
+		<PowerTransformerEnd.b> "-0.0001420227" ;
+		<PowerTransformerEnd.g> "0.0000181818" ;
+		<PowerTransformerEnd.r0> "0.069143" ;
+		<PowerTransformerEnd.x0> "5.377333" ;
+		<PowerTransformerEnd.b0> "0.0" ;
+		<PowerTransformerEnd.g0> "0.0" ;
+		<TransformerEnd.rground> "0e+000" ;
+		<TransformerEnd.xground> "0.0" ;
+		<PowerTransformerEnd.ratedS> "1260.000000" ;
+		<PowerTransformerEnd.ratedU> "220.000000" ;
+		<TransformerEnd.endNumber> "1" ;
+		<PowerTransformerEnd.phaseAngleClock> "0" ;
+		<TransformerEnd.grounded> "true" ;
+		<PowerTransformerEnd.connectionKind> "Yn" ;
+		<TransformerEnd.BaseVoltage> <urn:uuid:7891a026ba2c42098556665efd13ba94> ;
+		<PowerTransformerEnd.PowerTransformer> <urn:uuid:2184f365-8cd5-4b5d-8a28-9d68603bb6a4> ;
+		<TransformerEnd.Terminal> <urn:uuid:1128e664-0653-448a-9068-e37f1a097c05> .
+
+	<urn:uuid:19e65c25-cd8e-4603-ac38-9ddae41e0852> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL_TR2_2 - CL-0" ;
+		entsoe:IdentifiedObject.shortName "CL-0" ;
+		<IdentifiedObject.description> "Ratings for element NL_TR2_2 - Limit" ;
+		<CurrentLimit.value> "3306.600000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:e7c1b1c7-aaeb-470a-9cb5-93a3ec269179> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:1aee0921-7cbe-481c-9078-daf66ab2a950> .
+
+	<urn:uuid:19e65c25-cd8e-4603-ac38-9ddae41e08521> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "90" ;
+		entsoe:IdentifiedObject.shortName "CL-0" ;
+		<IdentifiedObject.description> "Ratings for element NL_TR2_2 - Limit" ;
+		<CurrentLimit.value> "2975.940000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:e7c1b1c7-aaeb-470a-9cb5-93a3ec269179> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:fd6c0e03-5026-4ac1-9d2b-6090d0c2585a> .
+
+	<urn:uuid:97e2927f-1969-49a3-b2f5-36447f19f621> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL_TR2_2 - CL-1" ;
+		entsoe:IdentifiedObject.shortName "CL-1" ;
+		<IdentifiedObject.description> "Ratings for element NL_TR2_2 - Limit" ;
+		<CurrentLimit.value> "3706.600000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:e7c1b1c7-aaeb-470a-9cb5-93a3ec269179> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:18c8d038-31ea-4d92-9e7e-4b8a397f30a5> .
+
+	<urn:uuid:59de7ed1-ab68-48f0-acf4-6fa64e101ce9> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL_TR2_2 - CL-2" ;
+		entsoe:IdentifiedObject.shortName "CL-2" ;
+		<IdentifiedObject.description> "Ratings for element NL_TR2_2 - Limit" ;
+		<CurrentLimit.value> "3506.600000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:e7c1b1c7-aaeb-470a-9cb5-93a3ec269179> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:250e948b-70ae-4139-971b-4f0053425b60> .
+
+	<urn:uuid:120a7f07-0e5b-490f-9bcf-115600230816> rdf:type <TapChangerControl> ;
+		<IdentifiedObject.name> "NL_TR2_2" ;
+		<RegulatingControl.mode> "activePower" ;
+		<RegulatingControl.Terminal> <urn:uuid:da232169-1c36-495a-8af6-a0d7d2b39f52> .
+
+	<urn:uuid:ee649b97-d2ec-47e1-976f-0f4d9f50fa11> rdf:type <PhaseTapChangerTabular> ;
+		<IdentifiedObject.name> "NL_TR2_2" ;
+		<TapChanger.neutralU> "220.000000" ;
+		<TapChanger.lowStep> "0" ;
+		<TapChanger.highStep> "33" ;
+		<TapChanger.neutralStep> "17" ;
+		<TapChanger.normalStep> "17" ;
+		<PhaseTapChangerTabular.PhaseTapChangerTable> <urn:uuid:36f76d69-6c44-4155-8be7-746cf6e77dc6> ;
+		<PhaseTapChanger.TransformerEnd> <urn:uuid:0dbed103-fc51-4df4-a6fa-0dee4c57f3a3> ;
+		<TapChanger.ltcFlag> "true" ;
+		<TapChanger.TapChangerControl> <urn:uuid:120a7f07-0e5b-490f-9bcf-115600230816> .
+
+	<urn:uuid:36f76d69-6c44-4155-8be7-746cf6e77dc6> rdf:type <PhaseTapChangerTable> ;
+		<IdentifiedObject.name> "Phase Tap Changer Table" .
+
+	<urn:uuid:3aaa79d2-fab7-4b83-932c-5b6cf502b86b> rdf:type <PhaseTapChangerTablePoint> ;
+		<PhaseTapChangerTablePoint.PhaseTapChangerTable> <urn:uuid:36f76d69-6c44-4155-8be7-746cf6e77dc6> ;
+		<TapChangerTablePoint.step> "0" ;
+		<TapChangerTablePoint.ratio> "0.920013" ;
+		<PhaseTapChangerTablePoint.angle> "-0.086951" ;
+		<TapChangerTablePoint.x> "0e+000" ;
+		<TapChangerTablePoint.b> "0e+000" ;
+		<TapChangerTablePoint.g> "0e+000" ;
+		<TapChangerTablePoint.r> "0e+000" .
+
+	<urn:uuid:682d8130-8149-44ee-ad23-c20f09f1886d> rdf:type <PhaseTapChangerTablePoint> ;
+		<PhaseTapChangerTablePoint.PhaseTapChangerTable> <urn:uuid:36f76d69-6c44-4155-8be7-746cf6e77dc6> ;
+		<TapChangerTablePoint.step> "1" ;
+		<TapChangerTablePoint.ratio> "0.925012" ;
+		<PhaseTapChangerTablePoint.angle> "-0.081076" ;
+		<TapChangerTablePoint.x> "0e+000" ;
+		<TapChangerTablePoint.b> "0e+000" ;
+		<TapChangerTablePoint.g> "0e+000" ;
+		<TapChangerTablePoint.r> "0e+000" .
+
+	<urn:uuid:bf777550-6940-495b-addf-513926ddb394> rdf:type <PhaseTapChangerTablePoint> ;
+		<PhaseTapChangerTablePoint.PhaseTapChangerTable> <urn:uuid:36f76d69-6c44-4155-8be7-746cf6e77dc6> ;
+		<TapChangerTablePoint.step> "2" ;
+		<TapChangerTablePoint.ratio> "0.930011" ;
+		<PhaseTapChangerTablePoint.angle> "-0.075264" ;
+		<TapChangerTablePoint.x> "0e+000" ;
+		<TapChangerTablePoint.b> "0e+000" ;
+		<TapChangerTablePoint.g> "0e+000" ;
+		<TapChangerTablePoint.r> "0e+000" .
+
+	<urn:uuid:84eb105a-f822-44fc-a43d-c5c7e62cd25e> rdf:type <PhaseTapChangerTablePoint> ;
+		<PhaseTapChangerTablePoint.PhaseTapChangerTable> <urn:uuid:36f76d69-6c44-4155-8be7-746cf6e77dc6> ;
+		<TapChangerTablePoint.step> "3" ;
+		<TapChangerTablePoint.ratio> "0.935011" ;
+		<PhaseTapChangerTablePoint.angle> "-0.069514" ;
+		<TapChangerTablePoint.x> "0e+000" ;
+		<TapChangerTablePoint.b> "0e+000" ;
+		<TapChangerTablePoint.g> "0e+000" ;
+		<TapChangerTablePoint.r> "0e+000" .
+
+	<urn:uuid:37d7aeba-2937-40aa-85e5-089d7458090e> rdf:type <PhaseTapChangerTablePoint> ;
+		<PhaseTapChangerTablePoint.PhaseTapChangerTable> <urn:uuid:36f76d69-6c44-4155-8be7-746cf6e77dc6> ;
+		<TapChangerTablePoint.step> "4" ;
+		<TapChangerTablePoint.ratio> "0.940010" ;
+		<PhaseTapChangerTablePoint.angle> "-0.063826" ;
+		<TapChangerTablePoint.x> "0e+000" ;
+		<TapChangerTablePoint.b> "0e+000" ;
+		<TapChangerTablePoint.g> "0e+000" ;
+		<TapChangerTablePoint.r> "0e+000" .
+
+	<urn:uuid:08552b52-ddea-4dfe-9c21-5573efe44d5b> rdf:type <PhaseTapChangerTablePoint> ;
+		<PhaseTapChangerTablePoint.PhaseTapChangerTable> <urn:uuid:36f76d69-6c44-4155-8be7-746cf6e77dc6> ;
+		<TapChangerTablePoint.step> "5" ;
+		<TapChangerTablePoint.ratio> "0.945009" ;
+		<PhaseTapChangerTablePoint.angle> "-0.058198" ;
+		<TapChangerTablePoint.x> "0e+000" ;
+		<TapChangerTablePoint.b> "0e+000" ;
+		<TapChangerTablePoint.g> "0e+000" ;
+		<TapChangerTablePoint.r> "0e+000" .
+
+	<urn:uuid:7b4fafe5-5212-4d96-9d4f-b1c6b9c4895a> rdf:type <PhaseTapChangerTablePoint> ;
+		<PhaseTapChangerTablePoint.PhaseTapChangerTable> <urn:uuid:36f76d69-6c44-4155-8be7-746cf6e77dc6> ;
+		<TapChangerTablePoint.step> "6" ;
+		<TapChangerTablePoint.ratio> "0.950008" ;
+		<PhaseTapChangerTablePoint.angle> "-0.052628" ;
+		<TapChangerTablePoint.x> "0e+000" ;
+		<TapChangerTablePoint.b> "0e+000" ;
+		<TapChangerTablePoint.g> "0e+000" ;
+		<TapChangerTablePoint.r> "0e+000" .
+
+	<urn:uuid:2f3d023e-6850-46c7-9313-8bde3f7feadf> rdf:type <PhaseTapChangerTablePoint> ;
+		<PhaseTapChangerTablePoint.PhaseTapChangerTable> <urn:uuid:36f76d69-6c44-4155-8be7-746cf6e77dc6> ;
+		<TapChangerTablePoint.step> "7" ;
+		<TapChangerTablePoint.ratio> "0.955007" ;
+		<PhaseTapChangerTablePoint.angle> "-0.047118" ;
+		<TapChangerTablePoint.x> "0e+000" ;
+		<TapChangerTablePoint.b> "0e+000" ;
+		<TapChangerTablePoint.g> "0e+000" ;
+		<TapChangerTablePoint.r> "0e+000" .
+
+	<urn:uuid:1b6e1f48-e583-4319-b360-c48ff05aa4f6> rdf:type <PhaseTapChangerTablePoint> ;
+		<PhaseTapChangerTablePoint.PhaseTapChangerTable> <urn:uuid:36f76d69-6c44-4155-8be7-746cf6e77dc6> ;
+		<TapChangerTablePoint.step> "8" ;
+		<TapChangerTablePoint.ratio> "0.960006" ;
+		<PhaseTapChangerTablePoint.angle> "-0.041664" ;
+		<TapChangerTablePoint.x> "0e+000" ;
+		<TapChangerTablePoint.b> "0e+000" ;
+		<TapChangerTablePoint.g> "0e+000" ;
+		<TapChangerTablePoint.r> "0e+000" .
+
+	<urn:uuid:0c9308f5-5530-46f0-bdd3-0ae56fe50429> rdf:type <PhaseTapChangerTablePoint> ;
+		<PhaseTapChangerTablePoint.PhaseTapChangerTable> <urn:uuid:36f76d69-6c44-4155-8be7-746cf6e77dc6> ;
+		<TapChangerTablePoint.step> "9" ;
+		<TapChangerTablePoint.ratio> "0.965006" ;
+		<PhaseTapChangerTablePoint.angle> "-0.036267" ;
+		<TapChangerTablePoint.x> "0e+000" ;
+		<TapChangerTablePoint.b> "0e+000" ;
+		<TapChangerTablePoint.g> "0e+000" ;
+		<TapChangerTablePoint.r> "0e+000" .
+
+	<urn:uuid:dcc55d8e-9cf7-4a90-8d1c-781f583285ea> rdf:type <PhaseTapChangerTablePoint> ;
+		<PhaseTapChangerTablePoint.PhaseTapChangerTable> <urn:uuid:36f76d69-6c44-4155-8be7-746cf6e77dc6> ;
+		<TapChangerTablePoint.step> "10" ;
+		<TapChangerTablePoint.ratio> "0.970005" ;
+		<PhaseTapChangerTablePoint.angle> "-0.030926" ;
+		<TapChangerTablePoint.x> "0e+000" ;
+		<TapChangerTablePoint.b> "0e+000" ;
+		<TapChangerTablePoint.g> "0e+000" ;
+		<TapChangerTablePoint.r> "0e+000" .
+
+	<urn:uuid:f927200c-52ae-4f02-87c7-16da39a0229c> rdf:type <PhaseTapChangerTablePoint> ;
+		<PhaseTapChangerTablePoint.PhaseTapChangerTable> <urn:uuid:36f76d69-6c44-4155-8be7-746cf6e77dc6> ;
+		<TapChangerTablePoint.step> "11" ;
+		<TapChangerTablePoint.ratio> "0.975004" ;
+		<PhaseTapChangerTablePoint.angle> "-0.025640" ;
+		<TapChangerTablePoint.x> "0e+000" ;
+		<TapChangerTablePoint.b> "0e+000" ;
+		<TapChangerTablePoint.g> "0e+000" ;
+		<TapChangerTablePoint.r> "0e+000" .
+
+	<urn:uuid:ceb332b9-f748-4135-aa53-04e9a609fbad> rdf:type <PhaseTapChangerTablePoint> ;
+		<PhaseTapChangerTablePoint.PhaseTapChangerTable> <urn:uuid:36f76d69-6c44-4155-8be7-746cf6e77dc6> ;
+		<TapChangerTablePoint.step> "12" ;
+		<TapChangerTablePoint.ratio> "0.980003" ;
+		<PhaseTapChangerTablePoint.angle> "-0.020407" ;
+		<TapChangerTablePoint.x> "0e+000" ;
+		<TapChangerTablePoint.b> "0e+000" ;
+		<TapChangerTablePoint.g> "0e+000" ;
+		<TapChangerTablePoint.r> "0e+000" .
+
+	<urn:uuid:f310a571-d9fe-43fb-8b5c-7857efc92701> rdf:type <PhaseTapChangerTablePoint> ;
+		<PhaseTapChangerTablePoint.PhaseTapChangerTable> <urn:uuid:36f76d69-6c44-4155-8be7-746cf6e77dc6> ;
+		<TapChangerTablePoint.step> "13" ;
+		<TapChangerTablePoint.ratio> "0.985002" ;
+		<PhaseTapChangerTablePoint.angle> "-0.015228" ;
+		<TapChangerTablePoint.x> "0e+000" ;
+		<TapChangerTablePoint.b> "0e+000" ;
+		<TapChangerTablePoint.g> "0e+000" ;
+		<TapChangerTablePoint.r> "0e+000" .
+
+	<urn:uuid:daed0097-0632-49ab-bcde-65e47ce595a9> rdf:type <PhaseTapChangerTablePoint> ;
+		<PhaseTapChangerTablePoint.PhaseTapChangerTable> <urn:uuid:36f76d69-6c44-4155-8be7-746cf6e77dc6> ;
+		<TapChangerTablePoint.step> "14" ;
+		<TapChangerTablePoint.ratio> "0.990002" ;
+		<PhaseTapChangerTablePoint.angle> "-0.010100" ;
+		<TapChangerTablePoint.x> "0e+000" ;
+		<TapChangerTablePoint.b> "0e+000" ;
+		<TapChangerTablePoint.g> "0e+000" ;
+		<TapChangerTablePoint.r> "0e+000" .
+
+	<urn:uuid:a88de212-3da9-45e4-ab25-4bd54c67d948> rdf:type <PhaseTapChangerTablePoint> ;
+		<PhaseTapChangerTablePoint.PhaseTapChangerTable> <urn:uuid:36f76d69-6c44-4155-8be7-746cf6e77dc6> ;
+		<TapChangerTablePoint.step> "15" ;
+		<TapChangerTablePoint.ratio> "0.995001" ;
+		<PhaseTapChangerTablePoint.angle> "-0.005025" ;
+		<TapChangerTablePoint.x> "0e+000" ;
+		<TapChangerTablePoint.b> "0e+000" ;
+		<TapChangerTablePoint.g> "0e+000" ;
+		<TapChangerTablePoint.r> "0e+000" .
+
+	<urn:uuid:e0e16908-17b7-4082-9dba-8f1ca9503543> rdf:type <PhaseTapChangerTablePoint> ;
+		<PhaseTapChangerTablePoint.PhaseTapChangerTable> <urn:uuid:36f76d69-6c44-4155-8be7-746cf6e77dc6> ;
+		<TapChangerTablePoint.step> "16" ;
+		<TapChangerTablePoint.ratio> "1.000000" ;
+		<PhaseTapChangerTablePoint.angle> "0e+000" ;
+		<TapChangerTablePoint.x> "0e+000" ;
+		<TapChangerTablePoint.b> "0e+000" ;
+		<TapChangerTablePoint.g> "0e+000" ;
+		<TapChangerTablePoint.r> "0e+000" .
+
+	<urn:uuid:660fb4d4-8a56-4501-9b1a-25b0678be67a> rdf:type <PhaseTapChangerTablePoint> ;
+		<PhaseTapChangerTablePoint.PhaseTapChangerTable> <urn:uuid:36f76d69-6c44-4155-8be7-746cf6e77dc6> ;
+		<TapChangerTablePoint.step> "17" ;
+		<TapChangerTablePoint.ratio> "1.004999" ;
+		<PhaseTapChangerTablePoint.angle> "0.004975" ;
+		<TapChangerTablePoint.x> "0e+000" ;
+		<TapChangerTablePoint.b> "0e+000" ;
+		<TapChangerTablePoint.g> "0e+000" ;
+		<TapChangerTablePoint.r> "0e+000" .
+
+	<urn:uuid:bd2dedfb-a7b3-43b7-8282-3bca89d99f87> rdf:type <PhaseTapChangerTablePoint> ;
+		<PhaseTapChangerTablePoint.PhaseTapChangerTable> <urn:uuid:36f76d69-6c44-4155-8be7-746cf6e77dc6> ;
+		<TapChangerTablePoint.step> "18" ;
+		<TapChangerTablePoint.ratio> "1.009998" ;
+		<PhaseTapChangerTablePoint.angle> "0.009901" ;
+		<TapChangerTablePoint.x> "0e+000" ;
+		<TapChangerTablePoint.b> "0e+000" ;
+		<TapChangerTablePoint.g> "0e+000" ;
+		<TapChangerTablePoint.r> "0e+000" .
+
+	<urn:uuid:31d39760-fac3-4ffe-9945-34c694a30245> rdf:type <PhaseTapChangerTablePoint> ;
+		<PhaseTapChangerTablePoint.PhaseTapChangerTable> <urn:uuid:36f76d69-6c44-4155-8be7-746cf6e77dc6> ;
+		<TapChangerTablePoint.step> "19" ;
+		<TapChangerTablePoint.ratio> "1.014998" ;
+		<PhaseTapChangerTablePoint.angle> "0.014778" ;
+		<TapChangerTablePoint.x> "0e+000" ;
+		<TapChangerTablePoint.b> "0e+000" ;
+		<TapChangerTablePoint.g> "0e+000" ;
+		<TapChangerTablePoint.r> "0e+000" .
+
+	<urn:uuid:6a2f5c8f-5fcd-4710-8e39-93789590e95d> rdf:type <PhaseTapChangerTablePoint> ;
+		<PhaseTapChangerTablePoint.PhaseTapChangerTable> <urn:uuid:36f76d69-6c44-4155-8be7-746cf6e77dc6> ;
+		<TapChangerTablePoint.step> "20" ;
+		<TapChangerTablePoint.ratio> "1.019997" ;
+		<PhaseTapChangerTablePoint.angle> "0.019607" ;
+		<TapChangerTablePoint.x> "0e+000" ;
+		<TapChangerTablePoint.b> "0e+000" ;
+		<TapChangerTablePoint.g> "0e+000" ;
+		<TapChangerTablePoint.r> "0e+000" .
+
+	<urn:uuid:bedd1ab4-6f25-401d-b6b0-d0e62f50ae5f> rdf:type <PhaseTapChangerTablePoint> ;
+		<PhaseTapChangerTablePoint.PhaseTapChangerTable> <urn:uuid:36f76d69-6c44-4155-8be7-746cf6e77dc6> ;
+		<TapChangerTablePoint.step> "21" ;
+		<TapChangerTablePoint.ratio> "1.024996" ;
+		<PhaseTapChangerTablePoint.angle> "0.024389" ;
+		<TapChangerTablePoint.x> "0e+000" ;
+		<TapChangerTablePoint.b> "0e+000" ;
+		<TapChangerTablePoint.g> "0e+000" ;
+		<TapChangerTablePoint.r> "0e+000" .
+
+	<urn:uuid:d1ead1f8-f2ab-493b-90dd-8e4e54be4e05> rdf:type <PhaseTapChangerTablePoint> ;
+		<PhaseTapChangerTablePoint.PhaseTapChangerTable> <urn:uuid:36f76d69-6c44-4155-8be7-746cf6e77dc6> ;
+		<TapChangerTablePoint.step> "22" ;
+		<TapChangerTablePoint.ratio> "1.029996" ;
+		<PhaseTapChangerTablePoint.angle> "0.029125" ;
+		<TapChangerTablePoint.x> "0e+000" ;
+		<TapChangerTablePoint.b> "0e+000" ;
+		<TapChangerTablePoint.g> "0e+000" ;
+		<TapChangerTablePoint.r> "0e+000" .
+
+	<urn:uuid:78ce7ddf-b505-4888-827d-5775ea5ab689> rdf:type <PhaseTapChangerTablePoint> ;
+		<PhaseTapChangerTablePoint.PhaseTapChangerTable> <urn:uuid:36f76d69-6c44-4155-8be7-746cf6e77dc6> ;
+		<TapChangerTablePoint.step> "23" ;
+		<TapChangerTablePoint.ratio> "1.034995" ;
+		<PhaseTapChangerTablePoint.angle> "0.033815" ;
+		<TapChangerTablePoint.x> "0e+000" ;
+		<TapChangerTablePoint.b> "0e+000" ;
+		<TapChangerTablePoint.g> "0e+000" ;
+		<TapChangerTablePoint.r> "0e+000" .
+
+	<urn:uuid:2921fa7c-bbb5-40bd-bed9-9268d6c315a6> rdf:type <PhaseTapChangerTablePoint> ;
+		<PhaseTapChangerTablePoint.PhaseTapChangerTable> <urn:uuid:36f76d69-6c44-4155-8be7-746cf6e77dc6> ;
+		<TapChangerTablePoint.step> "24" ;
+		<TapChangerTablePoint.ratio> "1.039994" ;
+		<PhaseTapChangerTablePoint.angle> "0.038460" ;
+		<TapChangerTablePoint.x> "0e+000" ;
+		<TapChangerTablePoint.b> "0e+000" ;
+		<TapChangerTablePoint.g> "0e+000" ;
+		<TapChangerTablePoint.r> "0e+000" .
+
+	<urn:uuid:358a053f-a204-43df-8a86-aef5801c449c> rdf:type <PhaseTapChangerTablePoint> ;
+		<PhaseTapChangerTablePoint.PhaseTapChangerTable> <urn:uuid:36f76d69-6c44-4155-8be7-746cf6e77dc6> ;
+		<TapChangerTablePoint.step> "25" ;
+		<TapChangerTablePoint.ratio> "1.044993" ;
+		<PhaseTapChangerTablePoint.angle> "0.043060" ;
+		<TapChangerTablePoint.x> "0e+000" ;
+		<TapChangerTablePoint.b> "0e+000" ;
+		<TapChangerTablePoint.g> "0e+000" ;
+		<TapChangerTablePoint.r> "0e+000" .
+
+	<urn:uuid:1605c636-e9a2-4c12-8fc9-e4ffb536fefe> rdf:type <PhaseTapChangerTablePoint> ;
+		<PhaseTapChangerTablePoint.PhaseTapChangerTable> <urn:uuid:36f76d69-6c44-4155-8be7-746cf6e77dc6> ;
+		<TapChangerTablePoint.step> "26" ;
+		<TapChangerTablePoint.ratio> "1.049993" ;
+		<PhaseTapChangerTablePoint.angle> "0.047617" ;
+		<TapChangerTablePoint.x> "0e+000" ;
+		<TapChangerTablePoint.b> "0e+000" ;
+		<TapChangerTablePoint.g> "0e+000" ;
+		<TapChangerTablePoint.r> "0e+000" .
+
+	<urn:uuid:87363171-8841-4bf0-99f0-52db2b406a27> rdf:type <PhaseTapChangerTablePoint> ;
+		<PhaseTapChangerTablePoint.PhaseTapChangerTable> <urn:uuid:36f76d69-6c44-4155-8be7-746cf6e77dc6> ;
+		<TapChangerTablePoint.step> "27" ;
+		<TapChangerTablePoint.ratio> "1.054992" ;
+		<PhaseTapChangerTablePoint.angle> "0.052130" ;
+		<TapChangerTablePoint.x> "0e+000" ;
+		<TapChangerTablePoint.b> "0e+000" ;
+		<TapChangerTablePoint.g> "0e+000" ;
+		<TapChangerTablePoint.r> "0e+000" .
+
+	<urn:uuid:91efaea8-1198-49b4-92c8-93af6e4fe01e> rdf:type <PhaseTapChangerTablePoint> ;
+		<PhaseTapChangerTablePoint.PhaseTapChangerTable> <urn:uuid:36f76d69-6c44-4155-8be7-746cf6e77dc6> ;
+		<TapChangerTablePoint.step> "28" ;
+		<TapChangerTablePoint.ratio> "1.059991" ;
+		<PhaseTapChangerTablePoint.angle> "0.056601" ;
+		<TapChangerTablePoint.x> "0e+000" ;
+		<TapChangerTablePoint.b> "0e+000" ;
+		<TapChangerTablePoint.g> "0e+000" ;
+		<TapChangerTablePoint.r> "0e+000" .
+
+	<urn:uuid:68f800f5-a0d8-4848-89e9-e5550c603c34> rdf:type <PhaseTapChangerTablePoint> ;
+		<PhaseTapChangerTablePoint.PhaseTapChangerTable> <urn:uuid:36f76d69-6c44-4155-8be7-746cf6e77dc6> ;
+		<TapChangerTablePoint.step> "29" ;
+		<TapChangerTablePoint.ratio> "1.064991" ;
+		<PhaseTapChangerTablePoint.angle> "0.061030" ;
+		<TapChangerTablePoint.x> "0e+000" ;
+		<TapChangerTablePoint.b> "0e+000" ;
+		<TapChangerTablePoint.g> "0e+000" ;
+		<TapChangerTablePoint.r> "0e+000" .
+
+	<urn:uuid:7af06aa1-2dc6-4d87-9b67-8922938e8f4c> rdf:type <PhaseTapChangerTablePoint> ;
+		<PhaseTapChangerTablePoint.PhaseTapChangerTable> <urn:uuid:36f76d69-6c44-4155-8be7-746cf6e77dc6> ;
+		<TapChangerTablePoint.step> "30" ;
+		<TapChangerTablePoint.ratio> "1.069990" ;
+		<PhaseTapChangerTablePoint.angle> "0.065418" ;
+		<TapChangerTablePoint.x> "0e+000" ;
+		<TapChangerTablePoint.b> "0e+000" ;
+		<TapChangerTablePoint.g> "0e+000" ;
+		<TapChangerTablePoint.r> "0e+000" .
+
+	<urn:uuid:f7ea7583-e1f6-4b24-b70f-da3c381751f9> rdf:type <PhaseTapChangerTablePoint> ;
+		<PhaseTapChangerTablePoint.PhaseTapChangerTable> <urn:uuid:36f76d69-6c44-4155-8be7-746cf6e77dc6> ;
+		<TapChangerTablePoint.step> "31" ;
+		<TapChangerTablePoint.ratio> "1.074989" ;
+		<PhaseTapChangerTablePoint.angle> "0.069765" ;
+		<TapChangerTablePoint.x> "0e+000" ;
+		<TapChangerTablePoint.b> "0e+000" ;
+		<TapChangerTablePoint.g> "0e+000" ;
+		<TapChangerTablePoint.r> "0e+000" .
+
+	<urn:uuid:93d7465c-1f36-4805-aaa0-5e507d620429> rdf:type <PhaseTapChangerTablePoint> ;
+		<PhaseTapChangerTablePoint.PhaseTapChangerTable> <urn:uuid:36f76d69-6c44-4155-8be7-746cf6e77dc6> ;
+		<TapChangerTablePoint.step> "32" ;
+		<TapChangerTablePoint.ratio> "1.079989" ;
+		<PhaseTapChangerTablePoint.angle> "0.074071" ;
+		<TapChangerTablePoint.x> "0e+000" ;
+		<TapChangerTablePoint.b> "0e+000" ;
+		<TapChangerTablePoint.g> "0e+000" ;
+		<TapChangerTablePoint.r> "0e+000" .
+
+	<urn:uuid:2fca73e8-4223-4a62-9a73-57a6a980e861> rdf:type <PhaseTapChangerTablePoint> ;
+		<PhaseTapChangerTablePoint.PhaseTapChangerTable> <urn:uuid:36f76d69-6c44-4155-8be7-746cf6e77dc6> ;
+		<TapChangerTablePoint.step> "33" ;
+		<TapChangerTablePoint.ratio> "1.084988" ;
+		<PhaseTapChangerTablePoint.angle> "0.078338" ;
+		<TapChangerTablePoint.x> "0e+000" ;
+		<TapChangerTablePoint.b> "0e+000" ;
+		<TapChangerTablePoint.g> "0e+000" ;
+		<TapChangerTablePoint.r> "0e+000" .
+
+	<urn:uuid:41ca9e70-1cb4-4971-b8e6-a97a15580b89> rdf:type <PowerTransformerEnd> ;
+		<IdentifiedObject.name> "NL_TR2_2" ;
+		<PowerTransformerEnd.r> "0e+000" ;
+		<PowerTransformerEnd.x> "0e+000" ;
+		<PowerTransformerEnd.b> "0.0" ;
+		<PowerTransformerEnd.g> "0.0" ;
+		<PowerTransformerEnd.r0> "0e+000" ;
+		<PowerTransformerEnd.x0> "0e+000" ;
+		<PowerTransformerEnd.b0> "0.0" ;
+		<PowerTransformerEnd.g0> "0.0" ;
+		<TransformerEnd.rground> "0e+000" ;
+		<TransformerEnd.xground> "0.0" ;
+		<PowerTransformerEnd.ratedS> "1260.000000" ;
+		<PowerTransformerEnd.ratedU> "15.750000" ;
+		<TransformerEnd.endNumber> "2" ;
+		<PowerTransformerEnd.phaseAngleClock> "0" ;
+		<TransformerEnd.grounded> "true" ;
+		<PowerTransformerEnd.connectionKind> "Yn" ;
+		<TransformerEnd.BaseVoltage> <urn:uuid:c1d5bff18f8011e08e4d00247eb1f55e> ;
+		<PowerTransformerEnd.PowerTransformer> <urn:uuid:2184f365-8cd5-4b5d-8a28-9d68603bb6a4> ;
+		<TransformerEnd.Terminal> <urn:uuid:da232169-1c36-495a-8af6-a0d7d2b39f52> .
+
+	<urn:uuid:2025437c-16f2-4632-8bfa-524387c75b3b> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL_TR2_2 - CL-0" ;
+		entsoe:IdentifiedObject.shortName "CL-0" ;
+		<IdentifiedObject.description> "Ratings for element NL_TR2_2 - Limit" ;
+		<CurrentLimit.value> "46188.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:261d13c4-1527-42a5-ad0d-a3b817971166> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:1aee0921-7cbe-481c-9078-daf66ab2a950> .
+
+	<urn:uuid:2025437c-16f2-4632-8bfa-524387c75b3b1> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "90" ;
+		entsoe:IdentifiedObject.shortName "CL-0" ;
+		<IdentifiedObject.description> "Ratings for element NL_TR2_2 - Limit" ;
+		<CurrentLimit.value> "41569.200000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:261d13c4-1527-42a5-ad0d-a3b817971166> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:fd6c0e03-5026-4ac1-9d2b-6090d0c2585a> .
+
+	<urn:uuid:90d4bd32-1ca7-41f9-966b-a2f638d3fd70> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL_TR2_2 - CL-1" ;
+		entsoe:IdentifiedObject.shortName "CL-1" ;
+		<IdentifiedObject.description> "Ratings for element NL_TR2_2 - Limit" ;
+		<CurrentLimit.value> "48188.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:261d13c4-1527-42a5-ad0d-a3b817971166> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:18c8d038-31ea-4d92-9e7e-4b8a397f30a5> .
+
+	<urn:uuid:e0b55687-f073-4160-9f35-ac6e2782d449> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL_TR2_2 - CL-2" ;
+		entsoe:IdentifiedObject.shortName "CL-2" ;
+		<IdentifiedObject.description> "Ratings for element NL_TR2_2 - Limit" ;
+		<CurrentLimit.value> "47188.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:261d13c4-1527-42a5-ad0d-a3b817971166> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:250e948b-70ae-4139-971b-4f0053425b60> .
+
+	<urn:uuid:f3600241-63dc-485b-aefb-4ec24028f8b3> rdf:type <PowerTransformerEnd> ;
+		<IdentifiedObject.name> "NL_TR2_3" ;
+		<PowerTransformerEnd.r> "0.065302" ;
+		<PowerTransformerEnd.x> "5.377381" ;
+		<PowerTransformerEnd.b> "-0.0001420227" ;
+		<PowerTransformerEnd.g> "0.0000181818" ;
+		<PowerTransformerEnd.r0> "0.069143" ;
+		<PowerTransformerEnd.x0> "5.377333" ;
+		<PowerTransformerEnd.b0> "0.0" ;
+		<PowerTransformerEnd.g0> "0.0" ;
+		<TransformerEnd.rground> "0e+000" ;
+		<TransformerEnd.xground> "0.0" ;
+		<PowerTransformerEnd.ratedS> "1260.000000" ;
+		<PowerTransformerEnd.ratedU> "220.000000" ;
+		<TransformerEnd.endNumber> "1" ;
+		<PowerTransformerEnd.phaseAngleClock> "0" ;
+		<TransformerEnd.grounded> "true" ;
+		<PowerTransformerEnd.connectionKind> "Yn" ;
+		<TransformerEnd.BaseVoltage> <urn:uuid:7891a026ba2c42098556665efd13ba94> ;
+		<PowerTransformerEnd.PowerTransformer> <urn:uuid:80016742-31b3-432a-b00a-300667a1e572> ;
+		<TransformerEnd.Terminal> <urn:uuid:bd61b1f9-474d-424e-9709-42f75337c477> .
+
+	<urn:uuid:da8afd22-0f4e-4947-b14f-077d29c4efdb> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL_TR2_3 - CL-0" ;
+		entsoe:IdentifiedObject.shortName "CL-0" ;
+		<IdentifiedObject.description> "Ratings for element NL_TR2_3 - Limit" ;
+		<CurrentLimit.value> "3306.600000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:fd472104-d68c-4536-ba4a-5fd9349c0a65> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:1aee0921-7cbe-481c-9078-daf66ab2a950> .
+
+	<urn:uuid:da8afd22-0f4e-4947-b14f-077d29c4efdb1> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "90" ;
+		entsoe:IdentifiedObject.shortName "CL-0" ;
+		<IdentifiedObject.description> "Ratings for element NL_TR2_3 - Limit" ;
+		<CurrentLimit.value> "2975.940000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:fd472104-d68c-4536-ba4a-5fd9349c0a65> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:fd6c0e03-5026-4ac1-9d2b-6090d0c2585a> .
+
+	<urn:uuid:24e8f339-d812-4cfb-9d49-6e2f8cf3b6a0> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL_TR2_3 - CL-1" ;
+		entsoe:IdentifiedObject.shortName "CL-1" ;
+		<IdentifiedObject.description> "Ratings for element NL_TR2_3 - Limit" ;
+		<CurrentLimit.value> "3706.600000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:fd472104-d68c-4536-ba4a-5fd9349c0a65> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:18c8d038-31ea-4d92-9e7e-4b8a397f30a5> .
+
+	<urn:uuid:e0eb29e7-8e22-48fb-af7a-b8a9ee442b8b> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL_TR2_3 - CL-2" ;
+		entsoe:IdentifiedObject.shortName "CL-2" ;
+		<IdentifiedObject.description> "Ratings for element NL_TR2_3 - Limit" ;
+		<CurrentLimit.value> "3506.600000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:fd472104-d68c-4536-ba4a-5fd9349c0a65> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:250e948b-70ae-4139-971b-4f0053425b60> .
+
+	<urn:uuid:73a10a55-7ea0-4f48-878b-a94812685f3e> rdf:type <RatioTapChangerTable> ;
+		<IdentifiedObject.name> "Ratio Tap Changer Table" .
+
+	<urn:uuid:b0ae3958-f114-44ee-9cd4-d8ff5ae35334> rdf:type <RatioTapChangerTablePoint> ;
+		<RatioTapChangerTablePoint.RatioTapChangerTable> <urn:uuid:73a10a55-7ea0-4f48-878b-a94812685f3e> ;
+		<TapChangerTablePoint.step> "-15" ;
+		<TapChangerTablePoint.ratio> "0.920000" ;
+		<TapChangerTablePoint.b> "0e+000" ;
+		<TapChangerTablePoint.g> "0e+000" ;
+		<TapChangerTablePoint.x> "-8.571429" ;
+		<TapChangerTablePoint.r> "-8.571429" .
+
+	<urn:uuid:d5c02c57-3648-4658-92fc-116b0e5ff60d> rdf:type <RatioTapChangerTablePoint> ;
+		<RatioTapChangerTablePoint.RatioTapChangerTable> <urn:uuid:73a10a55-7ea0-4f48-878b-a94812685f3e> ;
+		<TapChangerTablePoint.step> "-14" ;
+		<TapChangerTablePoint.ratio> "0.925000" ;
+		<TapChangerTablePoint.b> "0e+000" ;
+		<TapChangerTablePoint.g> "0e+000" ;
+		<TapChangerTablePoint.x> "-7.857143" ;
+		<TapChangerTablePoint.r> "-7.857143" .
+
+	<urn:uuid:7a04f801-e4f2-4038-ad84-9331d31464af> rdf:type <RatioTapChangerTablePoint> ;
+		<RatioTapChangerTablePoint.RatioTapChangerTable> <urn:uuid:73a10a55-7ea0-4f48-878b-a94812685f3e> ;
+		<TapChangerTablePoint.step> "-13" ;
+		<TapChangerTablePoint.ratio> "0.930000" ;
+		<TapChangerTablePoint.b> "0e+000" ;
+		<TapChangerTablePoint.g> "0e+000" ;
+		<TapChangerTablePoint.x> "-7.142857" ;
+		<TapChangerTablePoint.r> "-7.142857" .
+
+	<urn:uuid:ad03e676-9080-4143-9480-daa5806d0fc5> rdf:type <RatioTapChangerTablePoint> ;
+		<RatioTapChangerTablePoint.RatioTapChangerTable> <urn:uuid:73a10a55-7ea0-4f48-878b-a94812685f3e> ;
+		<TapChangerTablePoint.step> "-12" ;
+		<TapChangerTablePoint.ratio> "0.940000" ;
+		<TapChangerTablePoint.b> "0e+000" ;
+		<TapChangerTablePoint.g> "0e+000" ;
+		<TapChangerTablePoint.x> "-6.428571" ;
+		<TapChangerTablePoint.r> "-6.428571" .
+
+	<urn:uuid:d6a192a9-2233-4680-af07-eb659910f90b> rdf:type <RatioTapChangerTablePoint> ;
+		<RatioTapChangerTablePoint.RatioTapChangerTable> <urn:uuid:73a10a55-7ea0-4f48-878b-a94812685f3e> ;
+		<TapChangerTablePoint.step> "-11" ;
+		<TapChangerTablePoint.ratio> "0.945000" ;
+		<TapChangerTablePoint.b> "0e+000" ;
+		<TapChangerTablePoint.g> "0e+000" ;
+		<TapChangerTablePoint.x> "-6.428571" ;
+		<TapChangerTablePoint.r> "-6.428571" .
+
+	<urn:uuid:1f61179d-04ca-4c43-939e-ac7337b3122d> rdf:type <RatioTapChangerTablePoint> ;
+		<RatioTapChangerTablePoint.RatioTapChangerTable> <urn:uuid:73a10a55-7ea0-4f48-878b-a94812685f3e> ;
+		<TapChangerTablePoint.step> "-10" ;
+		<TapChangerTablePoint.ratio> "0.950000" ;
+		<TapChangerTablePoint.b> "0e+000" ;
+		<TapChangerTablePoint.g> "0e+000" ;
+		<TapChangerTablePoint.x> "-5.714286" ;
+		<TapChangerTablePoint.r> "-5.714286" .
+
+	<urn:uuid:9f53eebe-0682-41d3-bc87-4903d62b20c9> rdf:type <RatioTapChangerTablePoint> ;
+		<RatioTapChangerTablePoint.RatioTapChangerTable> <urn:uuid:73a10a55-7ea0-4f48-878b-a94812685f3e> ;
+		<TapChangerTablePoint.step> "-9" ;
+		<TapChangerTablePoint.ratio> "0.955000" ;
+		<TapChangerTablePoint.b> "0e+000" ;
+		<TapChangerTablePoint.g> "0e+000" ;
+		<TapChangerTablePoint.x> "-5.714286" ;
+		<TapChangerTablePoint.r> "-5.714286" .
+
+	<urn:uuid:4d9652a5-90f8-4497-aecc-b5ebf5ccb7a6> rdf:type <RatioTapChangerTablePoint> ;
+		<RatioTapChangerTablePoint.RatioTapChangerTable> <urn:uuid:73a10a55-7ea0-4f48-878b-a94812685f3e> ;
+		<TapChangerTablePoint.step> "-8" ;
+		<TapChangerTablePoint.ratio> "0.960000" ;
+		<TapChangerTablePoint.b> "0e+000" ;
+		<TapChangerTablePoint.g> "0e+000" ;
+		<TapChangerTablePoint.x> "-5.000000" ;
+		<TapChangerTablePoint.r> "-5.000000" .
+
+	<urn:uuid:55cda51a-c2af-45d9-a05e-44c7f942beb3> rdf:type <RatioTapChangerTablePoint> ;
+		<RatioTapChangerTablePoint.RatioTapChangerTable> <urn:uuid:73a10a55-7ea0-4f48-878b-a94812685f3e> ;
+		<TapChangerTablePoint.step> "-7" ;
+		<TapChangerTablePoint.ratio> "0.965000" ;
+		<TapChangerTablePoint.b> "0e+000" ;
+		<TapChangerTablePoint.g> "0e+000" ;
+		<TapChangerTablePoint.x> "-4.285714" ;
+		<TapChangerTablePoint.r> "-4.285714" .
+
+	<urn:uuid:c7c9e160-9458-4943-a708-36d9098d78b0> rdf:type <RatioTapChangerTablePoint> ;
+		<RatioTapChangerTablePoint.RatioTapChangerTable> <urn:uuid:73a10a55-7ea0-4f48-878b-a94812685f3e> ;
+		<TapChangerTablePoint.step> "-6" ;
+		<TapChangerTablePoint.ratio> "0.970000" ;
+		<TapChangerTablePoint.b> "0e+000" ;
+		<TapChangerTablePoint.g> "0e+000" ;
+		<TapChangerTablePoint.x> "-3.571429" ;
+		<TapChangerTablePoint.r> "-3.571429" .
+
+	<urn:uuid:8dd14060-2b4d-4d40-ab2c-f0bf8ef1e5f8> rdf:type <RatioTapChangerTablePoint> ;
+		<RatioTapChangerTablePoint.RatioTapChangerTable> <urn:uuid:73a10a55-7ea0-4f48-878b-a94812685f3e> ;
+		<TapChangerTablePoint.step> "-5" ;
+		<TapChangerTablePoint.ratio> "0.975000" ;
+		<TapChangerTablePoint.b> "0e+000" ;
+		<TapChangerTablePoint.g> "0e+000" ;
+		<TapChangerTablePoint.x> "-3.571429" ;
+		<TapChangerTablePoint.r> "-3.571429" .
+
+	<urn:uuid:b6a0d90d-8922-484b-9ece-2fe2ce52eb36> rdf:type <RatioTapChangerTablePoint> ;
+		<RatioTapChangerTablePoint.RatioTapChangerTable> <urn:uuid:73a10a55-7ea0-4f48-878b-a94812685f3e> ;
+		<TapChangerTablePoint.step> "-4" ;
+		<TapChangerTablePoint.ratio> "0.980000" ;
+		<TapChangerTablePoint.b> "0e+000" ;
+		<TapChangerTablePoint.g> "0e+000" ;
+		<TapChangerTablePoint.x> "-2.857143" ;
+		<TapChangerTablePoint.r> "-2.857143" .
+
+	<urn:uuid:1d6f15ff-9829-46f6-b333-4df485a90034> rdf:type <RatioTapChangerTablePoint> ;
+		<RatioTapChangerTablePoint.RatioTapChangerTable> <urn:uuid:73a10a55-7ea0-4f48-878b-a94812685f3e> ;
+		<TapChangerTablePoint.step> "-3" ;
+		<TapChangerTablePoint.ratio> "0.985000" ;
+		<TapChangerTablePoint.b> "0e+000" ;
+		<TapChangerTablePoint.g> "0e+000" ;
+		<TapChangerTablePoint.x> "-2.142857" ;
+		<TapChangerTablePoint.r> "-2.142857" .
+
+	<urn:uuid:cae753f5-222f-4c14-8c28-34736e4c14f7> rdf:type <RatioTapChangerTablePoint> ;
+		<RatioTapChangerTablePoint.RatioTapChangerTable> <urn:uuid:73a10a55-7ea0-4f48-878b-a94812685f3e> ;
+		<TapChangerTablePoint.step> "-2" ;
+		<TapChangerTablePoint.ratio> "0.990000" ;
+		<TapChangerTablePoint.b> "0e+000" ;
+		<TapChangerTablePoint.g> "0e+000" ;
+		<TapChangerTablePoint.x> "-1.428571" ;
+		<TapChangerTablePoint.r> "-1.428571" .
+
+	<urn:uuid:2f9003be-3378-49fb-bf71-940055f55d7a> rdf:type <RatioTapChangerTablePoint> ;
+		<RatioTapChangerTablePoint.RatioTapChangerTable> <urn:uuid:73a10a55-7ea0-4f48-878b-a94812685f3e> ;
+		<TapChangerTablePoint.step> "-1" ;
+		<TapChangerTablePoint.ratio> "0.995000" ;
+		<TapChangerTablePoint.b> "0e+000" ;
+		<TapChangerTablePoint.g> "0e+000" ;
+		<TapChangerTablePoint.x> "-0.714286" ;
+		<TapChangerTablePoint.r> "-0.714286" .
+
+	<urn:uuid:9c8e0b90-619f-45f6-a9e0-8166842cc38e> rdf:type <RatioTapChangerTablePoint> ;
+		<RatioTapChangerTablePoint.RatioTapChangerTable> <urn:uuid:73a10a55-7ea0-4f48-878b-a94812685f3e> ;
+		<TapChangerTablePoint.step> "0" ;
+		<TapChangerTablePoint.ratio> "1.000000" ;
+		<TapChangerTablePoint.b> "0e+000" ;
+		<TapChangerTablePoint.g> "0e+000" ;
+		<TapChangerTablePoint.x> "0e+000" ;
+		<TapChangerTablePoint.r> "0e+000" .
+
+	<urn:uuid:42ba05e1-3dbe-4b86-b1c7-e7c73153b2b8> rdf:type <RatioTapChangerTablePoint> ;
+		<RatioTapChangerTablePoint.RatioTapChangerTable> <urn:uuid:73a10a55-7ea0-4f48-878b-a94812685f3e> ;
+		<TapChangerTablePoint.step> "1" ;
+		<TapChangerTablePoint.ratio> "1.005000" ;
+		<TapChangerTablePoint.b> "0e+000" ;
+		<TapChangerTablePoint.g> "0e+000" ;
+		<TapChangerTablePoint.x> "0.714286" ;
+		<TapChangerTablePoint.r> "0.714286" .
+
+	<urn:uuid:2b11f10a-3b53-4e2c-96b3-e1e5d0bd3309> rdf:type <RatioTapChangerTablePoint> ;
+		<RatioTapChangerTablePoint.RatioTapChangerTable> <urn:uuid:73a10a55-7ea0-4f48-878b-a94812685f3e> ;
+		<TapChangerTablePoint.step> "2" ;
+		<TapChangerTablePoint.ratio> "1.010000" ;
+		<TapChangerTablePoint.b> "0e+000" ;
+		<TapChangerTablePoint.g> "0e+000" ;
+		<TapChangerTablePoint.x> "1.428571" ;
+		<TapChangerTablePoint.r> "1.428571" .
+
+	<urn:uuid:19fae7f4-6f19-4b28-973a-900bfb037c40> rdf:type <RatioTapChangerTablePoint> ;
+		<RatioTapChangerTablePoint.RatioTapChangerTable> <urn:uuid:73a10a55-7ea0-4f48-878b-a94812685f3e> ;
+		<TapChangerTablePoint.step> "3" ;
+		<TapChangerTablePoint.ratio> "1.015300" ;
+		<TapChangerTablePoint.b> "0e+000" ;
+		<TapChangerTablePoint.g> "0e+000" ;
+		<TapChangerTablePoint.x> "1.428571" ;
+		<TapChangerTablePoint.r> "1.428571" .
+
+	<urn:uuid:94f34b96-796e-4410-9c7e-dd4c3755aa0d> rdf:type <RatioTapChangerTablePoint> ;
+		<RatioTapChangerTablePoint.RatioTapChangerTable> <urn:uuid:73a10a55-7ea0-4f48-878b-a94812685f3e> ;
+		<TapChangerTablePoint.step> "4" ;
+		<TapChangerTablePoint.ratio> "1.020000" ;
+		<TapChangerTablePoint.b> "0e+000" ;
+		<TapChangerTablePoint.g> "0e+000" ;
+		<TapChangerTablePoint.x> "2.142857" ;
+		<TapChangerTablePoint.r> "2.142857" .
+
+	<urn:uuid:26e1b6a8-484a-4221-bf24-2716017c8c7c> rdf:type <RatioTapChangerTablePoint> ;
+		<RatioTapChangerTablePoint.RatioTapChangerTable> <urn:uuid:73a10a55-7ea0-4f48-878b-a94812685f3e> ;
+		<TapChangerTablePoint.step> "5" ;
+		<TapChangerTablePoint.ratio> "1.025000" ;
+		<TapChangerTablePoint.b> "0e+000" ;
+		<TapChangerTablePoint.g> "0e+000" ;
+		<TapChangerTablePoint.x> "2.857143" ;
+		<TapChangerTablePoint.r> "2.857143" .
+
+	<urn:uuid:228e64df-7d7c-4844-87ed-79dd95d828f0> rdf:type <RatioTapChangerTablePoint> ;
+		<RatioTapChangerTablePoint.RatioTapChangerTable> <urn:uuid:73a10a55-7ea0-4f48-878b-a94812685f3e> ;
+		<TapChangerTablePoint.step> "6" ;
+		<TapChangerTablePoint.ratio> "1.031000" ;
+		<TapChangerTablePoint.b> "0e+000" ;
+		<TapChangerTablePoint.g> "0e+000" ;
+		<TapChangerTablePoint.x> "3.571429" ;
+		<TapChangerTablePoint.r> "3.571429" .
+
+	<urn:uuid:00004dc1-fc82-4a01-9f8a-3903654c35af> rdf:type <RatioTapChangerTablePoint> ;
+		<RatioTapChangerTablePoint.RatioTapChangerTable> <urn:uuid:73a10a55-7ea0-4f48-878b-a94812685f3e> ;
+		<TapChangerTablePoint.step> "7" ;
+		<TapChangerTablePoint.ratio> "1.037000" ;
+		<TapChangerTablePoint.b> "0e+000" ;
+		<TapChangerTablePoint.g> "0e+000" ;
+		<TapChangerTablePoint.x> "4.285714" ;
+		<TapChangerTablePoint.r> "4.285714" .
+
+	<urn:uuid:83fefc1f-99bb-473c-ba76-187497e944fe> rdf:type <RatioTapChangerTablePoint> ;
+		<RatioTapChangerTablePoint.RatioTapChangerTable> <urn:uuid:73a10a55-7ea0-4f48-878b-a94812685f3e> ;
+		<TapChangerTablePoint.step> "8" ;
+		<TapChangerTablePoint.ratio> "1.043000" ;
+		<TapChangerTablePoint.b> "0e+000" ;
+		<TapChangerTablePoint.g> "0e+000" ;
+		<TapChangerTablePoint.x> "5.000000" ;
+		<TapChangerTablePoint.r> "5.000000" .
+
+	<urn:uuid:2c07e6fb-7574-4b76-ad87-b2148cab8a18> rdf:type <RatioTapChangerTablePoint> ;
+		<RatioTapChangerTablePoint.RatioTapChangerTable> <urn:uuid:73a10a55-7ea0-4f48-878b-a94812685f3e> ;
+		<TapChangerTablePoint.step> "9" ;
+		<TapChangerTablePoint.ratio> "1.050000" ;
+		<TapChangerTablePoint.b> "0e+000" ;
+		<TapChangerTablePoint.g> "0e+000" ;
+		<TapChangerTablePoint.x> "5.000000" ;
+		<TapChangerTablePoint.r> "5.000000" .
+
+	<urn:uuid:05d9a2d5-b1ec-4aba-a7ab-a1849ff80aa9> rdf:type <RatioTapChangerTablePoint> ;
+		<RatioTapChangerTablePoint.RatioTapChangerTable> <urn:uuid:73a10a55-7ea0-4f48-878b-a94812685f3e> ;
+		<TapChangerTablePoint.step> "10" ;
+		<TapChangerTablePoint.ratio> "1.055000" ;
+		<TapChangerTablePoint.b> "0e+000" ;
+		<TapChangerTablePoint.g> "0e+000" ;
+		<TapChangerTablePoint.x> "5.714286" ;
+		<TapChangerTablePoint.r> "5.714286" .
+
+	<urn:uuid:c45f907b-ef87-4ac0-a74d-11e17ffce137> rdf:type <RatioTapChangerTablePoint> ;
+		<RatioTapChangerTablePoint.RatioTapChangerTable> <urn:uuid:73a10a55-7ea0-4f48-878b-a94812685f3e> ;
+		<TapChangerTablePoint.step> "11" ;
+		<TapChangerTablePoint.ratio> "1.060000" ;
+		<TapChangerTablePoint.b> "0e+000" ;
+		<TapChangerTablePoint.g> "0e+000" ;
+		<TapChangerTablePoint.x> "5.714286" ;
+		<TapChangerTablePoint.r> "5.714286" .
+
+	<urn:uuid:c32f5732-42c1-4a99-9a33-243927c2a947> rdf:type <RatioTapChangerTablePoint> ;
+		<RatioTapChangerTablePoint.RatioTapChangerTable> <urn:uuid:73a10a55-7ea0-4f48-878b-a94812685f3e> ;
+		<TapChangerTablePoint.step> "12" ;
+		<TapChangerTablePoint.ratio> "1.065000" ;
+		<TapChangerTablePoint.b> "0e+000" ;
+		<TapChangerTablePoint.g> "0e+000" ;
+		<TapChangerTablePoint.x> "6.428571" ;
+		<TapChangerTablePoint.r> "6.428571" .
+
+	<urn:uuid:f545d657-acd5-4b70-9b42-29916ab86e19> rdf:type <RatioTapChangerTablePoint> ;
+		<RatioTapChangerTablePoint.RatioTapChangerTable> <urn:uuid:73a10a55-7ea0-4f48-878b-a94812685f3e> ;
+		<TapChangerTablePoint.step> "13" ;
+		<TapChangerTablePoint.ratio> "1.072000" ;
+		<TapChangerTablePoint.b> "0e+000" ;
+		<TapChangerTablePoint.g> "0e+000" ;
+		<TapChangerTablePoint.x> "6.428571" ;
+		<TapChangerTablePoint.r> "6.428571" .
+
+	<urn:uuid:90b2ca0f-8148-45af-b9e9-5fe242de7e01> rdf:type <RatioTapChangerTablePoint> ;
+		<RatioTapChangerTablePoint.RatioTapChangerTable> <urn:uuid:73a10a55-7ea0-4f48-878b-a94812685f3e> ;
+		<TapChangerTablePoint.step> "14" ;
+		<TapChangerTablePoint.ratio> "1.080000" ;
+		<TapChangerTablePoint.b> "0e+000" ;
+		<TapChangerTablePoint.g> "0e+000" ;
+		<TapChangerTablePoint.x> "7.142857" ;
+		<TapChangerTablePoint.r> "7.142857" .
+
+	<urn:uuid:0a474d5f-4fd8-44c2-93ce-826d113f7bc3> rdf:type <RatioTapChangerTablePoint> ;
+		<RatioTapChangerTablePoint.RatioTapChangerTable> <urn:uuid:73a10a55-7ea0-4f48-878b-a94812685f3e> ;
+		<TapChangerTablePoint.step> "15" ;
+		<TapChangerTablePoint.ratio> "1.085000" ;
+		<TapChangerTablePoint.b> "0e+000" ;
+		<TapChangerTablePoint.g> "0e+000" ;
+		<TapChangerTablePoint.x> "7.857143" ;
+		<TapChangerTablePoint.r> "7.857143" .
+
+	<urn:uuid:cba72b64-5e8e-4322-8e5c-446f728df478> rdf:type <TapChangerControl> ;
+		<IdentifiedObject.name> "NL_TR2_3" ;
+		<RegulatingControl.mode> "voltage" ;
+		<RegulatingControl.Terminal> <urn:uuid:4f1c405f-07c9-4fb0-b64e-551896a29aa8> .
+
+	<urn:uuid:44b4277a-0f4b-43a8-ad93-6f7d6ef02061> rdf:type <RatioTapChanger> ;
+		<IdentifiedObject.name> "NL_TR2_3" ;
+		<TapChanger.neutralU> "220.000000" ;
+		<TapChanger.lowStep> "-15" ;
+		<TapChanger.highStep> "15" ;
+		<TapChanger.neutralStep> "0" ;
+		<TapChanger.normalStep> "5" ;
+		<RatioTapChanger.stepVoltageIncrement> "0.625000" ;
+		<TapChanger.ltcFlag> "true" ;
+		<TapChanger.TapChangerControl> <urn:uuid:cba72b64-5e8e-4322-8e5c-446f728df478> ;
+		<RatioTapChanger.tculControlMode> "volt" ;
+		<RatioTapChanger.TransformerEnd> <urn:uuid:f3600241-63dc-485b-aefb-4ec24028f8b3> ;
+		<RatioTapChanger.RatioTapChangerTable> <urn:uuid:73a10a55-7ea0-4f48-878b-a94812685f3e> .
+
+	<urn:uuid:4df90339-ae02-4da1-8e1e-69ab068df065> rdf:type <PowerTransformerEnd> ;
+		<IdentifiedObject.name> "NL_TR2_3" ;
+		<PowerTransformerEnd.r> "0e+000" ;
+		<PowerTransformerEnd.x> "0e+000" ;
+		<PowerTransformerEnd.b> "0.0" ;
+		<PowerTransformerEnd.g> "0.0" ;
+		<PowerTransformerEnd.r0> "0e+000" ;
+		<PowerTransformerEnd.x0> "0e+000" ;
+		<PowerTransformerEnd.b0> "0.0" ;
+		<PowerTransformerEnd.g0> "0.0" ;
+		<TransformerEnd.rground> "0e+000" ;
+		<TransformerEnd.xground> "0.0" ;
+		<PowerTransformerEnd.ratedS> "1260.000000" ;
+		<PowerTransformerEnd.ratedU> "15.750000" ;
+		<TransformerEnd.endNumber> "2" ;
+		<PowerTransformerEnd.phaseAngleClock> "0" ;
+		<TransformerEnd.grounded> "true" ;
+		<PowerTransformerEnd.connectionKind> "Yn" ;
+		<TransformerEnd.BaseVoltage> <urn:uuid:c1d5bff18f8011e08e4d00247eb1f55e> ;
+		<PowerTransformerEnd.PowerTransformer> <urn:uuid:80016742-31b3-432a-b00a-300667a1e572> ;
+		<TransformerEnd.Terminal> <urn:uuid:4f1c405f-07c9-4fb0-b64e-551896a29aa8> .
+
+	<urn:uuid:a01fa1eb-bf7c-4db0-9a7a-8fc0ec81e914> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL_TR2_3 - CL-0" ;
+		entsoe:IdentifiedObject.shortName "CL-0" ;
+		<IdentifiedObject.description> "Ratings for element NL_TR2_3 - Limit" ;
+		<CurrentLimit.value> "46188.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:cf3e5341-6736-4b34-b4da-e4af2073765b> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:1aee0921-7cbe-481c-9078-daf66ab2a950> .
+
+	<urn:uuid:a01fa1eb-bf7c-4db0-9a7a-8fc0ec81e9141> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "90" ;
+		entsoe:IdentifiedObject.shortName "CL-0" ;
+		<IdentifiedObject.description> "Ratings for element NL_TR2_3 - Limit" ;
+		<CurrentLimit.value> "41569.200000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:cf3e5341-6736-4b34-b4da-e4af2073765b> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:fd6c0e03-5026-4ac1-9d2b-6090d0c2585a> .
+
+	<urn:uuid:e17c1040-2f4f-4f35-bf55-ddc273021c15> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL_TR2_3 - CL-1" ;
+		entsoe:IdentifiedObject.shortName "CL-1" ;
+		<IdentifiedObject.description> "Ratings for element NL_TR2_3 - Limit" ;
+		<CurrentLimit.value> "48188.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:cf3e5341-6736-4b34-b4da-e4af2073765b> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:18c8d038-31ea-4d92-9e7e-4b8a397f30a5> .
+
+	<urn:uuid:56acc988-b71a-45e8-9fe1-822c2c7c70ba> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL_TR2_3 - CL-2" ;
+		entsoe:IdentifiedObject.shortName "CL-2" ;
+		<IdentifiedObject.description> "Ratings for element NL_TR2_3 - Limit" ;
+		<CurrentLimit.value> "47188.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:cf3e5341-6736-4b34-b4da-e4af2073765b> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:250e948b-70ae-4139-971b-4f0053425b60> .
+}

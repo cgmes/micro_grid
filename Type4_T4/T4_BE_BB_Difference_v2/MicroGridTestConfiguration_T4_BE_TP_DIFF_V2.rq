@@ -1,0 +1,21 @@
+BASE <http://iec.ch/TC57/2013/CIM-schema-cim16#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX cim: <http://iec.ch/TC57/2013/CIM-schema-cim16#>
+PREFIX entsoe: <http://entsoe.eu/CIM/SchemaExtension/3/1#>
+
+WITH <urn:uuid:f2f43818-09c8-4252-9611-7af80c398d20>
+INSERT {
+	<urn:uuid:23b65c6b-2351-4673-89e9-1895c7291543> rdf:type <TopologicalNode> ;
+		<IdentifiedObject.name> "Series Compensator" ;
+		<TopologicalNode.BaseVoltage> <urn:uuid:63893f24-5b4e-407c-9a1e-4ff71121f33c> ;
+		<TopologicalNode.ConnectivityNodeContainer> <urn:uuid:69ef0dbd-da79-4eef-a02f-690cb8a28361> .
+
+	<urn:uuid:67bb74f1-8620-4a32-9d7d-a44092d11d22> rdf:type <Terminal> ;
+		<Terminal.TopologicalNode> <urn:uuid:f70f6bad-eb8d-4b8f-8431-4ab93581514e> .
+
+	<urn:uuid:8171fc34-6891-40e0-92d1-da9f4ba69e26> rdf:type <Terminal> ;
+		<Terminal.TopologicalNode> <urn:uuid:f70f6bad-eb8d-4b8f-8431-4ab93581514e> .
+
+	<urn:uuid:13dcec71-4b02-4c0c-93a7-8e16db4aa0b7> rdf:type <Terminal> ;
+		<Terminal.TopologicalNode> <urn:uuid:23b65c6b-2351-4673-89e9-1895c7291543> .
+}

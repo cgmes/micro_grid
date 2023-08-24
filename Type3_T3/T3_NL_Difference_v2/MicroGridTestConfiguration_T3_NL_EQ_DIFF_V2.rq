@@ -1,0 +1,1109 @@
+BASE <http://iec.ch/TC57/2013/CIM-schema-cim16#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX cim: <http://iec.ch/TC57/2013/CIM-schema-cim16#>
+PREFIX entsoe: <http://entsoe.eu/CIM/SchemaExtension/3/1#>
+
+WITH <urn:uuid:77b55f87-fc1e-4046-9599-6c6b4f991a86>
+DELETE {
+	<urn:uuid:dd9c5b59-0728-45ca-9930-0dff2a9fb390> rdf:type <OperationalLimitType> ;
+		<IdentifiedObject.name> "TC" ;
+		entsoe:IdentifiedObject.shortName "tc" ;
+		<OperationalLimitType.direction> "absoluteValue" ;
+		entsoe:OperationalLimitType.limitType "tc" .
+
+	<urn:uuid:68cd26b8-d512-4104-a1d1-b2e8f9376ecc> rdf:type <OperationalLimitType> ;
+		<IdentifiedObject.name> "PATLT" ;
+		entsoe:IdentifiedObject.shortName "patlt" ;
+		<OperationalLimitType.direction> "absoluteValue" ;
+		entsoe:OperationalLimitType.limitType "patlt" .
+
+	<urn:uuid:a1cc9747-6819-429e-bd5f-23ffdb1d7376> rdf:type <OperationalLimitType> ;
+		<IdentifiedObject.name> "TCT" ;
+		entsoe:IdentifiedObject.shortName "tct" ;
+		<OperationalLimitType.direction> "absoluteValue" ;
+		entsoe:OperationalLimitType.limitType "tct" .
+
+	<urn:uuid:a4b97f0b-39b8-452d-b51c-fd3b25fa1d9b1> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:68cd26b8-d512-4104-a1d1-b2e8f9376ecc> .
+
+	<urn:uuid:db8675aa-6a3d-47a8-b864-a3e474c5c8851> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:68cd26b8-d512-4104-a1d1-b2e8f9376ecc> .
+
+	<urn:uuid:b4659169-38a4-494f-b3e2-aa83dc9a66701> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:68cd26b8-d512-4104-a1d1-b2e8f9376ecc> .
+
+	<urn:uuid:0388b680-3feb-45a2-bd56-5a620472107b1> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:68cd26b8-d512-4104-a1d1-b2e8f9376ecc> .
+
+	<urn:uuid:a279a3dc-550b-426c-af3a-61b7be508dcc> rdf:type rdf:Description ;
+		<IdentifiedObject.name> "NL-Line_3" ;
+		<Equipment.EquipmentContainer> <urn:uuid:644936cc-1ea0-46f3-93e6-eed0e0cc8bee> .
+
+	<urn:uuid:5dfee914-a4fd-4bde-a5b4-c4caa6378d10> rdf:type <Terminal> ;
+		<IdentifiedObject.name> "NL-Line_3 - T1" ;
+		entsoe:IdentifiedObject.shortName "NL-L_3" ;
+		entsoe:IdentifiedObject.energyIdentCodeEic "10T-AT-DE-00009W" ;
+		<ACDCTerminal.sequenceNumber> "1" ;
+		<Terminal.phases> "ABC" ;
+		<Terminal.ConductingEquipment> <urn:uuid:a279a3dc-550b-426c-af3a-61b7be508dcc> ;
+		<Terminal.ConnectivityNode> <urn:uuid:f28134fe-076d-4605-aa92-b9e0bbe96841> .
+
+	<urn:uuid:6aecb9ba-5835-4b70-89bc-96d687e45779> rdf:type <Terminal> ;
+		<IdentifiedObject.name> "NL-Line_3 - T2" ;
+		entsoe:IdentifiedObject.shortName "NL-L_3" ;
+		entsoe:IdentifiedObject.energyIdentCodeEic "10T-AT-DE-00009W" ;
+		<ACDCTerminal.sequenceNumber> "2" ;
+		<Terminal.phases> "ABC" ;
+		<Terminal.ConductingEquipment> <urn:uuid:a279a3dc-550b-426c-af3a-61b7be508dcc> ;
+		<Terminal.ConnectivityNode> <urn:uuid:b6978550-cb6e-11e1-bcee-406c8f32ef58> .
+
+	<urn:uuid:9a03e8ee-e832-43c8-b38e-0d43f8ef7355> rdf:type <OperationalLimitSet> ;
+		<IdentifiedObject.name> "Limits at Port 1" ;
+		<IdentifiedObject.description> "Limit-Ratings for branch NL-Line_3 at Port 1" ;
+		<OperationalLimitSet.Terminal> <urn:uuid:5dfee914-a4fd-4bde-a5b4-c4caa6378d10> .
+
+	<urn:uuid:9dd40a3a-c6df-4f16-876c-bd11c538324b> rdf:type rdf:Description ;
+		<IdentifiedObject.name> "NL-Line_3 - CL-0" ;
+		<IdentifiedObject.description> "Ratings for element NL-Line_3 - Limit" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:9a03e8ee-e832-43c8-b38e-0d43f8ef7355> .
+
+	<urn:uuid:150d1dcb-f7b6-4fcd-bce9-e39c6ddf15aa> rdf:type rdf:Description ;
+		<IdentifiedObject.name> "NL-Line_3 - CL-1" ;
+		<IdentifiedObject.description> "Ratings for element NL-Line_3 - Limit" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:9a03e8ee-e832-43c8-b38e-0d43f8ef7355> .
+
+	<urn:uuid:317c3033-0409-4f57-9209-4baae4b5e165> rdf:type rdf:Description ;
+		<IdentifiedObject.name> "NL-Line_3 - CL-2" ;
+		<IdentifiedObject.description> "Ratings for element NL-Line_3 - Limit" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:9a03e8ee-e832-43c8-b38e-0d43f8ef7355> .
+
+	<urn:uuid:317c3033-0409-4f57-9209-4baae4b5e1651> rdf:type rdf:Description ;
+		<IdentifiedObject.description> "Ratings for element NL-Line_3 - Limit" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:9a03e8ee-e832-43c8-b38e-0d43f8ef7355> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:68cd26b8-d512-4104-a1d1-b2e8f9376ecc> .
+
+	<urn:uuid:e29f4055-0267-4d9e-a889-8afc2326e870> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL-Line_3 - CL-3" ;
+		entsoe:IdentifiedObject.shortName "CL-3" ;
+		<IdentifiedObject.description> "Ratings for element NL-Line_3 - Limit" ;
+		<CurrentLimit.value> "2000.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:9a03e8ee-e832-43c8-b38e-0d43f8ef7355> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:dd9c5b59-0728-45ca-9930-0dff2a9fb390> .
+
+	<urn:uuid:e29f4055-0267-4d9e-a889-8afc2326e8702> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "90" ;
+		entsoe:IdentifiedObject.shortName "CL-3" ;
+		<IdentifiedObject.description> "Ratings for element NL-Line_3 - Limit" ;
+		<CurrentLimit.value> "1800.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:9a03e8ee-e832-43c8-b38e-0d43f8ef7355> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:a1cc9747-6819-429e-bd5f-23ffdb1d7376> .
+
+	<urn:uuid:14e9e317-a168-44a2-82ef-7c76190108a2> rdf:type <OperationalLimitSet> ;
+		<IdentifiedObject.name> "Limits at Port 2" ;
+		<IdentifiedObject.description> "Limit-Ratings for branch NL-Line_3 at Port 2" ;
+		<OperationalLimitSet.Terminal> <urn:uuid:6aecb9ba-5835-4b70-89bc-96d687e45779> .
+
+	<urn:uuid:75caf931-a43f-4e4a-a831-fe9a729feb72> rdf:type rdf:Description ;
+		<IdentifiedObject.name> "NL-Line_3 - CL-0" ;
+		<IdentifiedObject.description> "Ratings for element NL-Line_3 - Limit" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:14e9e317-a168-44a2-82ef-7c76190108a2> .
+
+	<urn:uuid:bec4e785-5143-4ad4-b7b0-aea8e33be7e6> rdf:type rdf:Description ;
+		<IdentifiedObject.name> "NL-Line_3 - CL-1" ;
+		<IdentifiedObject.description> "Ratings for element NL-Line_3 - Limit" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:14e9e317-a168-44a2-82ef-7c76190108a2> .
+
+	<urn:uuid:62be08ea-2a9e-4284-9642-2947cb2c5f1b> rdf:type rdf:Description ;
+		<IdentifiedObject.name> "NL-Line_3 - CL-2" ;
+		<IdentifiedObject.description> "Ratings for element NL-Line_3 - Limit" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:14e9e317-a168-44a2-82ef-7c76190108a2> .
+
+	<urn:uuid:62be08ea-2a9e-4284-9642-2947cb2c5f1b1> rdf:type rdf:Description ;
+		<IdentifiedObject.description> "Ratings for element NL-Line_3 - Limit" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:14e9e317-a168-44a2-82ef-7c76190108a2> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:68cd26b8-d512-4104-a1d1-b2e8f9376ecc> .
+
+	<urn:uuid:22274f03-885c-4ea8-931d-862beec6edd1> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL-Line_3 - CL-3" ;
+		entsoe:IdentifiedObject.shortName "CL-3" ;
+		<IdentifiedObject.description> "Ratings for element NL-Line_3 - Limit" ;
+		<CurrentLimit.value> "2000.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:14e9e317-a168-44a2-82ef-7c76190108a2> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:dd9c5b59-0728-45ca-9930-0dff2a9fb390> .
+
+	<urn:uuid:22274f03-885c-4ea8-931d-862beec6edd12> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "90" ;
+		entsoe:IdentifiedObject.shortName "CL-3" ;
+		<IdentifiedObject.description> "Ratings for element NL-Line_3 - Limit" ;
+		<CurrentLimit.value> "1800.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:14e9e317-a168-44a2-82ef-7c76190108a2> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:a1cc9747-6819-429e-bd5f-23ffdb1d7376> .
+
+	<urn:uuid:644936cc-1ea0-46f3-93e6-eed0e0cc8bee> rdf:type <Line> ;
+		<IdentifiedObject.name> "container of NL-Line_3" ;
+		<Line.Region> <urn:uuid:c1d5bfe48f8011e08e4d00247eb1f55e> .
+
+	<urn:uuid:1cd93631-5573-48db-8444-0e85a91aa6f11> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:68cd26b8-d512-4104-a1d1-b2e8f9376ecc> .
+
+	<urn:uuid:d73f50e0-00db-4f54-a087-b0d2204f229a1> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:68cd26b8-d512-4104-a1d1-b2e8f9376ecc> .
+
+	<urn:uuid:45b85c9e-0788-4cbb-b71b-dc1d5de04e511> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:68cd26b8-d512-4104-a1d1-b2e8f9376ecc> .
+
+	<urn:uuid:a228917a-44c9-4124-b7db-ea6408b3c5bb1> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:68cd26b8-d512-4104-a1d1-b2e8f9376ecc> .
+
+	<urn:uuid:150183f1-3144-4d18-b5ca-328efdead2571> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:68cd26b8-d512-4104-a1d1-b2e8f9376ecc> .
+
+	<urn:uuid:89d45390-25dc-49a6-bb08-69b67f27cd391> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:68cd26b8-d512-4104-a1d1-b2e8f9376ecc> .
+
+	<urn:uuid:fa85553d-9769-45fe-9b79-cecafa01c4ba1> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:68cd26b8-d512-4104-a1d1-b2e8f9376ecc> .
+
+	<urn:uuid:1a886514-5f7d-418a-99b7-02330ed01ca71> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:68cd26b8-d512-4104-a1d1-b2e8f9376ecc> .
+
+	<urn:uuid:0c95b506-05a2-40d5-9f82-b9bf1e680a8d1> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:68cd26b8-d512-4104-a1d1-b2e8f9376ecc> .
+
+	<urn:uuid:6a927421-36cd-487a-b6b7-61dd454704471> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:68cd26b8-d512-4104-a1d1-b2e8f9376ecc> .
+}
+INSERT {
+	<urn:uuid:d030d71d-e1d4-49e2-b27a-f5a36c290f59> rdf:type <Substation> ;
+		<IdentifiedObject.name> "NL_HVDC Rectifier" ;
+		<Substation.Region> <urn:uuid:c1d5bfe48f8011e08e4d00247eb1f55e> .
+
+	<urn:uuid:dfb3d892-fadc-4a65-8eee-5bd8715bbdf0> rdf:type <Substation> ;
+		<IdentifiedObject.name> "NL_HVDC Inverter" ;
+		<Substation.Region> <urn:uuid:c1d5bfe48f8011e08e4d00247eb1f55e> .
+
+	<urn:uuid:e042b69d-181c-4415-be3f-83a84ce951a1> rdf:type <BaseVoltage> ;
+		<BaseVoltage.nominalVoltage> "123.90" ;
+		<IdentifiedObject.description> "Base Voltage Level" ;
+		entsoe:IdentifiedObject.shortName "123.90" ;
+		<IdentifiedObject.name> "123.90 kV" .
+
+	<urn:uuid:c68f0a24-46cb-42aa-b91d-0b49b8310cc9> rdf:type <VoltageLevel> ;
+		<IdentifiedObject.name> "123.9" ;
+		<VoltageLevel.lowVoltageLimit> "111.510000" ;
+		<VoltageLevel.highVoltageLimit> "136.290000" ;
+		<VoltageLevel.Substation> <urn:uuid:d030d71d-e1d4-49e2-b27a-f5a36c290f59> ;
+		<VoltageLevel.BaseVoltage> <urn:uuid:e042b69d-181c-4415-be3f-83a84ce951a1> .
+
+	<urn:uuid:613bf445-d1a8-409a-95f8-45b41f9a0eec> rdf:type <VoltageLevel> ;
+		<IdentifiedObject.name> "220.0" ;
+		<VoltageLevel.lowVoltageLimit> "198.000000" ;
+		<VoltageLevel.highVoltageLimit> "242.000000" ;
+		<VoltageLevel.Substation> <urn:uuid:dfb3d892-fadc-4a65-8eee-5bd8715bbdf0> ;
+		<VoltageLevel.BaseVoltage> <urn:uuid:7891a026ba2c42098556665efd13ba94> .
+
+	<urn:uuid:10dff29d-ff80-49dc-b34e-3a58603bf0c6> rdf:type <VoltageLevel> ;
+		<IdentifiedObject.name> "123.9" ;
+		<VoltageLevel.lowVoltageLimit> "111.510000" ;
+		<VoltageLevel.highVoltageLimit> "136.290000" ;
+		<VoltageLevel.Substation> <urn:uuid:dfb3d892-fadc-4a65-8eee-5bd8715bbdf0> ;
+		<VoltageLevel.BaseVoltage> <urn:uuid:e042b69d-181c-4415-be3f-83a84ce951a1> .
+
+	<urn:uuid:613bf445-d1a8-409a-95f8-45b41f9a02ec> rdf:type <VoltageLevel> ;
+		<IdentifiedObject.name> "220.0" ;
+		<VoltageLevel.lowVoltageLimit> "14.175000" ;
+		<VoltageLevel.highVoltageLimit> "17.325000" ;
+		<VoltageLevel.Substation> <urn:uuid:d030d71d-e1d4-49e2-b27a-f5a36c290f59> ;
+		<VoltageLevel.BaseVoltage> <urn:uuid:c1d5bff18f8011e08e4d00247eb1f55e> .
+
+	<urn:uuid:f7b1271f-fa49-4f88-bc01-2eaac8242a1e> rdf:type <OperationalLimitType> ;
+		<IdentifiedObject.name> "PATLT" ;
+		entsoe:IdentifiedObject.shortName "patlt" ;
+		<OperationalLimitType.direction> "absoluteValue" ;
+		entsoe:OperationalLimitType.limitType "patlt" .
+
+	<urn:uuid:4e0ae37c-968f-4dfd-ac14-47bad592f98e> rdf:type <OperationalLimitType> ;
+		<IdentifiedObject.name> "TCT" ;
+		entsoe:IdentifiedObject.shortName "tct" ;
+		<OperationalLimitType.direction> "absoluteValue" ;
+		entsoe:OperationalLimitType.limitType "tct" .
+
+	<urn:uuid:a279a3dc-550b-426c-af3a-61b7be508dcc> rdf:type rdf:Description ;
+		<IdentifiedObject.name> "NL-Line_5" ;
+		<Equipment.EquipmentContainer> <urn:uuid:f2587aad-8718-431f-b6a9-fcecd6c5f0b9> .
+
+	<urn:uuid:9dd1915f-dd54-407d-a735-fb4ea99c9ca2> rdf:type <Terminal> ;
+		<IdentifiedObject.name> "NL-Line_5 - T1" ;
+		entsoe:IdentifiedObject.shortName "NL-L_3" ;
+		entsoe:IdentifiedObject.energyIdentCodeEic "10T-AT-DE-00009W" ;
+		<ACDCTerminal.sequenceNumber> "1" ;
+		<Terminal.phases> "ABC" ;
+		<Terminal.ConductingEquipment> <urn:uuid:a279a3dc-550b-426c-af3a-61b7be508dcc> ;
+		<Terminal.ConnectivityNode> <urn:uuid:b6978550-cb6e-11e1-bcee-406c8f32ef58> .
+
+	<urn:uuid:7404129c-0bbc-47bb-9cdc-4de2f89d9300> rdf:type <Terminal> ;
+		<IdentifiedObject.name> "NL-Line_5 - T2" ;
+		entsoe:IdentifiedObject.shortName "NL-L_3" ;
+		entsoe:IdentifiedObject.energyIdentCodeEic "10T-AT-DE-00009W" ;
+		<ACDCTerminal.sequenceNumber> "2" ;
+		<Terminal.phases> "ABC" ;
+		<Terminal.ConductingEquipment> <urn:uuid:a279a3dc-550b-426c-af3a-61b7be508dcc> ;
+		<Terminal.ConnectivityNode> <urn:uuid:e4743b84-976a-414d-a888-4362532c39e6> .
+
+	<urn:uuid:a1011dec-70c4-406e-af9f-a2a65d4ada3f> rdf:type <OperationalLimitSet> ;
+		<IdentifiedObject.name> "Limits at Port 1" ;
+		<IdentifiedObject.description> "Limit-Ratings for branch NL-Line_5 at Port 1" ;
+		<OperationalLimitSet.Terminal> <urn:uuid:9dd1915f-dd54-407d-a735-fb4ea99c9ca2> .
+
+	<urn:uuid:9dd40a3a-c6df-4f16-876c-bd11c538324b> rdf:type rdf:Description ;
+		<IdentifiedObject.name> "NL-Line_5 - CL-0" ;
+		<IdentifiedObject.description> "Ratings for element NL-Line_5 - Limit" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:a1011dec-70c4-406e-af9f-a2a65d4ada3f> .
+
+	<urn:uuid:150d1dcb-f7b6-4fcd-bce9-e39c6ddf15aa> rdf:type rdf:Description ;
+		<IdentifiedObject.name> "NL-Line_5 - CL-1" ;
+		<IdentifiedObject.description> "Ratings for element NL-Line_5 - Limit" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:a1011dec-70c4-406e-af9f-a2a65d4ada3f> .
+
+	<urn:uuid:317c3033-0409-4f57-9209-4baae4b5e165> rdf:type rdf:Description ;
+		<IdentifiedObject.name> "NL-Line_5 - CL-2" ;
+		<IdentifiedObject.description> "Ratings for element NL-Line_5 - Limit" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:a1011dec-70c4-406e-af9f-a2a65d4ada3f> .
+
+	<urn:uuid:317c3033-0409-4f57-9209-4baae4b5e1651> rdf:type rdf:Description ;
+		<IdentifiedObject.description> "Ratings for element NL-Line_5 - Limit" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:a1011dec-70c4-406e-af9f-a2a65d4ada3f> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:f7b1271f-fa49-4f88-bc01-2eaac8242a1e> .
+
+	<urn:uuid:541246b4-9bc0-4d15-876e-7d052e15a11f> rdf:type <OperationalLimitSet> ;
+		<IdentifiedObject.name> "Limits at Port 2" ;
+		<IdentifiedObject.description> "Limit-Ratings for branch NL-Line_5 at Port 2" ;
+		<OperationalLimitSet.Terminal> <urn:uuid:7404129c-0bbc-47bb-9cdc-4de2f89d9300> .
+
+	<urn:uuid:75caf931-a43f-4e4a-a831-fe9a729feb72> rdf:type rdf:Description ;
+		<IdentifiedObject.name> "NL-Line_5 - CL-0" ;
+		<IdentifiedObject.description> "Ratings for element NL-Line_5 - Limit" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:541246b4-9bc0-4d15-876e-7d052e15a11f> .
+
+	<urn:uuid:bec4e785-5143-4ad4-b7b0-aea8e33be7e6> rdf:type rdf:Description ;
+		<IdentifiedObject.name> "NL-Line_5 - CL-1" ;
+		<IdentifiedObject.description> "Ratings for element NL-Line_5 - Limit" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:541246b4-9bc0-4d15-876e-7d052e15a11f> .
+
+	<urn:uuid:62be08ea-2a9e-4284-9642-2947cb2c5f1b> rdf:type rdf:Description ;
+		<IdentifiedObject.name> "NL-Line_5 - CL-2" ;
+		<IdentifiedObject.description> "Ratings for element NL-Line_5 - Limit" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:541246b4-9bc0-4d15-876e-7d052e15a11f> .
+
+	<urn:uuid:62be08ea-2a9e-4284-9642-2947cb2c5f1b1> rdf:type rdf:Description ;
+		<IdentifiedObject.description> "Ratings for element NL-Line_5 - Limit" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:541246b4-9bc0-4d15-876e-7d052e15a11f> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:f7b1271f-fa49-4f88-bc01-2eaac8242a1e> .
+
+	<urn:uuid:f2587aad-8718-431f-b6a9-fcecd6c5f0b9> rdf:type <Line> ;
+		<IdentifiedObject.name> "container of NL-Line_5" ;
+		<Line.Region> <urn:uuid:c1d5bfe48f8011e08e4d00247eb1f55e> .
+
+	<urn:uuid:a4b97f0b-39b8-452d-b51c-fd3b25fa1d9b1> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:f7b1271f-fa49-4f88-bc01-2eaac8242a1e> .
+
+	<urn:uuid:db8675aa-6a3d-47a8-b864-a3e474c5c8851> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:f7b1271f-fa49-4f88-bc01-2eaac8242a1e> .
+
+	<urn:uuid:b4659169-38a4-494f-b3e2-aa83dc9a66701> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:f7b1271f-fa49-4f88-bc01-2eaac8242a1e> .
+
+	<urn:uuid:0388b680-3feb-45a2-bd56-5a620472107b1> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:f7b1271f-fa49-4f88-bc01-2eaac8242a1e> .
+
+	<urn:uuid:1cd93631-5573-48db-8444-0e85a91aa6f11> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:f7b1271f-fa49-4f88-bc01-2eaac8242a1e> .
+
+	<urn:uuid:d73f50e0-00db-4f54-a087-b0d2204f229a1> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:f7b1271f-fa49-4f88-bc01-2eaac8242a1e> .
+
+	<urn:uuid:45b85c9e-0788-4cbb-b71b-dc1d5de04e511> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:f7b1271f-fa49-4f88-bc01-2eaac8242a1e> .
+
+	<urn:uuid:a228917a-44c9-4124-b7db-ea6408b3c5bb1> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:f7b1271f-fa49-4f88-bc01-2eaac8242a1e> .
+
+	<urn:uuid:fe19b051-39e7-4b25-bd85-812e09522953> rdf:type <ACLineSegment> ;
+		<IdentifiedObject.name> "L1230541814" ;
+		<Equipment.EquipmentContainer> <urn:uuid:510da016-df16-4272-b378-ae27eab2c3ae> ;
+		<ACLineSegment.r> "0.010000" ;
+		<ACLineSegment.x> "0.030000" ;
+		<ACLineSegment.bch> "0.0" ;
+		<Conductor.length> "1.000000" ;
+		<ACLineSegment.gch> "0.0" ;
+		<Equipment.aggregate> "false" ;
+		<ConductingEquipment.BaseVoltage> <urn:uuid:c1d5bff18f8011e08e4d00247eb1f55e> ;
+		<ACLineSegment.r0> "0.020000" ;
+		<ACLineSegment.x0> "0.060000" ;
+		<ACLineSegment.b0ch> "0.0" ;
+		<ACLineSegment.g0ch> "0.0" ;
+		<ACLineSegment.shortCircuitEndTemperature> "160.0000000000" .
+
+	<urn:uuid:be7b3e05-e783-4b39-8201-a2e141076616> rdf:type <Terminal> ;
+		<IdentifiedObject.name> "L1230541814 - T1" ;
+		<ACDCTerminal.sequenceNumber> "1" ;
+		<Terminal.phases> "ABC" ;
+		<Terminal.ConductingEquipment> <urn:uuid:fe19b051-39e7-4b25-bd85-812e09522953> ;
+		<Terminal.ConnectivityNode> <urn:uuid:124b9180-9112-4b8a-a651-9c1bb9a031da> .
+
+	<urn:uuid:510e5c93-de26-487d-a7dd-6f5364bd7bd1> rdf:type <Terminal> ;
+		<IdentifiedObject.name> "L1230541814 - T2" ;
+		<ACDCTerminal.sequenceNumber> "2" ;
+		<Terminal.phases> "ABC" ;
+		<Terminal.ConductingEquipment> <urn:uuid:fe19b051-39e7-4b25-bd85-812e09522953> ;
+		<Terminal.ConnectivityNode> <urn:uuid:ca44e0c6-8f23-4f61-bb42-288faff7e090> .
+
+	<urn:uuid:6d9f1785-2c6f-4c83-93fc-9b1dd7b3b3b6> rdf:type <OperationalLimitSet> ;
+		<IdentifiedObject.name> "Limits at Port 1" ;
+		<IdentifiedObject.description> "Limit-Ratings for branch L1230541814 at Port 1" ;
+		<OperationalLimitSet.Terminal> <urn:uuid:be7b3e05-e783-4b39-8201-a2e141076616> .
+
+	<urn:uuid:5bae9a20-ee2a-4837-8adf-6d39407d12b7> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "L1230541814 - CL-0" ;
+		entsoe:IdentifiedObject.shortName "CL-0" ;
+		<IdentifiedObject.description> "Ratings for element L1230541814 - Limit" ;
+		<CurrentLimit.value> "30000.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:6d9f1785-2c6f-4c83-93fc-9b1dd7b3b3b6> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:1aee0921-7cbe-481c-9078-daf66ab2a950> .
+
+	<urn:uuid:5bae9a20-ee2a-4837-8adf-6d39407d12b71> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "90" ;
+		entsoe:IdentifiedObject.shortName "CL-0" ;
+		<IdentifiedObject.description> "Ratings for element L1230541814 - Limit" ;
+		<CurrentLimit.value> "27000.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:6d9f1785-2c6f-4c83-93fc-9b1dd7b3b3b6> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:f7b1271f-fa49-4f88-bc01-2eaac8242a1e> .
+
+	<urn:uuid:022bc71d-83cd-4920-a1b0-66e7a3c0ea86> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "L1230541814 - CL-1" ;
+		entsoe:IdentifiedObject.shortName "CL-1" ;
+		<IdentifiedObject.description> "Ratings for element L1230541814 - Limit" ;
+		<CurrentLimit.value> "40000.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:6d9f1785-2c6f-4c83-93fc-9b1dd7b3b3b6> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:18c8d038-31ea-4d92-9e7e-4b8a397f30a5> .
+
+	<urn:uuid:fe56c2b0-e708-4c1a-81f3-c2be5f824670> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "L1230541814 - CL-2" ;
+		entsoe:IdentifiedObject.shortName "CL-2" ;
+		<IdentifiedObject.description> "Ratings for element L1230541814 - Limit" ;
+		<CurrentLimit.value> "35000.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:6d9f1785-2c6f-4c83-93fc-9b1dd7b3b3b6> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:250e948b-70ae-4139-971b-4f0053425b60> .
+
+	<urn:uuid:f0094d26-ab76-4c08-af5a-13cef3b42456> rdf:type <OperationalLimitSet> ;
+		<IdentifiedObject.name> "Limits at Port 2" ;
+		<IdentifiedObject.description> "Limit-Ratings for branch L1230541814 at Port 2" ;
+		<OperationalLimitSet.Terminal> <urn:uuid:510e5c93-de26-487d-a7dd-6f5364bd7bd1> .
+
+	<urn:uuid:425eeabe-95b2-4c06-a4c0-ff958bcdf87a> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "L1230541814 - CL-0" ;
+		entsoe:IdentifiedObject.shortName "CL-0" ;
+		<IdentifiedObject.description> "Ratings for element L1230541814 - Limit" ;
+		<CurrentLimit.value> "30000.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:f0094d26-ab76-4c08-af5a-13cef3b42456> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:1aee0921-7cbe-481c-9078-daf66ab2a950> .
+
+	<urn:uuid:425eeabe-95b2-4c06-a4c0-ff958bcdf87a1> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "90" ;
+		entsoe:IdentifiedObject.shortName "CL-0" ;
+		<IdentifiedObject.description> "Ratings for element L1230541814 - Limit" ;
+		<CurrentLimit.value> "27000.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:f0094d26-ab76-4c08-af5a-13cef3b42456> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:f7b1271f-fa49-4f88-bc01-2eaac8242a1e> .
+
+	<urn:uuid:518a8eee-550c-4967-b511-fe7f765e19d2> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "L1230541814 - CL-1" ;
+		entsoe:IdentifiedObject.shortName "CL-1" ;
+		<IdentifiedObject.description> "Ratings for element L1230541814 - Limit" ;
+		<CurrentLimit.value> "40000.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:f0094d26-ab76-4c08-af5a-13cef3b42456> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:18c8d038-31ea-4d92-9e7e-4b8a397f30a5> .
+
+	<urn:uuid:db6a3175-1004-4bb7-a19e-a072345e0a3e> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "L1230541814 - CL-2" ;
+		entsoe:IdentifiedObject.shortName "CL-2" ;
+		<IdentifiedObject.description> "Ratings for element L1230541814 - Limit" ;
+		<CurrentLimit.value> "35000.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:f0094d26-ab76-4c08-af5a-13cef3b42456> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:250e948b-70ae-4139-971b-4f0053425b60> .
+
+	<urn:uuid:510da016-df16-4272-b378-ae27eab2c3ae> rdf:type <Line> ;
+		<IdentifiedObject.name> "container of L1230541814" ;
+		<Line.Region> <urn:uuid:c1d5bfe48f8011e08e4d00247eb1f55e> .
+
+	<urn:uuid:05b8c424-7323-4b36-90c0-de4e86bd091c> rdf:type <ACLineSegment> ;
+		<IdentifiedObject.name> "L1230541809" ;
+		<Equipment.EquipmentContainer> <urn:uuid:1b0e845e-6ada-41f9-a138-5ae720faac8e> ;
+		<ACLineSegment.r> "0.100000" ;
+		<ACLineSegment.x> "0.300000" ;
+		<ACLineSegment.bch> "0.0" ;
+		<Conductor.length> "1.000000" ;
+		<ACLineSegment.gch> "0.0" ;
+		<Equipment.aggregate> "false" ;
+		<ConductingEquipment.BaseVoltage> <urn:uuid:7891a026ba2c42098556665efd13ba94> ;
+		<ACLineSegment.r0> "0.200000" ;
+		<ACLineSegment.x0> "0.600000" ;
+		<ACLineSegment.b0ch> "0.0" ;
+		<ACLineSegment.g0ch> "0.0" ;
+		<ACLineSegment.shortCircuitEndTemperature> "160.0000000000" .
+
+	<urn:uuid:8cc7ceec-142f-4c57-b680-77455e3fa017> rdf:type <Terminal> ;
+		<IdentifiedObject.name> "L1230541809 - T1" ;
+		<ACDCTerminal.sequenceNumber> "1" ;
+		<Terminal.phases> "ABC" ;
+		<Terminal.ConductingEquipment> <urn:uuid:05b8c424-7323-4b36-90c0-de4e86bd091c> ;
+		<Terminal.ConnectivityNode> <urn:uuid:e4743b84-976a-414d-a888-4362532c39e6> .
+
+	<urn:uuid:fabe87bd-ed92-498e-ac70-ac995148b5c0> rdf:type <Terminal> ;
+		<IdentifiedObject.name> "L1230541809 - T2" ;
+		<ACDCTerminal.sequenceNumber> "2" ;
+		<Terminal.phases> "ABC" ;
+		<Terminal.ConductingEquipment> <urn:uuid:05b8c424-7323-4b36-90c0-de4e86bd091c> ;
+		<Terminal.ConnectivityNode> <urn:uuid:7ee15713-658b-493f-810b-3295097e45c1> .
+
+	<urn:uuid:8ad7ed7b-23cc-40ac-909d-c9118ea389ce> rdf:type <OperationalLimitSet> ;
+		<IdentifiedObject.name> "Limits at Port 1" ;
+		<IdentifiedObject.description> "Limit-Ratings for branch L1230541809 at Port 1" ;
+		<OperationalLimitSet.Terminal> <urn:uuid:8cc7ceec-142f-4c57-b680-77455e3fa017> .
+
+	<urn:uuid:4c53d6ba-9468-48f9-8910-b48b71ed0380> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "L1230541809 - CL-0" ;
+		entsoe:IdentifiedObject.shortName "CL-0" ;
+		<IdentifiedObject.description> "Ratings for element L1230541809 - Limit" ;
+		<CurrentLimit.value> "2000.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:8ad7ed7b-23cc-40ac-909d-c9118ea389ce> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:1aee0921-7cbe-481c-9078-daf66ab2a950> .
+
+	<urn:uuid:4c53d6ba-9468-48f9-8910-b48b71ed03801> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "90" ;
+		entsoe:IdentifiedObject.shortName "CL-0" ;
+		<IdentifiedObject.description> "Ratings for element L1230541809 - Limit" ;
+		<CurrentLimit.value> "1800.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:8ad7ed7b-23cc-40ac-909d-c9118ea389ce> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:f7b1271f-fa49-4f88-bc01-2eaac8242a1e> .
+
+	<urn:uuid:b5bb4a07-9a45-4eb4-a4d5-3675bb75d22d> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "L1230541809 - CL-1" ;
+		entsoe:IdentifiedObject.shortName "CL-1" ;
+		<IdentifiedObject.description> "Ratings for element L1230541809 - Limit" ;
+		<CurrentLimit.value> "2200.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:8ad7ed7b-23cc-40ac-909d-c9118ea389ce> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:18c8d038-31ea-4d92-9e7e-4b8a397f30a5> .
+
+	<urn:uuid:dfe41889-6309-4f4a-85d9-1d308698ad10> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "L1230541809 - CL-2" ;
+		entsoe:IdentifiedObject.shortName "CL-2" ;
+		<IdentifiedObject.description> "Ratings for element L1230541809 - Limit" ;
+		<CurrentLimit.value> "2100.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:8ad7ed7b-23cc-40ac-909d-c9118ea389ce> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:250e948b-70ae-4139-971b-4f0053425b60> .
+
+	<urn:uuid:74904842-f3f6-4b7b-bfd1-6e429ee1d1e9> rdf:type <OperationalLimitSet> ;
+		<IdentifiedObject.name> "Limits at Port 2" ;
+		<IdentifiedObject.description> "Limit-Ratings for branch L1230541809 at Port 2" ;
+		<OperationalLimitSet.Terminal> <urn:uuid:fabe87bd-ed92-498e-ac70-ac995148b5c0> .
+
+	<urn:uuid:196ad216-544a-4ef3-8d0e-9436790efa31> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "L1230541809 - CL-0" ;
+		entsoe:IdentifiedObject.shortName "CL-0" ;
+		<IdentifiedObject.description> "Ratings for element L1230541809 - Limit" ;
+		<CurrentLimit.value> "2000.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:74904842-f3f6-4b7b-bfd1-6e429ee1d1e9> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:1aee0921-7cbe-481c-9078-daf66ab2a950> .
+
+	<urn:uuid:196ad216-544a-4ef3-8d0e-9436790efa311> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "90" ;
+		entsoe:IdentifiedObject.shortName "CL-0" ;
+		<IdentifiedObject.description> "Ratings for element L1230541809 - Limit" ;
+		<CurrentLimit.value> "1800.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:74904842-f3f6-4b7b-bfd1-6e429ee1d1e9> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:f7b1271f-fa49-4f88-bc01-2eaac8242a1e> .
+
+	<urn:uuid:3dc1ab32-f6ab-4850-afef-cc0c64761451> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "L1230541809 - CL-1" ;
+		entsoe:IdentifiedObject.shortName "CL-1" ;
+		<IdentifiedObject.description> "Ratings for element L1230541809 - Limit" ;
+		<CurrentLimit.value> "2200.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:74904842-f3f6-4b7b-bfd1-6e429ee1d1e9> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:18c8d038-31ea-4d92-9e7e-4b8a397f30a5> .
+
+	<urn:uuid:f47d27fa-6d36-4a2f-b2da-2c74b12dc5ed> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "L1230541809 - CL-2" ;
+		entsoe:IdentifiedObject.shortName "CL-2" ;
+		<IdentifiedObject.description> "Ratings for element L1230541809 - Limit" ;
+		<CurrentLimit.value> "2100.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:74904842-f3f6-4b7b-bfd1-6e429ee1d1e9> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:250e948b-70ae-4139-971b-4f0053425b60> .
+
+	<urn:uuid:1b0e845e-6ada-41f9-a138-5ae720faac8e> rdf:type <Line> ;
+		<IdentifiedObject.name> "container of L1230541809" ;
+		<Line.Region> <urn:uuid:c1d5bfe48f8011e08e4d00247eb1f55e> .
+
+	<urn:uuid:bb33d171-a358-4f32-8035-f55374740c83> rdf:type <DCLineSegment> ;
+		<IdentifiedObject.name> "LDC-1230531185" ;
+		<Equipment.EquipmentContainer> <urn:uuid:b2bb2622-008b-4aa7-b228-f436749f7aab> ;
+		<DCLineSegment.resistance> "2.500000" ;
+		<DCLineSegment.inductance> "30.000000" ;
+		<DCLineSegment.capacitance> "0e+000" ;
+		<DCLineSegment.length> "1.000000" ;
+		<Equipment.aggregate> "false" .
+
+	<urn:uuid:18b08821-c33a-4973-a41c-991a3ed41dfd> rdf:type <DCTerminal> ;
+		<IdentifiedObject.name> "LDC-1230531185" ;
+		<DCBaseTerminal.DCNode> <urn:uuid:0444e908-a83d-42ce-b7a8-f30f4143e0e9> ;
+		<DCTerminal.DCConductingEquipment> <urn:uuid:bb33d171-a358-4f32-8035-f55374740c83> .
+
+	<urn:uuid:2ea07a06-9bea-42d7-bf50-15ffa92c5b1f> rdf:type <DCTerminal> ;
+		<IdentifiedObject.name> "LDC-1230531185" ;
+		<DCBaseTerminal.DCNode> <urn:uuid:b3960341-186f-4374-a3c6-9cb00d3ecd83> ;
+		<DCTerminal.DCConductingEquipment> <urn:uuid:bb33d171-a358-4f32-8035-f55374740c83> .
+
+	<urn:uuid:b2bb2622-008b-4aa7-b228-f436749f7aab> rdf:type <DCLine> ;
+		<IdentifiedObject.name> "container of LDC-1230531185" ;
+		<DCLine.Region> <urn:uuid:c1d5bfe48f8011e08e4d00247eb1f55e> .
+
+	<urn:uuid:c41a58da-2676-43ab-9e3d-e0b26780890a> rdf:type <DCConverterUnit> ;
+		<IdentifiedObject.name> "InverterUnit" ;
+		<DCConverterUnit.Substation> <urn:uuid:dfb3d892-fadc-4a65-8eee-5bd8715bbdf0> ;
+		<DCConverterUnit.operationMode> "monopolarGroundReturn" .
+
+	<urn:uuid:84fd0a05-dda5-4e36-912b-37d1d3e751c7> rdf:type <CsConverter> ;
+		<IdentifiedObject.name> "Inverter" ;
+		<ACDCConverter.baseS> "334.600000" ;
+		<ACDCConverter.idleLoss> "0e+000" ;
+		<ACDCConverter.maxUdc> "167.300000" ;
+		<ACDCConverter.minUdc> "0e+000" ;
+		<ACDCConverter.ratedUdc> "167.300000" ;
+		<ACDCConverter.resistiveLoss> "0e+000" ;
+		<ACDCConverter.switchingLoss> "0e+000" ;
+		<ACDCConverter.valveU0> "0e+000" ;
+		<ACDCConverter.numberOfValves> "0" ;
+		<CsConverter.maxAlpha> "163.000000" ;
+		<CsConverter.maxGamma> "75.000000" ;
+		<CsConverter.maxIdc> "2200.000000" ;
+		<CsConverter.minAlpha> "110.000000" ;
+		<CsConverter.minGamma> "17.000000" ;
+		<CsConverter.minIdc> "400.000000" ;
+		<CsConverter.ratedIdc> "2000.000000" ;
+		<Equipment.EquipmentContainer> <urn:uuid:c41a58da-2676-43ab-9e3d-e0b26780890a> .
+
+	<urn:uuid:6d8b1dfd-319d-4b53-a1ae-ed41c790051b> rdf:type <Terminal> ;
+		<IdentifiedObject.name> "Inverter - T1" ;
+		<ACDCTerminal.sequenceNumber> "1" ;
+		<Terminal.phases> "ABC" ;
+		<Terminal.ConductingEquipment> <urn:uuid:84fd0a05-dda5-4e36-912b-37d1d3e751c7> ;
+		<Terminal.ConnectivityNode> <urn:uuid:ba484ebd-fd32-4e9b-affe-77720a8e514b> .
+
+	<urn:uuid:d93fa389-1f5e-42ae-9213-ace113758bec> rdf:type <ACDCConverterDCTerminal> ;
+		<ACDCTerminal.sequenceNumber> "2" ;
+		<IdentifiedObject.name> "Inverter" ;
+		<ACDCConverterDCTerminal.DCConductingEquipment> <urn:uuid:84fd0a05-dda5-4e36-912b-37d1d3e751c7> ;
+		<DCBaseTerminal.DCNode> <urn:uuid:0444e908-a83d-42ce-b7a8-f30f4143e0e9> ;
+		<ACDCConverterDCTerminal.polarity> "positive" .
+
+	<urn:uuid:758ecd05-a2e1-47b0-b30a-d0737375bb65> rdf:type <ACDCConverterDCTerminal> ;
+		<ACDCTerminal.sequenceNumber> "3" ;
+		<IdentifiedObject.name> "Inverter" ;
+		<ACDCConverterDCTerminal.DCConductingEquipment> <urn:uuid:84fd0a05-dda5-4e36-912b-37d1d3e751c7> ;
+		<DCBaseTerminal.DCNode> <urn:uuid:cf60e62e-9db4-45b1-8b05-7e7cda333224> ;
+		<ACDCConverterDCTerminal.polarity> "middle" .
+
+	<urn:uuid:4729c697-1ee3-47f4-89ac-1ec73fd7a61b> rdf:type <DCConverterUnit> ;
+		<IdentifiedObject.name> "RectifierUnit" ;
+		<DCConverterUnit.Substation> <urn:uuid:d030d71d-e1d4-49e2-b27a-f5a36c290f59> ;
+		<DCConverterUnit.operationMode> "monopolarGroundReturn" .
+
+	<urn:uuid:4405870e-7283-4e4e-9a9b-435dea9e9eaa> rdf:type <CsConverter> ;
+		<IdentifiedObject.name> "Rectifier" ;
+		<ACDCConverter.baseS> "334.600000" ;
+		<ACDCConverter.idleLoss> "0e+000" ;
+		<ACDCConverter.maxUdc> "167.300000" ;
+		<ACDCConverter.minUdc> "0e+000" ;
+		<ACDCConverter.ratedUdc> "167.300000" ;
+		<ACDCConverter.resistiveLoss> "0e+000" ;
+		<ACDCConverter.switchingLoss> "0e+000" ;
+		<ACDCConverter.valveU0> "0e+000" ;
+		<ACDCConverter.numberOfValves> "0" ;
+		<CsConverter.maxAlpha> "163.000000" ;
+		<CsConverter.maxGamma> "75.000000" ;
+		<CsConverter.maxIdc> "2200.000000" ;
+		<CsConverter.minAlpha> "5.000000" ;
+		<CsConverter.minGamma> "17.000000" ;
+		<CsConverter.minIdc> "400.000000" ;
+		<CsConverter.ratedIdc> "2000.000000" ;
+		<Equipment.EquipmentContainer> <urn:uuid:4729c697-1ee3-47f4-89ac-1ec73fd7a61b> .
+
+	<urn:uuid:a2fadaa3-4e0c-4aca-87b1-99758d3650d2> rdf:type <Terminal> ;
+		<IdentifiedObject.name> "Rectifier - T1" ;
+		<ACDCTerminal.sequenceNumber> "1" ;
+		<Terminal.phases> "ABC" ;
+		<Terminal.ConductingEquipment> <urn:uuid:4405870e-7283-4e4e-9a9b-435dea9e9eaa> ;
+		<Terminal.ConnectivityNode> <urn:uuid:b171fb39-b1d7-4da0-a2b0-8ee2f8db262e> .
+
+	<urn:uuid:2c72ca72-0103-4e77-9068-fcd0429abe63> rdf:type <ACDCConverterDCTerminal> ;
+		<ACDCTerminal.sequenceNumber> "2" ;
+		<IdentifiedObject.name> "Rectifier" ;
+		<ACDCConverterDCTerminal.DCConductingEquipment> <urn:uuid:4405870e-7283-4e4e-9a9b-435dea9e9eaa> ;
+		<DCBaseTerminal.DCNode> <urn:uuid:b3960341-186f-4374-a3c6-9cb00d3ecd83> ;
+		<ACDCConverterDCTerminal.polarity> "positive" .
+
+	<urn:uuid:5260a0a8-2906-4537-8d20-779a3788d7ff> rdf:type <ACDCConverterDCTerminal> ;
+		<ACDCTerminal.sequenceNumber> "3" ;
+		<IdentifiedObject.name> "Rectifier" ;
+		<ACDCConverterDCTerminal.DCConductingEquipment> <urn:uuid:4405870e-7283-4e4e-9a9b-435dea9e9eaa> ;
+		<DCBaseTerminal.DCNode> <urn:uuid:759506ce-9731-4b60-b52a-1f61aeecb4d8> ;
+		<ACDCConverterDCTerminal.polarity> "middle" .
+
+	<urn:uuid:b171fb39-b1d7-4da0-a2b0-8ee2f8db262e> rdf:type <ConnectivityNode> ;
+		<IdentifiedObject.name> "NL_Busbar_HVDC2" ;
+		<ConnectivityNode.ConnectivityNodeContainer> <urn:uuid:c68f0a24-46cb-42aa-b91d-0b49b8310cc9> .
+
+	<urn:uuid:ba484ebd-fd32-4e9b-affe-77720a8e514b> rdf:type <ConnectivityNode> ;
+		<IdentifiedObject.name> "NL_Busbar_HVDC1" ;
+		<ConnectivityNode.ConnectivityNodeContainer> <urn:uuid:10dff29d-ff80-49dc-b34e-3a58603bf0c6> .
+
+	<urn:uuid:ca44e0c6-8f23-4f61-bb42-288faff7e090> rdf:type <ConnectivityNode> ;
+		<IdentifiedObject.name> "NL_PCC2" ;
+		entsoe:IdentifiedObject.energyIdentCodeEic "10T-AT-DE-00017X" ;
+		<IdentifiedObject.description> "10T-AT-DE-00017X" ;
+		<ConnectivityNode.ConnectivityNodeContainer> <urn:uuid:613bf445-d1a8-409a-95f8-45b41f9a02ec> .
+
+	<urn:uuid:7ee15713-658b-493f-810b-3295097e45c1> rdf:type <ConnectivityNode> ;
+		<IdentifiedObject.name> "NL_PCC1" ;
+		entsoe:IdentifiedObject.energyIdentCodeEic "10T-AT-DE-00017X" ;
+		<IdentifiedObject.description> "10T-AT-DE-00017X" ;
+		<ConnectivityNode.ConnectivityNodeContainer> <urn:uuid:613bf445-d1a8-409a-95f8-45b41f9a0eec> .
+
+	<urn:uuid:b3960341-186f-4374-a3c6-9cb00d3ecd83> rdf:type <DCNode> ;
+		<IdentifiedObject.name> "NL_DC2" ;
+		<DCNode.DCEquipmentContainer> <urn:uuid:4729c697-1ee3-47f4-89ac-1ec73fd7a61b> .
+
+	<urn:uuid:0444e908-a83d-42ce-b7a8-f30f4143e0e9> rdf:type <DCNode> ;
+		<IdentifiedObject.name> "NL_DC1" ;
+		<DCNode.DCEquipmentContainer> <urn:uuid:c41a58da-2676-43ab-9e3d-e0b26780890a> .
+
+	<urn:uuid:759506ce-9731-4b60-b52a-1f61aeecb4d8> rdf:type <DCNode> ;
+		<IdentifiedObject.name> "DC_Ground2" ;
+		<DCNode.DCEquipmentContainer> <urn:uuid:4729c697-1ee3-47f4-89ac-1ec73fd7a61b> .
+
+	<urn:uuid:cf60e62e-9db4-45b1-8b05-7e7cda333224> rdf:type <DCNode> ;
+		<IdentifiedObject.name> "DC_Ground1" ;
+		<DCNode.DCEquipmentContainer> <urn:uuid:c41a58da-2676-43ab-9e3d-e0b26780890a> .
+
+	<urn:uuid:150183f1-3144-4d18-b5ca-328efdead2571> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:f7b1271f-fa49-4f88-bc01-2eaac8242a1e> .
+
+	<urn:uuid:89d45390-25dc-49a6-bb08-69b67f27cd391> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:f7b1271f-fa49-4f88-bc01-2eaac8242a1e> .
+
+	<urn:uuid:fa85553d-9769-45fe-9b79-cecafa01c4ba1> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:f7b1271f-fa49-4f88-bc01-2eaac8242a1e> .
+
+	<urn:uuid:1a886514-5f7d-418a-99b7-02330ed01ca71> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:f7b1271f-fa49-4f88-bc01-2eaac8242a1e> .
+
+	<urn:uuid:c19be095-6aaa-45f8-8e82-532d7f316433> rdf:type <PowerTransformer> ;
+		<IdentifiedObject.name> "NL_TR2_HVDC2" ;
+		<Equipment.aggregate> "false" ;
+		<Equipment.EquipmentContainer> <urn:uuid:4729c697-1ee3-47f4-89ac-1ec73fd7a61b> ;
+		<PowerTransformer.beforeShCircuitHighestOperatingVoltage> "0e+000" ;
+		<PowerTransformer.beforeShCircuitHighestOperatingCurrent> "0e+000" ;
+		<PowerTransformer.beforeShortCircuitAnglePf> "0e+000" ;
+		<PowerTransformer.highSideMinOperatingU> "0e+000" ;
+		<PowerTransformer.isPartOfGeneratorUnit> "false" ;
+		<PowerTransformer.operationalValuesConsidered> "false" .
+
+	<urn:uuid:ba4736e6-60dd-4bbf-8762-dbf070c87ebf> rdf:type <Terminal> ;
+		<IdentifiedObject.name> "NL_TR2_HVDC2 - T1" ;
+		<ACDCTerminal.sequenceNumber> "1" ;
+		<Terminal.phases> "ABC" ;
+		<Terminal.ConductingEquipment> <urn:uuid:c19be095-6aaa-45f8-8e82-532d7f316433> ;
+		<Terminal.ConnectivityNode> <urn:uuid:b171fb39-b1d7-4da0-a2b0-8ee2f8db262e> .
+
+	<urn:uuid:1576caf1-5af7-44fe-952e-3ae8d24fcdd0> rdf:type <PowerTransformerEnd> ;
+		<IdentifiedObject.name> "NL_TR2_HVDC2" ;
+		<PowerTransformerEnd.r> "0e+000" ;
+		<PowerTransformerEnd.x> "12.849459" ;
+		<PowerTransformerEnd.b> "0.0" ;
+		<PowerTransformerEnd.g> "0.0" ;
+		<PowerTransformerEnd.r0> "0e+000" ;
+		<PowerTransformerEnd.x0> "0e+000" ;
+		<PowerTransformerEnd.b0> "0.0" ;
+		<PowerTransformerEnd.g0> "0.0" ;
+		<TransformerEnd.rground> "0e+000" ;
+		<TransformerEnd.xground> "0.0" ;
+		<PowerTransformerEnd.ratedS> "157.700000" ;
+		<PowerTransformerEnd.ratedU> "123.900000" ;
+		<TransformerEnd.endNumber> "1" ;
+		<PowerTransformerEnd.phaseAngleClock> "0" ;
+		<TransformerEnd.grounded> "true" ;
+		<PowerTransformerEnd.connectionKind> "Yn" ;
+		<TransformerEnd.BaseVoltage> <urn:uuid:e042b69d-181c-4415-be3f-83a84ce951a1> ;
+		<PowerTransformerEnd.PowerTransformer> <urn:uuid:c19be095-6aaa-45f8-8e82-532d7f316433> ;
+		<TransformerEnd.Terminal> <urn:uuid:ba4736e6-60dd-4bbf-8762-dbf070c87ebf> .
+
+	<urn:uuid:996f4d73-a4b9-46d6-8407-11c904942fba> rdf:type <OperationalLimitSet> ;
+		<IdentifiedObject.name> "Limits at Port 1" ;
+		<IdentifiedObject.description> "Limit-Ratings for branch NL_TR2_HVDC2 at Port 1" ;
+		<OperationalLimitSet.Terminal> <urn:uuid:ba4736e6-60dd-4bbf-8762-dbf070c87ebf> .
+
+	<urn:uuid:6fd742c9-9482-4cd8-9f2b-30b880dd725a> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL_TR2_HVDC2 - CL-0" ;
+		entsoe:IdentifiedObject.shortName "CL-0" ;
+		<IdentifiedObject.description> "Ratings for element NL_TR2_HVDC2 - Limit" ;
+		<CurrentLimit.value> "734.900000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:996f4d73-a4b9-46d6-8407-11c904942fba> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:1aee0921-7cbe-481c-9078-daf66ab2a950> .
+
+	<urn:uuid:6fd742c9-9482-4cd8-9f2b-30b880dd725a1> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "90" ;
+		entsoe:IdentifiedObject.shortName "CL-0" ;
+		<IdentifiedObject.description> "Ratings for element NL_TR2_HVDC2 - Limit" ;
+		<CurrentLimit.value> "661.410000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:996f4d73-a4b9-46d6-8407-11c904942fba> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:f7b1271f-fa49-4f88-bc01-2eaac8242a1e> .
+
+	<urn:uuid:051f7fc7-992c-4cf3-97b2-3331779b9aa1> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL_TR2_HVDC2 - CL-1" ;
+		entsoe:IdentifiedObject.shortName "CL-1" ;
+		<IdentifiedObject.description> "Ratings for element NL_TR2_HVDC2 - Limit" ;
+		<CurrentLimit.value> "734.900000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:996f4d73-a4b9-46d6-8407-11c904942fba> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:18c8d038-31ea-4d92-9e7e-4b8a397f30a5> .
+
+	<urn:uuid:d7b5be50-e47b-4e2b-9cfd-1717c8072d15> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL_TR2_HVDC2 - CL-2" ;
+		entsoe:IdentifiedObject.shortName "CL-2" ;
+		<IdentifiedObject.description> "Ratings for element NL_TR2_HVDC2 - Limit" ;
+		<CurrentLimit.value> "734.900000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:996f4d73-a4b9-46d6-8407-11c904942fba> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:250e948b-70ae-4139-971b-4f0053425b60> .
+
+	<urn:uuid:918838f5-5c43-4a84-9962-1b31b9eaeb1e> rdf:type <TapChangerControl> ;
+		<IdentifiedObject.name> "NL_TR2_HVDC2" ;
+		<RegulatingControl.mode> "voltage" ;
+		<RegulatingControl.Terminal> <urn:uuid:ba4736e6-60dd-4bbf-8762-dbf070c87ebf> .
+
+	<urn:uuid:6a572c3b-77d9-4c3a-8bd3-4667d7a9b615> rdf:type <RatioTapChanger> ;
+		<IdentifiedObject.name> "NL_TR2_HVDC2" ;
+		<TapChanger.neutralU> "123.900000" ;
+		<TapChanger.lowStep> "-15" ;
+		<TapChanger.highStep> "15" ;
+		<TapChanger.neutralStep> "0" ;
+		<TapChanger.normalStep> "6" ;
+		<RatioTapChanger.stepVoltageIncrement> "1.000000" ;
+		<TapChanger.ltcFlag> "true" ;
+		<TapChanger.TapChangerControl> <urn:uuid:918838f5-5c43-4a84-9962-1b31b9eaeb1e> ;
+		<RatioTapChanger.tculControlMode> "volt" ;
+		<RatioTapChanger.TransformerEnd> <urn:uuid:1576caf1-5af7-44fe-952e-3ae8d24fcdd0> .
+
+	<urn:uuid:6cb817a1-0cb5-4a03-b9ce-599cdac5002d> rdf:type <Terminal> ;
+		<IdentifiedObject.name> "NL_TR2_HVDC2 - T2" ;
+		<ACDCTerminal.sequenceNumber> "2" ;
+		<Terminal.phases> "ABC" ;
+		<Terminal.ConductingEquipment> <urn:uuid:c19be095-6aaa-45f8-8e82-532d7f316433> ;
+		<Terminal.ConnectivityNode> <urn:uuid:ca44e0c6-8f23-4f61-bb42-288faff7e090> .
+
+	<urn:uuid:2cb48bbf-86ae-443e-80b4-f8747f7c0a0a> rdf:type <PowerTransformerEnd> ;
+		<IdentifiedObject.name> "NL_TR2_HVDC2" ;
+		<PowerTransformerEnd.r> "0e+000" ;
+		<PowerTransformerEnd.x> "0e+000" ;
+		<PowerTransformerEnd.b> "0.0" ;
+		<PowerTransformerEnd.g> "0.0" ;
+		<PowerTransformerEnd.r0> "0e+000" ;
+		<PowerTransformerEnd.x0> "0e+000" ;
+		<PowerTransformerEnd.b0> "0.0" ;
+		<PowerTransformerEnd.g0> "0.0" ;
+		<TransformerEnd.rground> "0e+000" ;
+		<TransformerEnd.xground> "0.0" ;
+		<PowerTransformerEnd.ratedS> "157.700000" ;
+		<PowerTransformerEnd.ratedU> "15.750000" ;
+		<TransformerEnd.endNumber> "2" ;
+		<PowerTransformerEnd.phaseAngleClock> "0" ;
+		<TransformerEnd.grounded> "true" ;
+		<PowerTransformerEnd.connectionKind> "Yn" ;
+		<TransformerEnd.BaseVoltage> <urn:uuid:c1d5bff18f8011e08e4d00247eb1f55e> ;
+		<PowerTransformerEnd.PowerTransformer> <urn:uuid:c19be095-6aaa-45f8-8e82-532d7f316433> ;
+		<TransformerEnd.Terminal> <urn:uuid:6cb817a1-0cb5-4a03-b9ce-599cdac5002d> .
+
+	<urn:uuid:71b24808-b70f-4e75-a94a-38c6530961de> rdf:type <OperationalLimitSet> ;
+		<IdentifiedObject.name> "Limits at Port 2" ;
+		<IdentifiedObject.description> "Limit-Ratings for branch NL_TR2_HVDC2 at Port 2" ;
+		<OperationalLimitSet.Terminal> <urn:uuid:6cb817a1-0cb5-4a03-b9ce-599cdac5002d> .
+
+	<urn:uuid:3bf3b659-ba61-485b-b00f-0aa7e595d515> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL_TR2_HVDC2 - CL-0" ;
+		entsoe:IdentifiedObject.shortName "CL-0" ;
+		<IdentifiedObject.description> "Ratings for element NL_TR2_HVDC2 - Limit" ;
+		<CurrentLimit.value> "5780.800000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:71b24808-b70f-4e75-a94a-38c6530961de> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:1aee0921-7cbe-481c-9078-daf66ab2a950> .
+
+	<urn:uuid:3bf3b659-ba61-485b-b00f-0aa7e595d5151> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "90" ;
+		entsoe:IdentifiedObject.shortName "CL-0" ;
+		<IdentifiedObject.description> "Ratings for element NL_TR2_HVDC2 - Limit" ;
+		<CurrentLimit.value> "5202.720000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:71b24808-b70f-4e75-a94a-38c6530961de> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:f7b1271f-fa49-4f88-bc01-2eaac8242a1e> .
+
+	<urn:uuid:fed49eb7-3b2a-41b8-8615-174e24a69ef5> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL_TR2_HVDC2 - CL-1" ;
+		entsoe:IdentifiedObject.shortName "CL-1" ;
+		<IdentifiedObject.description> "Ratings for element NL_TR2_HVDC2 - Limit" ;
+		<CurrentLimit.value> "5780.800000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:71b24808-b70f-4e75-a94a-38c6530961de> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:18c8d038-31ea-4d92-9e7e-4b8a397f30a5> .
+
+	<urn:uuid:5a3a5781-b379-4dca-8522-eec62269403d> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL_TR2_HVDC2 - CL-2" ;
+		entsoe:IdentifiedObject.shortName "CL-2" ;
+		<IdentifiedObject.description> "Ratings for element NL_TR2_HVDC2 - Limit" ;
+		<CurrentLimit.value> "5780.800000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:71b24808-b70f-4e75-a94a-38c6530961de> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:250e948b-70ae-4139-971b-4f0053425b60> .
+
+	<urn:uuid:98f1c119-c884-4f79-a6f6-1c7597a30df4> rdf:type <PowerTransformer> ;
+		<IdentifiedObject.name> "NL_TR2_HVDC1" ;
+		<Equipment.aggregate> "false" ;
+		<Equipment.EquipmentContainer> <urn:uuid:c41a58da-2676-43ab-9e3d-e0b26780890a> ;
+		<PowerTransformer.beforeShCircuitHighestOperatingVoltage> "0e+000" ;
+		<PowerTransformer.beforeShCircuitHighestOperatingCurrent> "0e+000" ;
+		<PowerTransformer.beforeShortCircuitAnglePf> "0e+000" ;
+		<PowerTransformer.highSideMinOperatingU> "0e+000" ;
+		<PowerTransformer.isPartOfGeneratorUnit> "false" ;
+		<PowerTransformer.operationalValuesConsidered> "false" .
+
+	<urn:uuid:c31f863a-8151-4400-a88f-33f517124576> rdf:type <Terminal> ;
+		<IdentifiedObject.name> "NL_TR2_HVDC1 - T1" ;
+		<ACDCTerminal.sequenceNumber> "1" ;
+		<Terminal.phases> "ABC" ;
+		<Terminal.ConductingEquipment> <urn:uuid:98f1c119-c884-4f79-a6f6-1c7597a30df4> ;
+		<Terminal.ConnectivityNode> <urn:uuid:7ee15713-658b-493f-810b-3295097e45c1> .
+
+	<urn:uuid:05edf0a0-7aba-4e13-9431-c130535761fa> rdf:type <PowerTransformerEnd> ;
+		<IdentifiedObject.name> "NL_TR2_HVDC1" ;
+		<PowerTransformerEnd.r> "0e+000" ;
+		<PowerTransformerEnd.x> "40.512365" ;
+		<PowerTransformerEnd.b> "0.0" ;
+		<PowerTransformerEnd.g> "0.0" ;
+		<PowerTransformerEnd.r0> "0e+000" ;
+		<PowerTransformerEnd.x0> "0e+000" ;
+		<PowerTransformerEnd.b0> "0.0" ;
+		<PowerTransformerEnd.g0> "0.0" ;
+		<TransformerEnd.rground> "0e+000" ;
+		<TransformerEnd.xground> "0.0" ;
+		<PowerTransformerEnd.ratedS> "157.700000" ;
+		<PowerTransformerEnd.ratedU> "220.000000" ;
+		<TransformerEnd.endNumber> "1" ;
+		<PowerTransformerEnd.phaseAngleClock> "0" ;
+		<TransformerEnd.grounded> "true" ;
+		<PowerTransformerEnd.connectionKind> "Yn" ;
+		<TransformerEnd.BaseVoltage> <urn:uuid:7891a026ba2c42098556665efd13ba94> ;
+		<PowerTransformerEnd.PowerTransformer> <urn:uuid:98f1c119-c884-4f79-a6f6-1c7597a30df4> ;
+		<TransformerEnd.Terminal> <urn:uuid:c31f863a-8151-4400-a88f-33f517124576> .
+
+	<urn:uuid:2c894db9-1a3f-484c-a4a8-4ce73437ed01> rdf:type <OperationalLimitSet> ;
+		<IdentifiedObject.name> "Limits at Port 1" ;
+		<IdentifiedObject.description> "Limit-Ratings for branch NL_TR2_HVDC1 at Port 1" ;
+		<OperationalLimitSet.Terminal> <urn:uuid:c31f863a-8151-4400-a88f-33f517124576> .
+
+	<urn:uuid:06c3c91e-4f4e-491c-8490-4cb493629a75> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL_TR2_HVDC1 - CL-0" ;
+		entsoe:IdentifiedObject.shortName "CL-0" ;
+		<IdentifiedObject.description> "Ratings for element NL_TR2_HVDC1 - Limit" ;
+		<CurrentLimit.value> "413.900000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:2c894db9-1a3f-484c-a4a8-4ce73437ed01> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:1aee0921-7cbe-481c-9078-daf66ab2a950> .
+
+	<urn:uuid:06c3c91e-4f4e-491c-8490-4cb493629a751> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "90" ;
+		entsoe:IdentifiedObject.shortName "CL-0" ;
+		<IdentifiedObject.description> "Ratings for element NL_TR2_HVDC1 - Limit" ;
+		<CurrentLimit.value> "372.510000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:2c894db9-1a3f-484c-a4a8-4ce73437ed01> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:f7b1271f-fa49-4f88-bc01-2eaac8242a1e> .
+
+	<urn:uuid:050bc668-301d-4943-9290-dc2423e432f2> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL_TR2_HVDC1 - CL-1" ;
+		entsoe:IdentifiedObject.shortName "CL-1" ;
+		<IdentifiedObject.description> "Ratings for element NL_TR2_HVDC1 - Limit" ;
+		<CurrentLimit.value> "413.900000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:2c894db9-1a3f-484c-a4a8-4ce73437ed01> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:18c8d038-31ea-4d92-9e7e-4b8a397f30a5> .
+
+	<urn:uuid:ed479d03-2036-4a28-afdc-16479f4e925c> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL_TR2_HVDC1 - CL-2" ;
+		entsoe:IdentifiedObject.shortName "CL-2" ;
+		<IdentifiedObject.description> "Ratings for element NL_TR2_HVDC1 - Limit" ;
+		<CurrentLimit.value> "413.900000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:2c894db9-1a3f-484c-a4a8-4ce73437ed01> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:250e948b-70ae-4139-971b-4f0053425b60> .
+
+	<urn:uuid:5cf72107-98ae-4a85-894f-6998fb4961bd> rdf:type <TapChangerControl> ;
+		<IdentifiedObject.name> "NL_TR2_HVDC1" ;
+		<RegulatingControl.mode> "voltage" ;
+		<RegulatingControl.Terminal> <urn:uuid:1c002f6a-c8ad-49b6-9134-fa0737681623> .
+
+	<urn:uuid:0de77cdf-f612-4f1d-92c7-c20748e34a4d> rdf:type <RatioTapChanger> ;
+		<IdentifiedObject.name> "NL_TR2_HVDC1" ;
+		<TapChanger.neutralU> "220.000000" ;
+		<TapChanger.lowStep> "-10" ;
+		<TapChanger.highStep> "10" ;
+		<TapChanger.neutralStep> "0" ;
+		<TapChanger.normalStep> "0" ;
+		<RatioTapChanger.stepVoltageIncrement> "1.250000" ;
+		<TapChanger.ltcFlag> "true" ;
+		<TapChanger.TapChangerControl> <urn:uuid:5cf72107-98ae-4a85-894f-6998fb4961bd> ;
+		<RatioTapChanger.tculControlMode> "volt" ;
+		<RatioTapChanger.TransformerEnd> <urn:uuid:05edf0a0-7aba-4e13-9431-c130535761fa> .
+
+	<urn:uuid:1c002f6a-c8ad-49b6-9134-fa0737681623> rdf:type <Terminal> ;
+		<IdentifiedObject.name> "NL_TR2_HVDC1 - T2" ;
+		<ACDCTerminal.sequenceNumber> "2" ;
+		<Terminal.phases> "ABC" ;
+		<Terminal.ConductingEquipment> <urn:uuid:98f1c119-c884-4f79-a6f6-1c7597a30df4> ;
+		<Terminal.ConnectivityNode> <urn:uuid:ba484ebd-fd32-4e9b-affe-77720a8e514b> .
+
+	<urn:uuid:2b4b8f39-27f9-4651-91c6-16ebc42ca957> rdf:type <PowerTransformerEnd> ;
+		<IdentifiedObject.name> "NL_TR2_HVDC1" ;
+		<PowerTransformerEnd.r> "0e+000" ;
+		<PowerTransformerEnd.x> "0e+000" ;
+		<PowerTransformerEnd.b> "0.0" ;
+		<PowerTransformerEnd.g> "0.0" ;
+		<PowerTransformerEnd.r0> "0e+000" ;
+		<PowerTransformerEnd.x0> "0e+000" ;
+		<PowerTransformerEnd.b0> "0.0" ;
+		<PowerTransformerEnd.g0> "0.0" ;
+		<TransformerEnd.rground> "0e+000" ;
+		<TransformerEnd.xground> "0.0" ;
+		<PowerTransformerEnd.ratedS> "157.700000" ;
+		<PowerTransformerEnd.ratedU> "123.900000" ;
+		<TransformerEnd.endNumber> "2" ;
+		<PowerTransformerEnd.phaseAngleClock> "0" ;
+		<TransformerEnd.grounded> "true" ;
+		<PowerTransformerEnd.connectionKind> "Yn" ;
+		<TransformerEnd.BaseVoltage> <urn:uuid:e042b69d-181c-4415-be3f-83a84ce951a1> ;
+		<PowerTransformerEnd.PowerTransformer> <urn:uuid:98f1c119-c884-4f79-a6f6-1c7597a30df4> ;
+		<TransformerEnd.Terminal> <urn:uuid:1c002f6a-c8ad-49b6-9134-fa0737681623> .
+
+	<urn:uuid:31f1650b-ef06-40e8-b6c4-25fd5560e4ba> rdf:type <OperationalLimitSet> ;
+		<IdentifiedObject.name> "Limits at Port 2" ;
+		<IdentifiedObject.description> "Limit-Ratings for branch NL_TR2_HVDC1 at Port 2" ;
+		<OperationalLimitSet.Terminal> <urn:uuid:1c002f6a-c8ad-49b6-9134-fa0737681623> .
+
+	<urn:uuid:cacdc01a-f91d-435f-b753-2a7ddec4629f> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL_TR2_HVDC1 - CL-0" ;
+		entsoe:IdentifiedObject.shortName "CL-0" ;
+		<IdentifiedObject.description> "Ratings for element NL_TR2_HVDC1 - Limit" ;
+		<CurrentLimit.value> "734.900000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:31f1650b-ef06-40e8-b6c4-25fd5560e4ba> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:1aee0921-7cbe-481c-9078-daf66ab2a950> .
+
+	<urn:uuid:cacdc01a-f91d-435f-b753-2a7ddec4629f1> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "90" ;
+		entsoe:IdentifiedObject.shortName "CL-0" ;
+		<IdentifiedObject.description> "Ratings for element NL_TR2_HVDC1 - Limit" ;
+		<CurrentLimit.value> "661.410000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:31f1650b-ef06-40e8-b6c4-25fd5560e4ba> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:f7b1271f-fa49-4f88-bc01-2eaac8242a1e> .
+
+	<urn:uuid:807aa75a-5984-44d9-9acf-ba0593fe250f> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL_TR2_HVDC1 - CL-1" ;
+		entsoe:IdentifiedObject.shortName "CL-1" ;
+		<IdentifiedObject.description> "Ratings for element NL_TR2_HVDC1 - Limit" ;
+		<CurrentLimit.value> "734.900000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:31f1650b-ef06-40e8-b6c4-25fd5560e4ba> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:18c8d038-31ea-4d92-9e7e-4b8a397f30a5> .
+
+	<urn:uuid:966e2808-00d9-4ad0-9c63-b517166d5840> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL_TR2_HVDC1 - CL-2" ;
+		entsoe:IdentifiedObject.shortName "CL-2" ;
+		<IdentifiedObject.description> "Ratings for element NL_TR2_HVDC1 - Limit" ;
+		<CurrentLimit.value> "734.900000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:31f1650b-ef06-40e8-b6c4-25fd5560e4ba> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:250e948b-70ae-4139-971b-4f0053425b60> .
+
+	<urn:uuid:0c95b506-05a2-40d5-9f82-b9bf1e680a8d1> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:f7b1271f-fa49-4f88-bc01-2eaac8242a1e> .
+
+	<urn:uuid:6a927421-36cd-487a-b6b7-61dd454704471> rdf:type rdf:Description ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:f7b1271f-fa49-4f88-bc01-2eaac8242a1e> .
+
+	<urn:uuid:b98ded5b-4300-4131-9cb8-14c53ecaa942> rdf:type <LinearShuntCompensator> ;
+		<IdentifiedObject.name> "HVDC2" ;
+		<ShuntCompensator.normalSections> "1" ;
+		<ShuntCompensator.maximumSections> "1" ;
+		<LinearShuntCompensator.bPerSection> "0.161250" ;
+		<LinearShuntCompensator.gPerSection> "0e+000" ;
+		<LinearShuntCompensator.b0PerSection> "-0e+000" ;
+		<LinearShuntCompensator.g0PerSection> "0e+000" ;
+		<ShuntCompensator.nomU> "15.750000" ;
+		<RegulatingCondEq.RegulatingControl> <urn:uuid:c67181f4-6d0c-4b3c-982f-1a55bb8cc3b4> ;
+		<Equipment.aggregate> "false" ;
+		<Equipment.EquipmentContainer> <urn:uuid:613bf445-d1a8-409a-95f8-45b41f9a02ec> .
+
+	<urn:uuid:4b4ee120-b820-4ead-9cbb-c7ecdb49ac82> rdf:type <Terminal> ;
+		<IdentifiedObject.name> "HVDC2 - T1" ;
+		<ACDCTerminal.sequenceNumber> "1" ;
+		<Terminal.phases> "ABC" ;
+		<Terminal.ConductingEquipment> <urn:uuid:b98ded5b-4300-4131-9cb8-14c53ecaa942> ;
+		<Terminal.ConnectivityNode> <urn:uuid:ca44e0c6-8f23-4f61-bb42-288faff7e090> .
+
+	<urn:uuid:c67181f4-6d0c-4b3c-982f-1a55bb8cc3b4> rdf:type <RegulatingControl> ;
+		<IdentifiedObject.name> "HVDC2" ;
+		<RegulatingControl.mode> "voltage" ;
+		<RegulatingControl.Terminal> <urn:uuid:4b4ee120-b820-4ead-9cbb-c7ecdb49ac82> .
+
+	<urn:uuid:80b131ac-c989-4c5f-ab59-4635d99bf7c6> rdf:type <LinearShuntCompensator> ;
+		<IdentifiedObject.name> "HVDC1" ;
+		<ShuntCompensator.normalSections> "1" ;
+		<ShuntCompensator.maximumSections> "1" ;
+		<LinearShuntCompensator.bPerSection> "0.002479" ;
+		<LinearShuntCompensator.gPerSection> "0e+000" ;
+		<LinearShuntCompensator.b0PerSection> "-0e+000" ;
+		<LinearShuntCompensator.g0PerSection> "0e+000" ;
+		<ShuntCompensator.nomU> "220.000000" ;
+		<RegulatingCondEq.RegulatingControl> <urn:uuid:3f0c04e4-44d9-4a54-88a9-7af2798a51d8> ;
+		<Equipment.aggregate> "false" ;
+		<Equipment.EquipmentContainer> <urn:uuid:613bf445-d1a8-409a-95f8-45b41f9a0eec> .
+
+	<urn:uuid:d53172b8-4633-46f2-90a8-9e08cb0339fc> rdf:type <Terminal> ;
+		<IdentifiedObject.name> "HVDC1 - T1" ;
+		<ACDCTerminal.sequenceNumber> "1" ;
+		<Terminal.phases> "ABC" ;
+		<Terminal.ConductingEquipment> <urn:uuid:80b131ac-c989-4c5f-ab59-4635d99bf7c6> ;
+		<Terminal.ConnectivityNode> <urn:uuid:7ee15713-658b-493f-810b-3295097e45c1> .
+
+	<urn:uuid:3f0c04e4-44d9-4a54-88a9-7af2798a51d8> rdf:type <RegulatingControl> ;
+		<IdentifiedObject.name> "HVDC1" ;
+		<RegulatingControl.mode> "voltage" ;
+		<RegulatingControl.Terminal> <urn:uuid:d53172b8-4633-46f2-90a8-9e08cb0339fc> .
+
+	<urn:uuid:98797682-ed24-44cf-8e63-83966cae689b> rdf:type <DCGround> ;
+		<IdentifiedObject.name> "DC-1230541231" ;
+		<DCGround.inductance> "0e+000" ;
+		<DCGround.r> "0e+000" ;
+		<Equipment.EquipmentContainer> <urn:uuid:4729c697-1ee3-47f4-89ac-1ec73fd7a61b> .
+
+	<urn:uuid:19054f8f-2533-4c55-af80-4dcfa80fa811> rdf:type <DCTerminal> ;
+		<IdentifiedObject.name> "DC-1230541231" ;
+		<DCBaseTerminal.DCNode> <urn:uuid:759506ce-9731-4b60-b52a-1f61aeecb4d8> ;
+		<DCTerminal.DCConductingEquipment> <urn:uuid:98797682-ed24-44cf-8e63-83966cae689b> .
+
+	<urn:uuid:c91d376e-7d03-4f09-8069-124d9e23348f> rdf:type <DCGround> ;
+		<IdentifiedObject.name> "DC-1230541231" ;
+		<DCGround.inductance> "0e+000" ;
+		<DCGround.r> "0e+000" ;
+		<Equipment.EquipmentContainer> <urn:uuid:c41a58da-2676-43ab-9e3d-e0b26780890a> .
+
+	<urn:uuid:0c0f0773-16e4-46d7-b984-48c0049e39ce> rdf:type <DCTerminal> ;
+		<IdentifiedObject.name> "DC-1230541231" ;
+		<DCBaseTerminal.DCNode> <urn:uuid:cf60e62e-9db4-45b1-8b05-7e7cda333224> ;
+		<DCTerminal.DCConductingEquipment> <urn:uuid:c91d376e-7d03-4f09-8069-124d9e23348f> .
+}

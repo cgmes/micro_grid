@@ -1,0 +1,30 @@
+BASE <http://iec.ch/TC57/2013/CIM-schema-cim16#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX cim: <http://iec.ch/TC57/2013/CIM-schema-cim16#>
+PREFIX entsoe: <http://entsoe.eu/CIM/SchemaExtension/3/1#>
+
+WITH <urn:uuid:77b55f87-fc1e-4046-9599-6c6b4f991a86>
+INSERT {
+	<urn:uuid:9e7cb7d4-52c2-4af3-ba6a-45e6906855dd> rdf:type <OperationalLimitType> ;
+		<IdentifiedObject.name> "TATL30" ;
+		entsoe:IdentifiedObject.shortName "tatl" ;
+		<OperationalLimitType.direction> "absoluteValue" ;
+		entsoe:OperationalLimitType.limitType "tatl" ;
+		<OperationalLimitType.acceptableDuration> "30.000000" .
+
+	<urn:uuid:3c45c689-e487-4a50-8fb7-0838d4b9ac2e> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL-Line_2 - CL-4" ;
+		entsoe:IdentifiedObject.shortName "CL-4" ;
+		<IdentifiedObject.description> "Ratings for element NL-Line_2 - Limit" ;
+		<CurrentLimit.value> "1200.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:13ee714f-6df4-4039-8519-5cf4e84ab20d> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:9e7cb7d4-52c2-4af3-ba6a-45e6906855dd> .
+
+	<urn:uuid:9e4624d8-723b-4251-92f2-1355da6e4756> rdf:type <CurrentLimit> ;
+		<IdentifiedObject.name> "NL-Line_2 - CL-4" ;
+		entsoe:IdentifiedObject.shortName "CL-4" ;
+		<IdentifiedObject.description> "Ratings for element NL-Line_2 - Limit" ;
+		<CurrentLimit.value> "1200.000000" ;
+		<OperationalLimit.OperationalLimitSet> <urn:uuid:7cf4108d-d355-48f5-8556-d42c37a8e2c8> ;
+		<OperationalLimit.OperationalLimitType> <urn:uuid:9e7cb7d4-52c2-4af3-ba6a-45e6906855dd> .
+}
